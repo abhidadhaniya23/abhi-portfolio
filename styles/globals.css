@@ -1,16 +1,30 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: codeFont;
+        src: url("/font/CascadiaCode.woff2");
+    }
+    @font-face {
+        font-family: textFont;
+        src: url("/font/Sohne.woff");
+    }
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
 a {
-  color: inherit;
-  text-decoration: none;
+    @apply font-bodyText;
 }
 
-* {
-  box-sizing: border-box;
+.btn {
+    @apply border-[1px] duration-300 hover:bg-cyanPrimary/5 mt-5 text-xl border-cyanPrimary py-3 px-7 text-cyanPrimary rounded-[4px];
 }
