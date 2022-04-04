@@ -13,6 +13,7 @@ module.exports = {
                 lightBluePrimary: "#CDD6F7",
                 lightBlueSecondary: "#8892B0",
                 cyanPrimary: "#65FEDA",
+                lowOpacity: "#ffffff1a",
             },
             backgroundImage: {
                 //   factoryImg: "url(/src/Assets/factory.png)",

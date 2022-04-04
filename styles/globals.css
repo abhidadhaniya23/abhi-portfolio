@@ -28,3 +28,7 @@ a {
 .btn {
     @apply border-[1px] duration-300 hover:bg-cyanPrimary/5 mt-5 text-xl border-cyanPrimary py-3 px-7 text-cyanPrimary rounded-[4px];
 }
+
+.input {
+    @apply px-5 py-3 duration-200 border-[1px] border-transparent rounded-sm outline-none bg-darkBluePrimary focus:border-cyanPrimary text-lightBluePrimary placeholder:text-lightBlueSecondary;
+}

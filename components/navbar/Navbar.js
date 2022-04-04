@@ -18,7 +18,7 @@ const Navbar = () => {
         },
         {
             name: "Resources",
-            link: "/development-resources",
+            link: "/resources",
         },
         {
             name: "Contact Me",
@@ -28,16 +28,16 @@ const Navbar = () => {
 
     return (
         <>
-            <header className="flex bg-darkBluePrimary flex-col justify-center h-screen items-center shadow-2xl">
+            <header className="fixed top-0 flex flex-col items-center justify-center min-h-screen px-16 shadow-2xl bg-darkBluePrimary">
                 <Link href="/">
                     <a className="mb-10 -mt-10">
                         <Image src={logo} alt="Abhi Dadhaniya" />
                     </a>
                 </Link>
-                <ul className="flex flex-col justify-center items-start">
+                <ul className="flex flex-col items-start justify-center">
                     {linksData.map((item, index) => (
                         <Link key={index} href={item.link}>
-                            <a className="text-lightBluePrimary text-xl hover:text-cyanPrimary duration-300 my-3">
+                            <a className="w-full my-3 text-xl duration-300 text-lightBluePrimary hover:text-cyanPrimary">
                                 <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
                                 {item.name}
                             </a>
