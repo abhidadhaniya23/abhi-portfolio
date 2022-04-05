@@ -1,7 +1,3 @@
-// Import react-circular-progressbar module and styles
-// import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
-// import "react-circular-progressbar/dist/styles.css";
-
 // import Image from "next/image";
 import Heading from "../Heading";
 import CircularProgressBar from "./CircularProgressBar";
@@ -21,14 +17,6 @@ import Netlify from "../../public/icons/Netlify.png";
 import Heroku from "../../public/icons/Heroku.png";
 import TailwindCSS from "../../public/icons/TailwindCSS.png";
 import Git from "../../public/icons/Git.png";
-
-// Animation
-// import { easeQuadInOut } from "d3-ease";
-// import AnimatedProgressProvider from "./AnimatedProgressProvider";
-// import { ChangingProgressProvider } from "react-circular-progressbar";
-
-// Radial separators
-// import RadialSeparators from "./RadialSeparators";
 
 const Skill = () => {
     const value = 60;

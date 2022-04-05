@@ -11,18 +11,22 @@ const SocialLine = () => {
     };
     const socialIcons = [
         {
+            label: "Instagram",
             link: "https://www.instagram.com/_abhi_dadhaniya_/",
             icon: "fa-brands fa-instagram",
         },
         {
+            label: "Twitter",
             link: "https://twitter.com/abhidadhaniya3",
             icon: "fa-brands fa-twitter",
         },
         {
+            label: "Github",
             link: "https://github.com/abhidadhaniya23",
             icon: "fa-brands fa-github",
         },
         {
+            label: "LinkedIn",
             link: "https://www.linkedin.com/in/abhi-dadhaniya-a09924220/",
             icon: "fa-brands fa-linkedin",
         },
@@ -32,7 +36,7 @@ const SocialLine = () => {
             <div className="fixed top-0 flex flex-col items-center justify-center right-10">
                 <motion.span variants={animations.line} animate="animate" exit="exit" initial="initial" className="block bg-lightBluePrimary/30 mb-5 h-32 w-[2px] rounded-full"></motion.span>
                 {socialIcons.map((icon, index) => (
-                    <Icon icon={icon.icon} index={index} key={index} link={icon.link} />
+                    <Icon icon={icon.icon} index={index} label={icon.label} key={index} link={icon.link} />
                 ))}
             </div>
         </>
@@ -68,7 +72,7 @@ const EmailLine = () => {
     );
 };
 
-const Icon = ({ index, icon, link }) => {
+const Icon = ({ index, icon, link, label }) => {
     const animations = {
         icons: {
             initial: { opacity: 0, y: -20 },
@@ -80,7 +84,7 @@ const Icon = ({ index, icon, link }) => {
         <>
             <motion.div variants={animations.icons} animate="animate" exit="exit" initial="initial">
                 <Link href={link}>
-                    <a target="_blank">
+                    <a target="_blank" area-label={label}>
                         <i className={`my-2 text-xl duration-300 text-lightBluePrimary/30 hover:text-cyanPrimary ${icon}`}></i>
                     </a>
                 </Link>
