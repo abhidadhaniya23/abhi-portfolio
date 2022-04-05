@@ -45,7 +45,7 @@ const About = () => {
                 </motion.div>
                 <div className="p-5 ml-10 -mr-20 text-xl text-lightBluePrimary">
                     <motion.p variants={animations.desc} initial="initial" animate="animate" exit="exit" className="my-2 leading-8">
-                        Hello, I'm Abhi Dadhaniya, a full-stack web developer at MERN Stack Technology. I'm currently trying my hands on NEXT.Js framework. Till now, I've completed a few projects on React.Js as mentioned in my portfolio and meanwhile, gained some experience in graphic design.
+                        Hello, I am Abhi Dadhaniya, a full-stack web developer at MERN Stack Technology. I am currently trying my hands on NEXT.Js framework. Till now, I have completed a few projects on React.Js as mentioned in my portfolio and meanwhile, gained some experience in graphic design.
                     </motion.p>
                     <div className="mt-5">
                         <motion.p variants={animations.expert} initial="initial" animate="animate" exit="exit" className="mb-2">
