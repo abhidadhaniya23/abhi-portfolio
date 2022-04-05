@@ -1,4 +1,4 @@
-import Navbar from "./navbar/navbar";
+import Navbar from "./navbar/Navbar";
 import Script from "next/script";
 
 const Layout = ({ component }) => {
