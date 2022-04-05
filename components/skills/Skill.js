@@ -3,10 +3,10 @@
 // import "react-circular-progressbar/dist/styles.css";
 
 // import Image from "next/image";
-import logo from "../../public/logo.png";
 import Heading from "../Heading";
 import CircularProgressBar from "./CircularProgressBar";
 import SkillCard from "./SkillCard";
+import { motion } from "framer-motion";
 
 // Logo Import
 import ReactJS from "../../public/icons/ReactJS.png";
@@ -32,6 +32,23 @@ import Git from "../../public/icons/Git.png";
 
 const Skill = () => {
     const value = 60;
+    const animations = {
+        fullStack: {
+            initial: { opacity: 0, y: -20 },
+            exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
+            animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1 } },
+        },
+        tool: {
+            initial: { opacity: 0, y: -20 },
+            exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
+            animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.6 } },
+        },
+        design: {
+            initial: { opacity: 0, y: -20 },
+            exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
+            animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.8 } },
+        },
+    };
     const skillsData = [
         {
             name: "ReactJS",
@@ -85,32 +102,42 @@ const Skill = () => {
             name: "TailwindCSS",
             url: TailwindCSS,
         },
+        {
+            name: "NextJS",
+            url: NextJS,
+        },
     ];
     return (
         <>
             <Heading heading={"Skills"} />
             <div className="flex items-start justify-center sm:flex-col md:flex-row">
                 <div className="flex flex-col items-center justify-center">
-                    <h2 className="px-16 py-5 my-10 text-2xl text-center rounded-[4px] bg-darkBluePrimary text-cyanPrimary">Full Stack Development</h2>
+                    <motion.h2 variants={animations.fullStack} animate="animate" exit="exit" initial="initial" className="px-16 py-5 my-10 text-2xl text-center rounded-[4px] bg-darkBluePrimary text-cyanPrimary">
+                        Full Stack Development
+                    </motion.h2>
                     <div className="flex flex-row flex-wrap items-center justify-center w-[30rem]">
                         {skillsData.map((skill, index) => (
                             <>
-                                <CircularProgressBar key={index} url={skill.url} name={skill.name} value={skill.value} />
+                                <CircularProgressBar key={index} index={index} url={skill.url} name={skill.name} value={skill.value} />
                             </>
                         ))}
                     </div>
                 </div>
                 <div className="flex flex-row items-start justify-center">
                     <div className="flex flex-col items-center justify-center mx-5">
-                        <h2 className="w-full px-16 py-5 my-10 text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary">Tools</h2>
+                        <motion.h2 variants={animations.tool} animate="animate" exit="exit" initial="initial" className="w-full px-16 py-5 my-10 text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary">
+                            Tools
+                        </motion.h2>
                         {toolData.map((tool, index) => (
-                            <SkillCard name={tool.name} key={index} url={tool.url} />
+                            <SkillCard name={tool.name} index={index} key={index} url={tool.url} />
                         ))}
                     </div>
                     <div className="flex flex-col items-center justify-center mx-5">
-                        <h2 className="px-16 py-5 my-10 text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary">Design</h2>
+                        <motion.h2 variants={animations.design} animate="animate" exit="exit" initial="initial" className="px-16 py-5 my-10 text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary">
+                            Design
+                        </motion.h2>
                         {designData.map((designTool, index) => (
-                            <SkillCard name={designTool.name} key={index} url={designTool.url} />
+                            <SkillCard name={designTool.name} index={index} key={index} url={designTool.url} />
                         ))}
                     </div>
                 </div>

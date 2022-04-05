@@ -7,11 +7,9 @@ import { motion } from "framer-motion";
 export default function Home() {
     return (
         <>
-            <div className="bg-blue-400">
-                <SocialLine />
-                <Layout component={<HeaderIntro />} />
-                <EmailLine />
-            </div>
+            <SocialLine />
+            <Layout component={<HeaderIntro />} />
+            <EmailLine />
         </>
     );
 }
@@ -19,27 +17,27 @@ export default function Home() {
 const animations = {
     spanTag: {
         initial: { opacity: 0, y: -100 },
-        exit: { opacity: 0, y: -100, transition: { duration: 0.3 } },
+        exit: { opacity: 0, y: 0, transition: { duration: 0.3, delay: 0.5 } },
         animate: { opacity: 1, y: 0, transition: { duration: 0.4 } },
     },
     name: {
         initial: { opacity: 0, x: -50 },
-        exit: { opacity: 0, x: -50, transition: { duration: 0.2 } },
+        exit: { opacity: 0, x: -30, transition: { duration: 0.3, delay: 0.4 } },
         animate: { opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.2 } },
     },
     tagLine: {
         initial: { opacity: 0, x: -50 },
-        exit: { opacity: 0, x: -50, transition: { duration: 0.2 } },
+        exit: { opacity: 0, x: -30, transition: { duration: 0.3, delay: 0.3 } },
         animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.4 } },
     },
     desc: {
         initial: { opacity: 0, x: -50 },
-        exit: { opacity: 0, x: -50, transition: { duration: 0.2 } },
+        exit: { opacity: 0, x: -30, transition: { duration: 0.3, delay: 0.2 } },
         animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.6 } },
     },
     btn: {
-        initial: { opacity: 0, y: -50 },
-        exit: { opacity: 0, y: -50, transition: { duration: 0.2 } },
+        initial: { opacity: 0, y: -30 },
+        exit: { opacity: 0, y: -10, transition: { duration: 0.3, delay: 0.1 } },
         animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.7 } },
     },
 };

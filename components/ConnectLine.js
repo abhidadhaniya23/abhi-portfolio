@@ -55,11 +55,13 @@ const EmailLine = () => {
     return (
         <>
             <div className="absolute right-0 flex flex-row items-center justify-center bottom-10">
-                <Link href="mailto:abhidadhaniya23@gmail.com">
-                    <motion.a variants={animations.emailAnimate} animate="animate" exit="exit" initial="initial" className="duration-300 text-lightBluePrimary/50 hover:text-cyanPrimary/90">
-                        <i className="mr-2 fa-solid fa-envelope"></i> abhidadhaniya23@gmail.com
-                    </motion.a>
-                </Link>
+                <motion.div variants={animations.emailAnimate} animate="animate" exit="exit" initial="initial">
+                    <Link href="mailto:abhidadhaniya23@gmail.com">
+                        <a className="duration-300 text-lightBluePrimary/50 hover:text-cyanPrimary/90">
+                            <i className="mr-2 fa-solid fa-envelope"></i> abhidadhaniya23@gmail.com
+                        </a>
+                    </Link>
+                </motion.div>
                 <motion.span variants={animations.line} animate="animate" exit="exit" initial="initial" className="block bg-lightBluePrimary/30 ml-5 w-32 h-[2px] rounded-full"></motion.span>
             </div>
         </>

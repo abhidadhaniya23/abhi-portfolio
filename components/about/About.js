@@ -7,32 +7,32 @@ const About = () => {
     const animations = {
         photo: {
             initial: { opacity: 0, x: 20 },
-            exit: { opacity: 0, x: 10, transition: { duration: 0.3 } },
+            exit: { opacity: 0, x: 10, transition: { duration: 0.3, delay: 0.1 } },
             animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.2 } },
         },
         desc: {
             initial: { opacity: 0, x: -20 },
-            exit: { opacity: 0, x: -10, transition: { duration: 0.3 } },
+            exit: { opacity: 0, x: -10, transition: { duration: 0.3, delay: 0.1 } },
             animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.3 } },
         },
         expert: {
             initial: { opacity: 0, x: -20 },
-            exit: { opacity: 0, x: -10, transition: { duration: 0.3 } },
+            exit: { opacity: 0, x: -10, transition: { duration: 0.3, delay: 0.1 } },
             animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.4 } },
         },
         p1: {
             initial: { opacity: 0, x: -20 },
-            exit: { opacity: 0, x: -10, transition: { duration: 0.3 } },
+            exit: { opacity: 0, x: -10, transition: { duration: 0.3, delay: 0.15 } },
             animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.5 } },
         },
         p2: {
             initial: { opacity: 0, x: -20 },
-            exit: { opacity: 0, x: -10, transition: { duration: 0.3 } },
+            exit: { opacity: 0, x: -10, transition: { duration: 0.3, delay: 0.18 } },
             animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.6 } },
         },
         p3: {
             initial: { opacity: 0, x: -20 },
-            exit: { opacity: 0, x: -10, transition: { duration: 0.3 } },
+            exit: { opacity: 0, x: -10, transition: { duration: 0.3, delay: 0.21 } },
             animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.7 } },
         },
     };

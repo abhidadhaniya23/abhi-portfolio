@@ -1,114 +1,114 @@
+// import { useState } from "react";
 import Heading from "../Heading";
-import Link from "next/link";
+import CategoryCard from "./CategoryCard";
+import ProjectCard from "./ProjectCard";
+import React, { useState } from "react";
 
 const Development = () => {
+    const [selectedCategory, setSelectedCategory] = useState("ReactJS");
     const categoryProjects = [
         {
             name: "ReactJS",
-            url: "/react",
             icon: "fa-brands fa-react",
         },
         {
             name: "Front-end",
-            url: "/front-end",
             icon: "fa-solid fa-code",
         },
         {
-            name: "Full Stack",
-            url: "/full-stack",
+            name: "Full-Stack",
             icon: "fa-solid fa-globe",
         },
         {
             name: "Games",
-            url: "/games",
             icon: "fa-solid fa-gamepad",
         },
         {
             name: "UI-Designs",
-            url: "/ui-designs",
             icon: "fa-solid fa-bezier-curve",
-        },
-        {
-            name: "Blogs",
-            url: "/blogs",
-            icon: "fa-brands fa-readme",
         },
     ];
     const projectData = [
         {
-            name: "abc",
+            name: "Movie App",
             url: "/",
-            category: "react",
+            category: "ReactJS",
         },
         {
-            name: "abc",
+            name: "Industry Website",
             url: "/",
-            category: "front-end",
+            category: "Full-Stack",
         },
         {
-            name: "abc",
+            name: "Educational Website",
             url: "/",
-            category: "full-stack",
+            category: "Front-end",
         },
         {
-            name: "abc",
+            name: "Image Gallery",
             url: "/",
-            category: "games",
+            category: "ReactJS",
         },
         {
-            name: "abc",
+            name: "Rock, Paper, Scissor",
             url: "/",
-            category: "ui-designs",
+            category: "Games",
         },
         {
-            name: "abc",
+            name: "Mind Sharp",
             url: "/",
-            category: "blogs",
+            category: "Games",
+        },
+        {
+            name: "Countdown Timer",
+            url: "/",
+            category: "Front-end",
+        },
+        {
+            name: "Time Square News",
+            url: "/",
+            category: "Front-end",
+        },
+        {
+            name: "Password Generator",
+            url: "/",
+            category: "Front-end",
+        },
+        {
+            name: "Food Website",
+            url: "/",
+            category: "UI-Designs",
+        },
+        {
+            name: "Covid-19 Tracker",
+            url: "/",
+            category: "Front-end",
+        },
+        {
+            name: "Periodic Table",
+            url: "/",
+            category: "Front-end",
+        },
+        {
+            name: "Awesome Cheat Sheets",
+            url: "/",
+            category: "Front-end",
         },
     ];
+
     return (
         <>
             <Heading heading={"What I've Done"} />
             <div className="flex flex-row items-start justify-center mt-10">
-                <div className="sticky flex flex-col items-center justify-center w-56 mt-10 top-10">
+                <div className="mt-5">
                     {categoryProjects.map((project, index) => (
-                        <Link href={project.url} key={index}>
-                            <a className="py-3 focus:text-cyanPrimary focus:border-cyanPrimary my-1 w-full border-[1px] border-transparent duration-300 hover:border-cyanPrimary rounded-[4px] text-lg px-7 font-codeText text-lightBluePrimary bg-darkBluePrimary">
-                                <i className={`mr-4 text-cyanPrimary ${project.icon}`}></i>
-                                {project.name}
-                            </a>
-                        </Link>
+                        <CategoryCard setSelectedCategory={(event) => setSelectedCategory(event)} name={project.name} selectedCategory={selectedCategory} icon={project.icon} key={index} index={index} />
                     ))}
                 </div>
                 <div className="overflow-y-scroll flex flex-row items-start justify-center mt-7 w-[40rem] flex-wrap h-[30rem]">
-                    <div className="flex flex-col items-center justify-center m-5 overflow-hidden rounded-lg bg-darkBluePrimary">
-                        <div className="w-56 h-56 bg-lightBlueSecondary"></div>
-                        <h2 className="py-4 text-lg text-lightBluePrimary">Industry Website</h2>
-                    </div>
-                    <div className="flex flex-col items-center justify-center m-5 overflow-hidden rounded-lg bg-darkBluePrimary">
-                        <div className="w-56 h-56 bg-lightBlueSecondary"></div>
-                        <h2 className="py-4 text-lg text-lightBluePrimary">Industry Website</h2>
-                    </div>
-                    <div className="flex flex-col items-center justify-center m-5 overflow-hidden rounded-lg bg-darkBluePrimary">
-                        <div className="w-56 h-56 bg-lightBlueSecondary"></div>
-                        <h2 className="py-4 text-lg text-lightBluePrimary">Industry Website</h2>
-                    </div>
-                    <div className="flex flex-col items-center justify-center m-5 overflow-hidden rounded-lg bg-darkBluePrimary">
-                        <div className="w-56 h-56 bg-lightBlueSecondary"></div>
-                        <h2 className="py-4 text-lg text-lightBluePrimary">Industry Website</h2>
-                    </div>
-                    <div className="flex flex-col items-center justify-center m-5 overflow-hidden rounded-lg bg-darkBluePrimary">
-                        <div className="w-56 h-56 bg-lightBlueSecondary"></div>
-                        <h2 className="py-4 text-lg text-lightBluePrimary">Industry Website</h2>
-                    </div>
-                    <div className="flex flex-col items-center justify-center m-5 overflow-hidden rounded-lg bg-darkBluePrimary">
-                        <div className="w-56 h-56 bg-lightBlueSecondary"></div>
-                        <h2 className="py-4 text-lg text-lightBluePrimary">Industry Website</h2>
-                    </div>
-                    <div className="flex flex-col items-center justify-center m-5 overflow-hidden rounded-lg bg-darkBluePrimary">
-                        <div className="w-56 h-56 bg-lightBlueSecondary"></div>
-                        <h2 className="py-4 text-lg text-lightBluePrimary">Industry Website</h2>
-                    </div>
+                    {projectData.map((project, index) => (
+                        <ProjectCard index={index} selectedCategory={selectedCategory} category={project.category} name={project.name} url={project.url} key={index} />
+                    ))}
                 </div>
             </div>
         </>

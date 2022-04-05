@@ -30,5 +30,30 @@ a {
 }
 
 .input {
-    @apply px-5 py-3 duration-200 border-[1px] border-transparent rounded-sm outline-none bg-darkBluePrimary focus:border-cyanPrimary text-lightBluePrimary placeholder:text-lightBlueSecondary;
+    @apply px-5 py-3 duration-200 border-[1px] border-transparent rounded-[4px] outline-none bg-darkBluePrimary focus:border-cyanPrimary text-lightBluePrimary placeholder:text-lightBlueSecondary;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply bg-darkBluePrimary;
+    border-radius: 500px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-cyanPrimary/10;
+    border-radius: 500px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyanPrimary;
+    /* background: #7a7f9c; */
 }

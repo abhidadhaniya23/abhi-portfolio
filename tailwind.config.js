@@ -5,7 +5,6 @@ module.exports = {
             fontFamily: {
                 bodyText: ["textFont"],
                 codeText: ["codeFont"],
-                // poppins: ["body, sans-serif"],
             },
             colors: {
                 darkBluePrimary: "#071124",

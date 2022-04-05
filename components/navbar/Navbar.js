@@ -21,6 +21,10 @@ const Navbar = () => {
             link: "/resources",
         },
         {
+            name: "Read Blogs",
+            link: "https://abhisblogs.hashnode.dev/",
+        },
+        {
             name: "Contact Me",
             link: "/contact",
         },
