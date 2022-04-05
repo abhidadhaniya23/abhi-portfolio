@@ -1,6 +1,9 @@
-import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import React from "react";
+import { Animate } from "react-move";
 
 const CircularProgressBar = ({ value, name, url, index }) => {
     const animations = {
@@ -37,7 +40,8 @@ const CircularProgressBar = ({ value, name, url, index }) => {
                     trailColor: "#ffffff1a",
                 })}
             />
-            <div className="absolute w-12 pb-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            );
+            <div className="absolute w-12 pb-16 pr-1 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                 <Image src={url} alt="Abhi Dadhaniya" />
             </div>
             <h2 className="pb-5 text-xl text-center font-codeText text-lightBluePrimary">{name}</h2>
@@ -46,3 +50,52 @@ const CircularProgressBar = ({ value, name, url, index }) => {
 };
 
 export default CircularProgressBar;
+
+class AnimatedProgressProvider extends React.Component {
+    interval = undefined;
+
+    state = {
+        isAnimated: false,
+    };
+
+    static defaultProps = {
+        valueStart: 0,
+    };
+
+    componentDidMount() {
+        if (this.props.repeat) {
+            this.interval = window.setInterval(() => {
+                this.setState({
+                    isAnimated: !this.state.isAnimated,
+                });
+            }, this.props.duration * 1000);
+        } else {
+            this.setState({
+                isAnimated: !this.state.isAnimated,
+            });
+        }
+    }
+
+    componentWillUnmount() {
+        window.clearInterval(this.interval);
+    }
+
+    render() {
+        return (
+            <Animate
+                start={() => ({
+                    value: this.props.valueStart,
+                })}
+                update={() => ({
+                    value: [this.state.isAnimated ? this.props.valueEnd : this.props.valueStart],
+                    timing: {
+                        duration: this.props.duration * 1000,
+                        ease: this.props.easingFunction,
+                    },
+                })}
+            >
+                {({ value }) => this.props.children(value)}
+            </Animate>
+        );
+    }
+}

@@ -45,23 +45,25 @@ const animations = {
 const HeaderIntro = () => {
     return (
         <>
-            <motion.span variants={animations.spanTag} initial="initial" animate="animate" exit="exit" className="relative my-5 text-2xl font-codeText text-cyanPrimary">
-                Hi, My name is
-            </motion.span>
-            <motion.h1 variants={animations.name} initial="initial" animate="animate" exit="exit" className="my-5 text-6xl font-bold text-lightBluePrimary">
-                Abhi Dadhaniya
-            </motion.h1>
-            <motion.h2 variants={animations.tagLine} initial="initial" animate="animate" exit="exit" className="my-5 font-bold text-7xl text-lightBlueSecondary">
-                I build things for web.
-            </motion.h2>
-            <motion.p variants={animations.desc} initial="initial" animate="animate" exit="exit" className="mb-10 text-xl text-lightBlueSecondary/80">
-                I have been a web developer for the past 3 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database.
-            </motion.p>
-            <motion.div variants={animations.btn} initial="initial" animate="animate" exit="exit">
-                <Link href="/contact">
-                    <a className="btn">Hire Me</a>
-                </Link>
-            </motion.div>
+            <div className="flex flex-col items-start justify-center">
+                <motion.span variants={animations.spanTag} initial="initial" animate="animate" exit="exit" className="relative my-5 text-2xl font-codeText text-cyanPrimary">
+                    Hi, My name is
+                </motion.span>
+                <motion.h1 variants={animations.name} initial="initial" animate="animate" exit="exit" className="my-0 text-6xl font-bold text-lightBluePrimary">
+                    Abhi Dadhaniya
+                </motion.h1>
+                <motion.h2 variants={animations.tagLine} initial="initial" animate="animate" exit="exit" className="my-5 font-bold text-7xl text-lightBlueSecondary">
+                    I build things for web.
+                </motion.h2>
+                <motion.p variants={animations.desc} initial="initial" animate="animate" exit="exit" className="mb-10 text-xl text-lightBlueSecondary/80">
+                    I have been a web developer for the past 3 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database.
+                </motion.p>
+                <motion.div variants={animations.btn} initial="initial" animate="animate" exit="exit">
+                    <Link href="/contact">
+                        <a className="btn">Hire Me</a>
+                    </Link>
+                </motion.div>
+            </div>
         </>
     );
 };
