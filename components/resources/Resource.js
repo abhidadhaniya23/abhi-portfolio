@@ -38,7 +38,7 @@ const Resource = () => {
                         <motion.span variants={animations.desc1} initial="initial" animate="animate" exit="exit" className="mb-3">
                             Me and my programmer friend
                             <span className="mx-1 text-cyanPrimary">
-                                <a className="font-codeText" target="_blank" href="https://rohan-kiratsata.github.io/">
+                                <a className="font-codeText" target="_blank" rel="noreferrer" href="https://rohan-kiratsata.github.io/">
                                     Rohan K.
                                 </a>
                             </span>
@@ -47,7 +47,7 @@ const Resource = () => {
                         <motion.span variants={animations.desc2} initial="initial" animate="animate" exit="exit" className="mb-3">
                             If you visit this page, it will glad to us and you can share your friends also.
                         </motion.span>
-                        <motion.a href="https://web-dev-resources.notion.site/web-dev-resources/Web-Development-Resources-be1207bcc32e434481c1ce6e90756964" target="_blank" variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn">
+                        <motion.a href="https://web-dev-resources.notion.site/web-dev-resources/Web-Development-Resources-be1207bcc32e434481c1ce6e90756964" target="_blank" rel="noreferrer" variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn">
                             Get for Free
                         </motion.a>
                     </div>

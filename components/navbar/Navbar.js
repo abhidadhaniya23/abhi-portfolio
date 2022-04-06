@@ -62,11 +62,11 @@ const Navbar = () => {
                                 </Link>
                             ))}
                         </ul>
-                        <a href="resume.pdf" download={false} target="_blank" className="btn">
+                        <a href="resume.pdf" download={false} target="_blank" rel="noreferrer" className="btn">
                             Resume
                         </a>
                         <br></br>
-                        <a className="mt-1 text-base duration-300 text-lightBlueSecondary/50 hover:text-cyanPrimary/70" href="http://web-developer-abhi.herokuapp.com/" target="_blank">
+                        <a className="mt-1 text-base duration-300 text-lightBlueSecondary/50 hover:text-cyanPrimary/70" href="http://web-developer-abhi.herokuapp.com/" target="_blank" rel="noreferrer">
                             V0.1<i className="ml-2 fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </motion.header>
@@ -88,11 +88,11 @@ const Navbar = () => {
                             </Link>
                         ))}
                     </ul>
-                    <a href="resume.pdf" download={false} target="_blank" className="btn">
+                    <a href="resume.pdf" download={false} target="_blank" rel="noreferrer" className="btn">
                         Resume
                     </a>
                     <br></br>
-                    <a className="mt-1 text-base duration-300 text-lightBlueSecondary/50 hover:text-cyanPrimary/70" href="http://web-developer-abhi.herokuapp.com/" target="_blank">
+                    <a className="mt-1 text-base duration-300 text-lightBlueSecondary/50 hover:text-cyanPrimary/70" href="http://web-developer-abhi.herokuapp.com/" target="_blank" rel="noreferrer">
                         V0.1<i className="ml-2 fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </header>

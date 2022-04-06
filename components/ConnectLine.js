@@ -84,7 +84,7 @@ const Icon = ({ index, icon, link, label }) => {
         <>
             <motion.div variants={animations.icons} animate="animate" exit="exit" initial="initial">
                 <Link href={link}>
-                    <a target="_blank" area-label={label}>
+                    <a target="_blank" rel="noreferrer" area-label={label}>
                         <i className={`my-2 text-xl duration-300 text-lightBluePrimary/30 hover:text-cyanPrimary ${icon}`}></i>
                     </a>
                 </Link>
