@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-const ProjectCard = ({ name, index, category, selectedCategory }) => {
+const ProjectCard = ({ name, img, index, category, selectedCategory }) => {
     const animations = {
         card: {
             initial: { opacity: 0, y: 20 },
@@ -11,7 +12,9 @@ const ProjectCard = ({ name, index, category, selectedCategory }) => {
     return (
         <>
             <motion.div variants={animations.card} initial="initial" animate="animate" exit="exit" className={selectedCategory !== category ? "hidden" : "flex flex-col items-center justify-center mx-2 md:mx-5 mb-5 overflow-hidden rounded-lg bg-gray-50"}>
-                <div className="w-[9rem] h-[9rem] md:w-56 md:h-56 bg-lightBlueSecondary"></div>
+                <div className="w-[9rem] h-[9rem] md:w-56 md:h-56 bg-lightBlueSecondary">
+                    <Image src={img} alt={name} width="240px" height="240px" rel="noreferrer" />
+                </div>
                 <h2 className="px-0 w-[9rem] md:w-auto py-1 text-base text-center md:py-4 md:px-0 md:text-lg text-darkBluePrimary">{name}</h2>
             </motion.div>
         </>
