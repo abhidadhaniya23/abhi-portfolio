@@ -45,22 +45,22 @@ const animations = {
 const HeaderIntro = () => {
     return (
         <>
-            <div className="flex flex-col items-start justify-center">
-                <motion.span variants={animations.spanTag} initial="initial" animate="animate" exit="exit" className="relative my-5 text-2xl font-codeText text-cyanPrimary">
+            <div className="flex flex-col items-start justify-center px-10">
+                <motion.span variants={animations.spanTag} initial="initial" animate="animate" exit="exit" className="relative my-1 text-base md:my-5 md:text-2xl font-codeText text-cyanPrimary">
                     Hi, My name is
                 </motion.span>
-                <motion.h1 variants={animations.name} initial="initial" animate="animate" exit="exit" className="my-0 text-6xl font-bold text-lightBluePrimary">
+                <motion.h1 variants={animations.name} initial="initial" animate="animate" exit="exit" className="text-4xl font-bold md:my-0 md:text-6xl text-lightBluePrimary">
                     Abhi Dadhaniya
                 </motion.h1>
-                <motion.h2 variants={animations.tagLine} initial="initial" animate="animate" exit="exit" className="my-5 font-bold text-7xl text-lightBlueSecondary">
+                <motion.h2 variants={animations.tagLine} initial="initial" animate="animate" exit="exit" className="my-2 text-5xl font-bold md:my-5 md:text-7xl text-lightBlueSecondary">
                     I build things for web.
                 </motion.h2>
-                <motion.p variants={animations.desc} initial="initial" animate="animate" exit="exit" className="mb-10 text-xl text-lightBlueSecondary/80">
+                <motion.p variants={animations.desc} initial="initial" animate="animate" exit="exit" className="text-base mb-7 md:mb-10 md:text-xl text-lightBlueSecondary/80">
                     I have been a web developer for the past 3 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database.
                 </motion.p>
                 <motion.div variants={animations.btn} initial="initial" animate="animate" exit="exit">
                     <Link href="/contact">
-                        <a className="btn">Hire Me</a>
+                        <a className=" btn">Hire Me</a>
                     </Link>
                 </motion.div>
             </div>

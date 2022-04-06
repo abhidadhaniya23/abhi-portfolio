@@ -11,8 +11,8 @@ const SkillCard = ({ name, url, index }) => {
     };
 
     return (
-        <motion.h3 variants={animations.card} animate="animate" exit="exit" initial="initial" className="flex flex-row items-center rounded-[4px] justify-start w-full py-2 mb-3 text-xl text-left px-7 bg-darkBluePrimary text-lightBluePrimary">
-            <div className="w-8 mt-1 mr-4">
+        <motion.h3 variants={animations.card} animate="animate" exit="exit" initial="initial" className="flex flex-row items-center rounded-[4px] justify-start w-full py-2 mb-3 text-lg md:text-xl text-left px-4 bg-darkBluePrimary text-lightBluePrimary">
+            <div className="w-5 mt-1 mr-4 md:w-8">
                 <Image src={url} alt={name} />
             </div>
             {name}

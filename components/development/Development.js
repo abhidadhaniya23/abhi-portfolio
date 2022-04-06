@@ -100,12 +100,12 @@ const Development = () => {
         <>
             <Heading heading={"What I've Done"} />
             <div className="flex flex-row items-start justify-center mt-10">
-                <div className="mt-5">
+                <div className="mx-2 mt-5">
                     {categoryProjects.map((project, index) => (
                         <CategoryCard setSelectedCategory={(event) => setSelectedCategory(event)} name={project.name} selectedCategory={selectedCategory} icon={project.icon} key={index} index={index} />
                     ))}
                 </div>
-                <div className="overflow-y-scroll flex flex-row items-start justify-center mt-7 w-[40rem] flex-wrap h-[30rem]">
+                <div className="overflow-y-scroll flex flex-row items-start justify-center mt-7 w-full md:w-[40rem] flex-wrap h-[26rem] md:h-[30rem]">
                     {projectData.map((project, index) => (
                         <ProjectCard index={index} selectedCategory={selectedCategory} category={project.category} name={project.name} url={project.url} key={index} />
                     ))}

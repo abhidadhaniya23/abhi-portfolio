@@ -33,7 +33,7 @@ const SocialLine = () => {
     ];
     return (
         <>
-            <div className="fixed top-0 flex flex-col items-center justify-center right-10">
+            <div className="absolute flex-row items-center justify-center hidden md:top-0 md:flex md:flex-col md:fixed right-10">
                 <motion.span variants={animations.line} animate="animate" exit="exit" initial="initial" className="block bg-lightBluePrimary/30 mb-5 h-32 w-[2px] rounded-full"></motion.span>
                 {socialIcons.map((icon, index) => (
                     <Icon icon={icon.icon} index={index} label={icon.label} key={index} link={icon.link} />
@@ -58,7 +58,7 @@ const EmailLine = () => {
     };
     return (
         <>
-            <div className="absolute right-0 flex flex-row items-center justify-center bottom-10">
+            <div className="absolute right-0 flex-row items-center justify-center hidden md:flex bottom-10">
                 <motion.div variants={animations.emailAnimate} animate="animate" exit="exit" initial="initial">
                     <Link href="mailto:abhidadhaniya23@gmail.com">
                         <a className="duration-300 text-lightBluePrimary/50 hover:text-cyanPrimary/90">

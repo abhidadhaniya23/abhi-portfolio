@@ -36,19 +36,21 @@ const Contact = () => {
     };
     return (
         <>
-            <Heading heading={"Get In Touch"} />
-            <div className="mt-10 font-bodyText">
-                <form action="/" onSubmit={submitForm} className="flex flex-col items-center justify-center">
-                    <div className="flex flex-row items-center justify-center">
-                        <motion.input variants={animations.nameInput} initial="initial" animate="animate" exit="exit" className="w-full mr-2 input" type="text" placeholder="Full Name" />
-                        <motion.input variants={animations.emailInput} initial="initial" animate="animate" exit="exit" className="w-full ml-2 input" type="email" placeholder="Email" />
-                    </div>
-                    <motion.input variants={animations.subjectInput} initial="initial" animate="animate" exit="exit" className="w-full m-4 input" type="text" placeholder="Subject" />
-                    <motion.textarea variants={animations.msgInput} initial="initial" animate="animate" exit="exit" className="w-full m-2 h-28 input" placeholder="Message" value="" name=""></motion.textarea>
-                    <motion.button variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn" type="submit">
-                        Send Message
-                    </motion.button>
-                </form>
+            <div className="px-7">
+                <Heading heading={"Get In Touch"} />
+                <div className="mt-10 font-bodyText">
+                    <form action="/" onSubmit={submitForm} className="flex flex-col items-center justify-center">
+                        <div className="flex flex-row items-center justify-center">
+                            <motion.input variants={animations.nameInput} initial="initial" animate="animate" exit="exit" className="w-full mr-2 input" type="text" placeholder="Full Name" />
+                            <motion.input variants={animations.emailInput} initial="initial" animate="animate" exit="exit" className="w-full ml-2 input" type="email" placeholder="Email" />
+                        </div>
+                        <motion.input variants={animations.subjectInput} initial="initial" animate="animate" exit="exit" className="w-full m-4 input" type="text" placeholder="Subject" />
+                        <motion.textarea variants={animations.msgInput} initial="initial" animate="animate" exit="exit" className="w-full m-2 h-28 input" placeholder="Message" value="" name=""></motion.textarea>
+                        <motion.button variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn" type="submit">
+                            Send Message
+                        </motion.button>
+                    </form>
+                </div>
             </div>
         </>
     );
