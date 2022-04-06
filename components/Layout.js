@@ -14,7 +14,7 @@ const Layout = ({ component }) => {
                     <div className="absolute top-0 z-10 w-full md:relative md:w-1/5">
                         <Navbar />
                     </div>
-                    <div className="flex flex-row items-center justify-center">
+                    <div className="flex flex-row items-center justify-center w-full">
                         <div className="flex flex-col items-center justify-center w-full px-0 mx-auto md:px-0 md:w-3/5">{component}</div>
                     </div>
                 </div>
