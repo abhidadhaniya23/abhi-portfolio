@@ -12,7 +12,7 @@ const ProjectCard = ({ name, index, category, selectedCategory }) => {
         <>
             <motion.div variants={animations.card} initial="initial" animate="animate" exit="exit" className={selectedCategory !== category ? "hidden" : "flex flex-col items-center justify-center mx-2 md:mx-5 mb-5 overflow-hidden rounded-lg bg-gray-50"}>
                 <div className="w-[9rem] h-[9rem] md:w-56 md:h-56 bg-lightBlueSecondary"></div>
-                <h2 className="px-1 py-1 text-base text-center md:py-4 md:px-0 md:text-lg text-darkBluePrimary">{name}</h2>
+                <h2 className="px-0 w-[9rem] md:w-auto py-1 text-base text-center md:py-4 md:px-0 md:text-lg text-darkBluePrimary">{name}</h2>
             </motion.div>
         </>
     );

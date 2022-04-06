@@ -106,9 +106,7 @@ const Skill = () => {
                         </motion.h2>
                         <div className="flex flex-row flex-wrap items-center justify-center w-full md:w-[30rem]">
                             {skillsData.map((skill, index) => (
-                                <>
-                                    <CircularProgressBar key={index} index={index} url={skill.url} name={skill.name} value={skill.value} />
-                                </>
+                                <CircularProgressBar key={index + 1} index={index} url={skill.url} name={skill.name} value={skill.value} />
                             ))}
                         </div>
                     </div>

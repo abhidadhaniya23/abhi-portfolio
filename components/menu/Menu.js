@@ -8,7 +8,6 @@ const Menu = () => {
             <div
                 onClick={() => {
                     menuActive ? setMenuActive(false) : setMenuActive(true);
-                    console.log("clicked");
                 }}
                 className="fixed z-20 flex flex-row items-center justify-center rounded-full md:hidden w-14 h-14 bottom-10 right-10 bg-cyanPrimary"
             >
