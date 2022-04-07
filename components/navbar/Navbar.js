@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import MenuBarContext from "../../context/MenuBarContext";
 import { isMobile } from "react-device-detect";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+    const router = useRouter();
     const { menuActive, setMenuActive } = useContext(MenuBarContext);
     const animations = {
         navbar: {
@@ -55,9 +57,9 @@ const Navbar = () => {
                         <ul className="flex flex-col items-start justify-center">
                             {linksData.map((item, index) => (
                                 <Link key={index} href={item.link}>
-                                    <a onClick={() => setMenuActive(false)} className="w-full my-3 text-xl duration-300 text-lightBluePrimary hover:text-cyanPrimary">
+                                    <a onClick={() => setMenuActive(false)} className={`${item.name.toLowerCase().includes(router.pathname.substring(1)) ? "text-cyanPrimary" : "text-lightBluePrimary"} w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}>
                                         <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
-                                        {item.name}
+                                        {item.name}Abhi
                                     </a>
                                 </Link>
                             ))}
@@ -81,7 +83,7 @@ const Navbar = () => {
                     <ul className="flex flex-col items-start justify-center">
                         {linksData.map((item, index) => (
                             <Link key={index} href={item.link}>
-                                <a onClick={() => setMenuActive(false)} className="w-full my-3 text-xl duration-300 text-lightBluePrimary hover:text-cyanPrimary">
+                                <a onClick={() => setMenuActive(false)} className={`${item.name.toLowerCase().includes(router.pathname.substring(1)) ? "text-cyanPrimary" : "text-lightBluePrimary"} w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}>
                                     <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
                                     {item.name}
                                 </a>
