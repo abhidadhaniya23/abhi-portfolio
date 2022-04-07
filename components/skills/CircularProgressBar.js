@@ -40,7 +40,6 @@ const CircularProgressBar = ({ value, name, url, index }) => {
                     trailColor: "#ffffff1a",
                 })}
             />
-            );
             <div className="absolute w-12 pb-16 pr-1 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                 <Image src={url} alt="Abhi Dadhaniya" />
             </div>
