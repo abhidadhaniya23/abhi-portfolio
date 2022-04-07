@@ -33,8 +33,8 @@ const SocialLine = () => {
     ];
     return (
         <>
-            <div className="absolute flex-row items-center justify-center hidden md:top-0 md:flex md:flex-col md:fixed right-10">
-                <motion.span variants={animations.line} animate="animate" exit="exit" initial="initial" className="block bg-lightBluePrimary/30 mb-5 h-32 w-[2px] rounded-full"></motion.span>
+            <div className="absolute flex flex-col items-center justify-center md:fixed right-10">
+                <motion.span variants={animations.line} animate="animate" exit="exit" initial="initial" className="block bg-lightBluePrimary/30 mb-2 md:mb-5 h-12 md:h-32 w-[2px] rounded-full"></motion.span>
                 {socialIcons.map((icon, index) => (
                     <Icon icon={icon.icon} index={index} label={icon.label} key={index} link={icon.link} />
                 ))}
@@ -58,7 +58,7 @@ const EmailLine = () => {
     };
     return (
         <>
-            <div className="absolute right-0 flex-row items-center justify-center hidden md:flex bottom-10">
+            <div className="absolute left-0 right-auto flex flex-row-reverse items-center justify-center md:left-auto md:right-0 md:flex-row bottom-5 md:bottom-10">
                 <motion.div variants={animations.emailAnimate} animate="animate" exit="exit" initial="initial">
                     <Link href="mailto:abhidadhaniya23@gmail.com">
                         <a className="duration-300 text-lightBluePrimary/50 hover:text-cyanPrimary/90">
@@ -66,7 +66,7 @@ const EmailLine = () => {
                         </a>
                     </Link>
                 </motion.div>
-                <motion.span variants={animations.line} animate="animate" exit="exit" initial="initial" className="block bg-lightBluePrimary/30 ml-5 w-32 h-[2px] rounded-full"></motion.span>
+                <motion.span variants={animations.line} animate="animate" exit="exit" initial="initial" className="block bg-lightBluePrimary/30 mx-5 w-10 md:w-32 h-[2px] rounded-full"></motion.span>
             </div>
         </>
     );
@@ -85,7 +85,7 @@ const Icon = ({ index, icon, link, label }) => {
             <motion.div variants={animations.icons} animate="animate" exit="exit" initial="initial">
                 <Link href={link}>
                     <a target="_blank" rel="noreferrer" area-label={label}>
-                        <i className={`my-2 text-xl duration-300 text-lightBluePrimary/30 hover:text-cyanPrimary ${icon}`}></i>
+                        <i className={`my-1.5 md:my-2 text-xl duration-300 text-lightBluePrimary/30 hover:text-cyanPrimary ${icon}`}></i>
                     </a>
                 </Link>
             </motion.div>

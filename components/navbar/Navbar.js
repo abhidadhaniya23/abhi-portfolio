@@ -57,9 +57,9 @@ const Navbar = () => {
                         <ul className="flex flex-col items-start justify-center">
                             {linksData.map((item, index) => (
                                 <Link key={index} href={item.link}>
-                                    <a onClick={() => setMenuActive(false)} className={`${item.name.toLowerCase().includes(router.pathname.substring(1)) ? "text-cyanPrimary" : "text-lightBluePrimary"} w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}>
+                                    <a onClick={() => setMenuActive(false)} className={`${router.pathname == "/" ? "text-lightBluePrimary" : item.name.toLowerCase().includes(router.pathname.substring(1)) ? "text-cyanPrimary" : "text-lightBluePrimary"} w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}>
                                         <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
-                                        {item.name}Abhi
+                                        {item.name}
                                     </a>
                                 </Link>
                             ))}
@@ -83,7 +83,7 @@ const Navbar = () => {
                     <ul className="flex flex-col items-start justify-center">
                         {linksData.map((item, index) => (
                             <Link key={index} href={item.link}>
-                                <a onClick={() => setMenuActive(false)} className={`${item.name.toLowerCase().includes(router.pathname.substring(1)) ? "text-cyanPrimary" : "text-lightBluePrimary"} w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}>
+                                <a onClick={() => setMenuActive(false)} className={`${router.pathname == "/" ? "text-lightBluePrimary" : item.name.toLowerCase().includes(router.pathname.substring(1)) ? "text-cyanPrimary" : "text-lightBlueSecondary"} w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}>
                                     <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
                                     {item.name}
                                 </a>

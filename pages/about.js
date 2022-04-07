@@ -1,3 +1,4 @@
+import { isMobile } from "react-device-detect";
 import About from "../components/about/About";
 import { EmailLine, SocialLine } from "../components/ConnectLine";
 import Layout from "../components/Layout";
@@ -5,8 +6,12 @@ import Layout from "../components/Layout";
 const about = () => {
     return (
         <>
-            <SocialLine />
-            <EmailLine />
+            {!isMobile && (
+                <>
+                    <SocialLine />
+                    <EmailLine />
+                </>
+            )}
             <Layout component={<About />} />
         </>
     );

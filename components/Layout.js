@@ -3,11 +3,15 @@ import Script from "next/script";
 import Menu from "./menu/Menu";
 import MenuBarContext from "../context/MenuBarContext";
 import { useState } from "react";
+import Head from "next/head";
 
 const Layout = ({ component }) => {
     const [menuActive, setMenuActive] = useState(false);
     return (
         <>
+            <Head>
+                <link rel="shortcut icon" href="/favicon.png" />
+            </Head>
             <MenuBarContext.Provider value={{ menuActive, setMenuActive }}>
                 <Menu />
                 <div className="flex flex-row items-center min-h-screen bg-gradient-to-r to-darkBluePrimary from-darkLightBluePrimary">
