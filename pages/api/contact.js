@@ -1,6 +1,5 @@
 export default function (req, res) {
     const nodemailer = require("nodemailer");
-    require("dotenv").config();
     const transporter = nodemailer.createTransport({
         host: "smtp.mailtrap.io",
         port: 2525,
