@@ -4,8 +4,8 @@ export default function (req, res) {
         host: "smtp.mailtrap.io",
         port: 2525,
         auth: {
-            user: process.env.USER,
-            pass: process.env.PASS,
+            user: process.env.NEXT_USER,
+            pass: process.env.NEXT_PASS,
         },
     });
     const mailOptions = {
