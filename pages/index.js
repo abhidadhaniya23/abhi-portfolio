@@ -3,10 +3,14 @@ import Layout from "../components/Layout";
 import { SocialLine } from "../components/ConnectLine";
 import { EmailLine } from "../components/ConnectLine";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function Home() {
     return (
         <>
+            <Head>
+                <title>Developer Abhi</title>
+            </Head>
             <SocialLine />
             <Layout component={<HeaderIntro />} />
             <EmailLine />
@@ -56,7 +60,7 @@ const HeaderIntro = () => {
                     I build things for web.
                 </motion.h2>
                 <motion.p variants={animations.desc} initial="initial" animate="animate" exit="exit" className="text-base mb-7 md:mb-10 md:text-xl text-lightBlueSecondary/80">
-                    I have been a web developer for the past 3 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database.
+                    I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database.
                 </motion.p>
                 <motion.div variants={animations.btn} initial="initial" animate="animate" exit="exit">
                     <Link href="/contact">

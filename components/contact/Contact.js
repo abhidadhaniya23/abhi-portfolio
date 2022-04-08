@@ -2,6 +2,7 @@ import Heading from "../Heading";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ContactContext from "../../context/ContactContext";
+import axios from "axios";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -13,24 +14,49 @@ const Contact = () => {
         event.preventDefault();
         // re-set all states
         const data = { name, email, subject, msg };
-        fetch("/api/contact", {
-            method: "POST",
-            headers: {
-                Accept: "application/json, text/plain, */*",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        }).then((res) => {
-            console.log("Response received");
-            if (res.status === 200) {
-                console.log("Response succeeded!");
-                // setSubmitted(true);
-                setName("");
-                setEmail("");
-                setSubject("");
-                setMsg("");
-            }
-        });
+        // axios
+        //     .post("/https://web-developer-abhi.herokuapp.com/contact", {
+        //         method: "POST",
+        //         headers: {
+        //             Accept: "application/json, text/plain, */*",
+        //             "Content-Type": "application/json",
+        //         },
+        //         data: JSON.stringify(data),
+        //     })
+        //     .then((res) => {
+        //         console.log("Response received");
+        //         if (res.status === 200) {
+        //             console.log("Response succeeded!");
+        //             // setSubmitted(true);
+        //             setName("");
+        //             setEmail("");
+        //             setSubject("");
+        //             setMsg("");
+        //         }
+        //     });
+        const submitRequest = async () => {
+            console.log("done");
+            const reqData = await fetch("https://web-developer-abhi.herokuapp.com/contact", {
+                method: "POST",
+                headers: {
+                    Accept: "application/json, text/plain, */*",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            }).then((res) => {
+                console.log(res);
+                console.log("Response received");
+                if (res.status === 200) {
+                    console.log("Response succeeded!");
+                    // setSubmitted(true);
+                    setName("");
+                    setEmail("");
+                    setSubject("");
+                    setMsg("");
+                }
+            });
+        };
+        submitRequest();
     };
 
     const animations = {

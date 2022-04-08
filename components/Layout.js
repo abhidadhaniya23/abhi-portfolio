@@ -11,6 +11,15 @@ const Layout = ({ component }) => {
         <>
             <Head>
                 <link rel="shortcut icon" href="/favicon.png" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="title" content="MERN Stack Developer - Abhi Dadhaniya" />
+                <meta name="description" content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database." />
+                <meta name="keywords" content="MERN Stack, Developer, Portfolio" />
+                <meta name="robots" content="index, follow" />
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="language" content="English" />
+                <meta name="revisit-after" content="15 days" />
+                <meta name="author" content="Abhi Dadhaniya" />
             </Head>
             <MenuBarContext.Provider value={{ menuActive, setMenuActive }}>
                 <Menu />
