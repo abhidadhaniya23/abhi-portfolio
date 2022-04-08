@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://localhost:3000/api/sitemap
+Sitemap: https://www.web-developer-abhi.me/api/sitemap
