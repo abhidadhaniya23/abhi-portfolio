@@ -80,7 +80,7 @@ const Contact = () => {
                             <motion.button variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn" type="submit">
                                 {formSubmitted ? (
                                     <>
-                                        <div class="loader"></div>
+                                        <div className="loader"></div>
                                     </>
                                 ) : dataReceived ? (
                                     "Message Sent"
