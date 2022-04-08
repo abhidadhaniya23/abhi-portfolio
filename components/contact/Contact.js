@@ -36,7 +36,7 @@ const Contact = () => {
         //     });
         const submitRequest = async () => {
             console.log("done");
-            const reqData = await fetch("https://web-developer-abhi.herokuapp.com/contact", {
+            const reqData = await fetch("api/contact", {
                 method: "POST",
                 headers: {
                     Accept: "application/json, text/plain, */*",

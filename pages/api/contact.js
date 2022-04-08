@@ -1,13 +1,14 @@
+const nodemailer = require("nodemailer");
+const transporter = nodemailer.createTransport({
+    host: "smtp.mailtrap.io",
+    port: 2525,
+    auth: {
+        user: process.env.NEXT_USER,
+        pass: process.env.NEXT_PASS,
+    },
+});
 export default function (req, res) {
-    const nodemailer = require("nodemailer");
-    const transporter = nodemailer.createTransport({
-        host: "smtp.mailtrap.io",
-        port: 2525,
-        auth: {
-            user: process.env.NEXT_USER,
-            pass: process.env.NEXT_PASS,
-        },
-    });
+    console.log(req.body);
     const mailOptions = {
         from: `${req.body.email}`,
         to: "abhidadhaniya23@gmail.com",
@@ -19,7 +20,7 @@ export default function (req, res) {
             console.log(error);
         } else {
             console.log("Email sent: " + info.response);
+            res.status(200).send("Finally Done");
         }
     });
-    res.status(200).send("Finally Done");
 }
