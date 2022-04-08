@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { SocialLine } from "../components/ConnectLine";
 import { EmailLine } from "../components/ConnectLine";
 import Head from "next/head";
+import { isMobile } from "react-device-detect";
 
 const contact = () => {
     return (
@@ -10,8 +11,14 @@ const contact = () => {
             <Head>
                 <title>Developer Abhi || Contact</title>
             </Head>
-            <SocialLine />
-            <EmailLine />
+            {!isMobile ? (
+                <>
+                    <SocialLine />
+                    <EmailLine />
+                </>
+            ) : (
+                <></>
+            )}
             <Layout component={<Contact />} />
         </>
     );
