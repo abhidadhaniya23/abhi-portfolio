@@ -33,6 +33,34 @@ a {
     @apply px-5 py-3 duration-200 border-[1px] border-transparent rounded-[4px] outline-none bg-darkBluePrimary focus:border-cyanPrimary text-lightBluePrimary placeholder:text-lightBlueSecondary;
 }
 
+.loader {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    @apply border-4 border-t-4 border-t-cyanPrimary border-cyanPrimary/10;
+}
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {

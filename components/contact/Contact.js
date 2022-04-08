@@ -9,33 +9,13 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [msg, setMsg] = useState("");
-    // const [success, setSuccess] = useState(true);
+    const [formSubmitted, setFormSubmitted] = useState(false);
+    const [dataReceived, setDataReceived] = useState(false);
     const submitForm = (event) => {
         event.preventDefault();
-        // re-set all states
         const data = { name, email, subject, msg };
-        // axios
-        //     .post("/https://web-developer-abhi.herokuapp.com/contact", {
-        //         method: "POST",
-        //         headers: {
-        //             Accept: "application/json, text/plain, */*",
-        //             "Content-Type": "application/json",
-        //         },
-        //         data: JSON.stringify(data),
-        //     })
-        //     .then((res) => {
-        //         console.log("Response received");
-        //         if (res.status === 200) {
-        //             console.log("Response succeeded!");
-        //             // setSubmitted(true);
-        //             setName("");
-        //             setEmail("");
-        //             setSubject("");
-        //             setMsg("");
-        //         }
-        //     });
         const submitRequest = async () => {
-            console.log("done");
+            setFormSubmitted(true);
             const reqData = await fetch("api/contact", {
                 method: "POST",
                 headers: {
@@ -44,11 +24,9 @@ const Contact = () => {
                 },
                 body: JSON.stringify(data),
             }).then((res) => {
-                console.log(res);
-                console.log("Response received");
                 if (res.status === 200) {
-                    console.log("Response succeeded!");
-                    // setSubmitted(true);
+                    setFormSubmitted(false);
+                    setDataReceived(true);
                     setName("");
                     setEmail("");
                     setSubject("");
@@ -100,7 +78,15 @@ const Contact = () => {
                             <motion.input value={subject} onChange={(e) => setSubject(e.target.value)} variants={animations.subjectInput} initial="initial" animate="animate" exit="exit" className="w-full m-4 input" type="text" placeholder="Subject" required />
                             <motion.textarea value={msg} onChange={(e) => setMsg(e.target.value)} variants={animations.msgInput} initial="initial" animate="animate" exit="exit" className="w-full m-2 h-28 input" placeholder="Message" name="" required></motion.textarea>
                             <motion.button variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn" type="submit">
-                                Send Message
+                                {formSubmitted ? (
+                                    <>
+                                        <div class="loader"></div>
+                                    </>
+                                ) : dataReceived ? (
+                                    "Message Sent"
+                                ) : (
+                                    "Send Message"
+                                )}
                             </motion.button>
                         </form>
                     </div>

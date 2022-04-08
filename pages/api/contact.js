@@ -8,7 +8,6 @@ const transporter = nodemailer.createTransport({
     },
 });
 export default function (req, res) {
-    console.log(req.body);
     const mailOptions = {
         from: `${req.body.email}`,
         to: "abhidadhaniya23@gmail.com",
