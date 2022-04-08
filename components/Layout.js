@@ -31,8 +31,20 @@ const Layout = ({ component }) => {
                         <div className="flex flex-col items-center justify-center w-full px-0 mx-auto md:px-0 md:w-3/5">{component}</div>
                     </div>
                 </div>
-                <Script src="https://kit.fontawesome.com/8b16cac71e.js" crossorigin="anonymous"></Script>
             </MenuBarContext.Provider>
+            <Script src="https://kit.fontawesome.com/8b16cac71e.js" crossorigin="anonymous"></Script>
+
+            <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+            <Script strategy="lazyOnload">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
         </>
     );
 };
