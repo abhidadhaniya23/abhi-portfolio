@@ -36,16 +36,16 @@ const Resource = () => {
                     </motion.div>
                     <div className="text-lightBluePrimary px-1 text-justify md:text-left md:px-10 py-10 text-lg font-bodyText flex w-full md:w-[60rem] flex-col items-center md:items-start justify-center">
                         <motion.span variants={animations.desc1} initial="initial" animate="animate" exit="exit" className="mb-3">
-                            Me and my programmer friend
+                            Eager to start web development but don't know from where to start? Don't worry we've got your back. With me friend,
                             <span className="mx-1 text-cyanPrimary">
                                 <a className="font-codeText" target="_blank" rel="noreferrer" href="https://rohan-kiratsata.github.io/">
-                                    Rohan K.
+                                    Rohan K.,
                                 </a>
                             </span>
-                            have created this useful web development resources for beginners. We have added all things from basic to advance in this notion resources page.
+                            If you visit this page, it will glad to us and you can share your friends also.
                         </motion.span>
                         <motion.span variants={animations.desc2} initial="initial" animate="animate" exit="exit" className="mb-3">
-                            If you visit this page, it will glad to us and you can share your friends also.
+                            Share with your friends too who are looking for the resources.
                         </motion.span>
                         <motion.a href="https://web-dev-resources.notion.site/web-dev-resources/Web-Development-Resources-be1207bcc32e434481c1ce6e90756964" target="_blank" rel="noreferrer" variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn">
                             Get for Free
