@@ -85,3 +85,157 @@ a {
     @apply bg-cyanPrimary;
     /* background: #7a7f9c; */
 }
+
+/* ---------- new blog styles ------------ */
+
+img {
+    display: flex;
+    max-height: 20rem;
+    max-width: 90vw;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 100%;
+    margin: 1.3rem 0;
+}
+
+li p {
+    line-height: 0rem;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+p {
+    color: var(--text-color);
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 1.7rem 0;
+}
+
+h1 {
+    color: var(--dark-blue-primary);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-blue-primary);
+    font-weight: 600;
+    margin: 3rem 0 0rem 0;
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+hr {
+    display: none;
+}
+
+a {
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.content {
+    max-width: 65rem;
+    padding: 3rem 5rem 5rem;
+    margin: 10rem 40px 0;
+    box-shadow: 0 4px 24px 7px rgb(0 0 0 / 4%), 0 12px 64px 1px rgb(0 0 0 / 10%);
+    background: white;
+    position: absolute;
+    top: -4.5rem;
+    border-radius: 5px;
+    right: 30rem;
+    /* box-shadow: 0 8px 60px 0 rgb(0 0 0 / 11%), 0 12px 90px 0 rgb(0 0 0 / 11%); */
+}
+
+@media (max-width: 1224px) {
+    .bg-div {
+        display: none;
+    }
+
+    .content {
+        max-width: initial;
+        margin: 0rem auto;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 724px) {
+    .content {
+        top: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .common-points {
+        display: none;
+    }
+
+    .content {
+        width: 90%;
+        right: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        --text-color: #525966;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+        margin: 2rem auto 0.2rem;
+    }
+
+    .content {
+        padding-bottom: 2rem;
+        margin: 0 auto;
+    }
+
+    .content h1 {
+        font-weight: 400;
+    }
+
+    pre,
+    code,
+    .token {
+        font-size: 1rem !important;
+    }
+}

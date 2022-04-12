@@ -1,3 +1,4 @@
+// import "../styles/globals.css";
 import React from "react";
 import { AnimatePresence } from "framer-motion";
 
