@@ -1,5 +1,4 @@
 import Navbar from "./navbar/Navbar";
-import "../styles/globals.css";
 import Script from "next/script";
 import Menu from "./menu/Menu";
 import MenuBarContext from "../context/MenuBarContext";
@@ -34,7 +33,6 @@ const Layout = ({ component }) => {
                     </div>
                 </div>
             </MenuBarContext.Provider>
-            <Script src="https://kit.fontawesome.com/8b16cac71e.js" crossorigin="anonymous"></Script>
 
             <Script id="g_analytics_id" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
             <Script id="g_analytics_script" strategy="lazyOnload">

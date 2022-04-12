@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.blog-content p,
+li {
+    font-family: inter, sans-serif !important;
+    font-weight: 400;
+}
+
+::selection {
+    color: white;
+    background: var(--primary-color);
+}
+
+:root {
+    --code-font: CascadiaMono, sans-serif;
+    --primary-color: #0af;
+    --light-primary-color: rgba(125, 212, 255, 0.5);
+    --dark-primary: rgb(0, 151, 226);
+    --dark-blue-primary: #004993;
+    --hover-primary: rgb(75, 195, 255);
+    /* --text-color: rgb(4, 6, 8); */
+    --text-color: rgb(17, 17, 17);
+}
+.blog-content img {
+    display: flex;
+    max-height: 20rem;
+    max-width: 90vw;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 100%;
+    margin: 1.3rem 0;
+}
+
+.blog-content li p {
+    line-height: 0rem;
+}
+
+.blog-content li {
+    margin: 0.5rem 0;
+}
+
+.blog-content p {
+    color: var(--text-color);
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 1.7rem 0;
+}
+
+.blog-content h1 {
+    color: var(--dark-blue-primary);
+    text-align: center;
+}
+
+.blog-content h1 {
+    font-size: 3rem;
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.blog-content h2 {
+    font-size: 2.5rem;
+}
+
+.blog-content h3 {
+    font-size: 2.3rem;
+}
+
+.blog-content h4 {
+    font-size: 1.7rem;
+}
+
+.blog-content h5 {
+    font-size: 1.6rem;
+}
+
+.blog-content h6 {
+    font-size: 1.5rem;
+}
+
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+    color: var(--dark-blue-primary);
+    font-weight: 600;
+    margin: 3rem 0 0rem 0;
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.blog-content hr {
+    display: none;
+}
+
+.blog-content a {
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.blog-content code {
+    padding: 1px 3px;
+    background: #f2f2f2;
+    color: #000000;
+    border-radius: 3px;
+}
+
+.blog-content pre code {
+    background: none;
+}
+
+.blog-content pre,
+.blog-content code,
+.blog-content .token {
+    font-family: var(--code-font) !important;
+}
+
+.blog-content blockquote {
+    background-color: rgb(219, 244, 255) !important;
+    margin: 2.4rem auto;
+    border-radius: 5px;
+    border-left: 0.4rem solid var(--primary-color);
+    padding: 0.15rem 1.2rem;
+}
+
+.blog-content blockquote p {
+    color: #00587e;
+}
+
+.blog-content li {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    color: var(--text-color);
+    list-style-type: disk;
+    line-height: 2rem;
+}
+
+.blog-content h1 + div.code-toolbar,
+.blog-content h2 + div.code-toolbar,
+.blog-content h3 + div.code-toolbar,
+.blog-content h4 + div.code-toolbar,
+.blog-content h5 + div.code-toolbar,
+.blog-content h6 + div.code-toolbar {
+    margin-top: 1.5rem;
+}
+
+.blog-content pre {
+    background: whitesmoke;
+    padding: 1.2rem;
+    font-size: 18px !important;
+    border-radius: 0.3rem;
+    border-left: 0.3rem solid var(--primary-color);
+}
+
+.blog-content .toolbar-item button {
+    color: white !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.blog-content .toolbar-item button span {
+    box-shadow: 0px 0px 11px 1px rgb(212, 212, 212) !important;
+    cursor: pointer !important;
+    background: #00d0ff !important;
+    color: whitesmoke !important;
+    padding: 7px 20px !important;
+    transition: 0.5s ease;
+    font-family: "Inter", sans-serif;
+}
+
+.blog-content .toolbar-item button span:hover {
+    background: #00b2da !important;
+}
+
+/* .content {
+    max-width: 65rem;
+    padding: 3rem 5rem 5rem;
+    margin: 10rem 40px 0;
+    box-shadow: 0 4px 24px 7px rgb(0 0 0 / 4%), 0 12px 64px 1px rgb(0 0 0 / 10%);
+    background: white;
+    position: absolute;
+    top: -4.5rem;
+    border-radius: 5px;
+    right: 30rem;
+} */
+
+@media (max-width: 1224px) {
+    .content {
+        max-width: initial;
+        margin: 0rem auto;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 724px) {
+    .content {
+        top: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .content {
+        width: 90%;
+        right: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        --text-color: #525966;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    .blog-content h1 {
+        margin: 2rem auto 0.2rem;
+    }
+
+    .content {
+        padding-bottom: 2rem;
+        margin: 0 auto;
+    }
+
+    .content h1 {
+        font-weight: 400;
+    }
+
+    .blog-content pre,
+    .blog-content code,
+    .blog-content .token {
+        font-size: 1rem !important;
+    }
+}

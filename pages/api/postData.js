@@ -10,7 +10,7 @@ export default async (req, res) => {
         await response.data.forEach((article) => {
             console.log(article.slug);
             if (article.slug === req.body) {
-                res.status(200).json({ data: article.body_markdown });
+                res.status(200).json({ data: article });
             }
         });
     });

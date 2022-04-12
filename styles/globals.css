@@ -86,8 +86,7 @@ a {
     /* background: #7a7f9c; */
 }
 
-/* ---------- new blog styles ------------ */
-
+/* ---------- new blog styles ------------
 img {
     display: flex;
     max-height: 20rem;
@@ -179,7 +178,6 @@ a {
     top: -4.5rem;
     border-radius: 5px;
     right: 30rem;
-    /* box-shadow: 0 8px 60px 0 rgb(0 0 0 / 11%), 0 12px 90px 0 rgb(0 0 0 / 11%); */
 }
 
 @media (max-width: 1224px) {
@@ -238,4 +236,4 @@ a {
     .token {
         font-size: 1rem !important;
     }
-}
+} */
