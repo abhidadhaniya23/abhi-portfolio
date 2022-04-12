@@ -1,4 +1,5 @@
 import Navbar from "./navbar/Navbar";
+import "../styles/globals.css";
 import Script from "next/script";
 import Menu from "./menu/Menu";
 import MenuBarContext from "../context/MenuBarContext";

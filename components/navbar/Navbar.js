@@ -36,7 +36,7 @@ const Navbar = () => {
         },
         {
             name: "Read Blogs",
-            link: "https://abhisblogs.hashnode.dev/",
+            link: "/blogs",
         },
         {
             name: "Contact Me",
@@ -69,7 +69,7 @@ const Navbar = () => {
                         </a>
                         <br></br>
                         <a className="mt-1 text-base duration-300 text-lightBlueSecondary/50 hover:text-cyanPrimary/70" href="http://web-developer-abhi.herokuapp.com/" target="_blank" rel="noreferrer">
-                            V0.1<i className="ml-2 fa-solid fa-arrow-up-right-from-square"></i>
+                            V 1.0<i className="ml-2 fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </motion.header>
                 )
@@ -95,7 +95,7 @@ const Navbar = () => {
                     </a>
                     <br></br>
                     <a className="mt-1 text-base duration-300 text-lightBlueSecondary/50 hover:text-cyanPrimary/70" href="http://web-developer-abhi.herokuapp.com/" target="_blank" rel="noreferrer">
-                        V0.1<i className="ml-2 fa-solid fa-arrow-up-right-from-square"></i>
+                        V 1.0<i className="ml-2 fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </header>
             )}
