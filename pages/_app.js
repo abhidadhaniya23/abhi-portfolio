@@ -1,6 +1,4 @@
 import "../styles/globals.css";
-import "../styles/blogStyles.css";
-import "../public/prism/prism.css";
 import React from "react";
 import { AnimatePresence } from "framer-motion";
 import Script from "next/script";
