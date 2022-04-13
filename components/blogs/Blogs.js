@@ -14,7 +14,6 @@ const Blogs = () => {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log(data.data);
                 setBlogsData(data.data);
             })
             .catch((err) => console.log(err));
@@ -28,25 +27,32 @@ const Blogs = () => {
                 <Heading heading={"Read Blogs"} />
                 <div className="w-full my-10">
                     {blogsData.map((post, index) => (
-                        <Link key={index} href={`/blogs/${post.slug}`}>
-                            <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.2, delay: index * 0.1 } }} exit={{ opacity: 0, y: -10, transition: { duration: 0.1, delay: index * 0.1 } }} key={index} className="flex flex-col justify-start w-[80%] mx-auto my-16 overflow-hidden rounded-md cursor-pointer md:w-full md:flex-row bg-darkBluePrimary">
-                                <div className="w-[30rem] h-[15rem]">
-                                    <img src={post.social_image} className="object-cover w-full h-full" alt="" />
-                                </div>
-                                <div className="flex flex-col items-start justify-between w-full p-10 md:px-8">
-                                    <h2 className="text-2xl text-cyanPrimary">{post.title}</h2>
-                                    <p className="my-3 text-base text-lightBlueSecondary">{post.description}</p>
-                                    <div className="flex flex-row flex-wrap items-start justify-start my-2">
-                                        {post.tag_list.map((tag, index) => (
-                                            <span key={index + 1} className="px-4 py-2 m-2 text-sm rounded-full font-codeText bg-cyanPrimary/10 text-cyanPrimary/90">
-                                                #{tag}
-                                            </span>
-                                        ))}
+                        <Link key={index} href={post.url}>
+                            <a target={"_blank"}>
+                                <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.2, delay: index * 0.1 } }} exit={{ opacity: 0, y: -10, transition: { duration: 0.1, delay: index * 0.1 } }} key={index} className="flex flex-col justify-start w-[80%] mx-auto my-16 overflow-hidden rounded-md cursor-pointer md:w-full md:flex-row bg-darkBluePrimary">
+                                    <div className="w-[30rem] h-[15rem]">
+                                        <img src={post.social_image} className="object-cover w-full h-full" alt="" />
                                     </div>
-                                </div>
-                            </motion.div>
+                                    <div className="flex flex-col items-start justify-between w-full p-10 md:px-8">
+                                        <h2 className="text-2xl text-cyanPrimary">{post.title}</h2>
+                                        <p className="my-3 text-base text-lightBlueSecondary">{post.description}</p>
+                                        <div className="flex flex-row flex-wrap items-start justify-start my-2 md:flex-nowrap">
+                                            {post.tag_list.map((tag, index) => (
+                                                <span key={index + 1} className="px-4 py-2 m-2 text-sm rounded-full font-codeText bg-cyanPrimary/10 text-cyanPrimary/90">
+                                                    #{tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </a>
                         </Link>
                     ))}
+                </div>
+                <div className="w-full text-center">
+                    <a href="https://abhisblogs.hashnode.dev/" target={"_blank"} className="btn">
+                        Read More <i className="ml-2 fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
         </>
