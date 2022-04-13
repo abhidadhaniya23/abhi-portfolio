@@ -110,6 +110,10 @@ li {
     border-radius: 3px;
 }
 
+pre {
+    overflow-x: scroll;
+}
+
 .blog-content pre code {
     background: none;
 }

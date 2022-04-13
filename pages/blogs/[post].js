@@ -73,7 +73,7 @@ const blogs = () => {
                 <Script src={"prism/prism.js"}></Script>
             </Head>
             <div className="bg-white">
-                <div className="container w-4/5 py-20 mx-auto bg-white shadow-2xl px-28">
+                <div className="md:container w-[95%] md:w-4/5 py-20 mx-auto bg-white shadow-2xl px-5 md:px-28">
                     <h1 className="my-4 text-6xl font-bold tracking-wide font-bodyText">{title}</h1>
                     <div className="flex flex-row items-center mt-16 mb-7 font-bodyText text-darkBluePrimary">
                         <span className="mx-2 text-xl">
