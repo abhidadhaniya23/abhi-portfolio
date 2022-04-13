@@ -28,7 +28,7 @@ const Blogs = () => {
                 <Heading heading={"Read Blogs"} />
                 <div className="my-10">
                     {blogsData.map((post, index) => (
-                        <Link href={`/blogs/${post.slug}`}>
+                        <Link key={index} href={`/blogs/${post.slug}`}>
                             <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.2, delay: index * 0.1 } }} exit={{ opacity: 0, y: -10, transition: { duration: 0.1, delay: index * 0.1 } }} key={index} className="flex flex-row items-center justify-start w-full mx-auto my-16 overflow-hidden rounded-md cursor-pointer bg-darkBluePrimary">
                                 <div className="w-[30rem] h-[15rem]">
                                     <img src={post.social_image} className="object-cover w-full h-full" alt="" />
