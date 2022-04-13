@@ -30,8 +30,8 @@ const Blogs = () => {
                         <Link key={index} href={post.url}>
                             <a target={"_blank"}>
                                 <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.2, delay: index * 0.1 } }} exit={{ opacity: 0, y: -10, transition: { duration: 0.1, delay: index * 0.1 } }} key={index} className="flex flex-col justify-start w-[80%] mx-auto my-16 overflow-hidden rounded-md cursor-pointer md:w-full md:flex-row bg-darkBluePrimary">
-                                    <div className="w-[30rem] h-[15rem]">
-                                        <img src={post.social_image} className="object-cover w-full h-full" alt="" />
+                                    <div className="w-[95%] md:w-[30rem] h-[15rem]">
+                                        <img src={post.social_image} className="object-cover w-full h-full rounded-tl-md rounded-tr-md" alt="" />
                                     </div>
                                     <div className="flex flex-col items-start justify-between w-full p-10 md:px-8">
                                         <h2 className="text-2xl text-cyanPrimary">{post.title}</h2>
