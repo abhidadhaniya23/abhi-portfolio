@@ -31,10 +31,6 @@ const Navbar = () => {
             link: "/development",
         },
         {
-            name: "xLinksPro",
-            link: "https://www.xlinks.pro/",
-        },
-        {
             name: "Resources",
             link: "/resources",
         },

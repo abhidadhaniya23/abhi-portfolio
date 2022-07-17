@@ -16,11 +16,16 @@ import securepassword from "../../public/project/secure-password.png";
 import food from "../../public/project/food.png";
 import covid19tracker from "../../public/project/covid-19-tracker.png";
 import periodictable from "../../public/project/periodic-table.png";
+import xlinks from "../../public/project/xlinks.png";
 import awesome_cheat_sheets from "../../public/project/cheat-sheets.png";
 
 const Development = () => {
-    const [selectedCategory, setSelectedCategory] = useState("ReactJS");
+    const [selectedCategory, setSelectedCategory] = useState("Real-World");
     const categoryProjects = [
+        {
+            name: "Real-World",
+            icon: "fa-solid fa-earth-africa",
+        },
         {
             name: "ReactJS",
             icon: "fa-brands fa-react",
@@ -49,12 +54,12 @@ const Development = () => {
             url: "https://react-movie-app-000.netlify.app/",
             category: "ReactJS",
         },
-        // {
-        //     name: "Industry Website",
-        //     img: movieapp,
-        //     url: "/",
-        //     category: "Full-Stack",
-        // },
+        {
+            name: "xLinks Pro",
+            img: xlinks,
+            url: "https://www.xlinks.pro/",
+            category: "Real-World",
+        },
         {
             name: "Educational Website",
             img: bme,
