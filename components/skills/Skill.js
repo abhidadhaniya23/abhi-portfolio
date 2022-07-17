@@ -5,18 +5,18 @@ import SkillCard from "./SkillCard";
 import { motion } from "framer-motion";
 
 // Logo Import
-import ReactJS from "../../public/icons/ReactJS.png";
-import ExpressJS from "../../public/icons/ExpressJS.png";
-import NodeJS from "../../public/icons/NodeJS.png";
-import MongoDB from "../../public/icons/MongoDB.png";
-import Figma from "../../public/icons/Figma.png";
-import NextJS from "../../public/icons/NextJS.png";
-import Photoshop from "../../public/icons/Photoshop.png";
-import Firebase from "../../public/icons/Firebase.png";
-import Netlify from "../../public/icons/Netlify.png";
-import Heroku from "../../public/icons/Heroku.png";
-import TailwindCSS from "../../public/icons/TailwindCSS.png";
-import Git from "../../public/icons/Git.png";
+import ReactJS from "../../public/icons/ReactJS.svg";
+import ExpressJS from "../../public/icons/ExpressJS.svg";
+import NodeJS from "../../public/icons/NodeJS.svg";
+import MongoDB from "../../public/icons/MongoDB.svg";
+import Figma from "../../public/icons/Figma.svg";
+import NextJS from "../../public/icons/NextJS.svg";
+import Photoshop from "../../public/icons/Photoshop.svg";
+import Firebase from "../../public/icons/Firebase.svg";
+import Netlify from "../../public/icons/Netlify.svg";
+import Heroku from "../../public/icons/Heroku.svg";
+import TailwindCSS from "../../public/icons/TailwindCSS.svg";
+import Git from "../../public/icons/Git.svg";
 
 const Skill = () => {
     const value = 60;
