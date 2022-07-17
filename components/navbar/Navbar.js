@@ -31,6 +31,10 @@ const Navbar = () => {
             link: "/development",
         },
         {
+            name: "GigaWeb",
+            link: "/gigaweb",
+        },
+        {
             name: "Resources",
             link: "/resources",
         },
