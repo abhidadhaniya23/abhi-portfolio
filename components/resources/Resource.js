@@ -7,23 +7,23 @@ const Resource = () => {
     const animations = {
         photo: {
             initial: { opacity: 0, x: 50 },
-            exit: { opacity: 0, x: 20, transition: { duration: 0.2 } },
+            exit: { opacity: 0, x: 10, transition: { duration: 0.1 } },
             animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.1 } },
         },
         desc1: {
             initial: { opacity: 0, x: -50 },
-            exit: { opacity: 0, x: -20, transition: { duration: 0.2, delay: 0.1 } },
+            exit: { opacity: 0, x: -10, transition: { duration: 0.1, delay: 0.1 } },
             animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.2 } },
         },
         desc2: {
             initial: { opacity: 0, x: -50 },
-            exit: { opacity: 0, x: -20, transition: { duration: 0.2, delay: 0.15 } },
-            animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.3 } },
+            exit: { opacity: 0, x: -10, transition: { duration: 0.1, delay: 0.15 } },
+            animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.2 } },
         },
         btn: {
             initial: { opacity: 0, y: -50 },
-            exit: { opacity: 0, y: -20, transition: { duration: 0.2, delay: 0.1 } },
-            animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.4 } },
+            exit: { opacity: 0, y: -20, transition: { duration: 0.1, delay: 0.15 } },
+            animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.2 } },
         },
     };
     return (
@@ -39,7 +39,7 @@ const Resource = () => {
                             Eager to start web development but don't know from where to start? Don't worry we've got your back. With me friend,
                             <span className="mx-1 text-cyanPrimary">
                                 <a className="font-codeText" target="_blank" rel="noreferrer" href="https://www.rohankiratsata.xyz/">
-                                    Rohan K.,
+                                    Rohan,
                                 </a>
                             </span>
                             If you visit this page, it will glad to us and you can share your friends also.

@@ -27,22 +27,22 @@ const animations = {
     name: {
         initial: { opacity: 0, x: -50 },
         exit: { opacity: 0, x: -30, transition: { duration: 0.3, delay: 0.4 } },
-        animate: { opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.2 } },
+        animate: { opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.15 } },
     },
     tagLine: {
         initial: { opacity: 0, x: -50 },
         exit: { opacity: 0, x: -30, transition: { duration: 0.3, delay: 0.3 } },
-        animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.4 } },
+        animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.3 } },
     },
     desc: {
         initial: { opacity: 0, x: -50 },
         exit: { opacity: 0, x: -30, transition: { duration: 0.3, delay: 0.2 } },
-        animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.6 } },
+        animate: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.45 } },
     },
     btn: {
         initial: { opacity: 0, y: -30 },
         exit: { opacity: 0, y: -10, transition: { duration: 0.3, delay: 0.1 } },
-        animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.7 } },
+        animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.6 } },
     },
 };
 

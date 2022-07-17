@@ -1,5 +1,6 @@
 import Image from "next/image";
-import logo from "../../public/logo.png";
+// import logo from "../../public/logo.png";
+import logo from "../../public/Alogo.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useContext } from "react";
