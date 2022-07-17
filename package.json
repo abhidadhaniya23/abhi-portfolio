@@ -19,6 +19,7 @@
         "react-circular-progressbar": "^2.0.4",
         "react-device-detect": "^2.1.2",
         "react-dom": "18.0.0",
+        "react-icons": "^4.4.0",
         "react-move": "^6.5.0",
         "sitemap": "^7.1.1",
         "stream": "0.0.2"

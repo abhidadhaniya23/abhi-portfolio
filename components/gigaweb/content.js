@@ -49,10 +49,10 @@ const GigaWebContent = () => {
                             are co-founders of
                             <span className="mx-1 text-cyanPrimary font-bold">
                                 <a className="font-codeText" target="_blank" rel="noreferrer" href="https://www.gigaweb.in/">
-                                    GigaWeb Agency
+                                    GigaWeb
                                 </a>
                             </span>
-                            . Don't hesitate to contact us if you have any questions or want to work with us.
+                            Agency. Don't hesitate to contact us if you have any questions or want to work with us.
                         </motion.span>
                         <motion.a href="https://www.gigaweb.in/" target="_blank" rel="noreferrer" variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn">
                             Get Services

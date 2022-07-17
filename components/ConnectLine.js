@@ -1,5 +1,10 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { RiLinkedinLine } from "react-icons/ri";
+import { SiInstagram } from "react-icons/si";
+import { FiTwitter } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 
 const SocialLine = () => {
     const animations = {
@@ -13,22 +18,22 @@ const SocialLine = () => {
         {
             label: "Instagram",
             link: "https://www.instagram.com/_abhi_dadhaniya_/",
-            icon: "fa-brands fa-instagram",
+            icon: "SiInstagram",
         },
         {
             label: "Twitter",
             link: "https://twitter.com/abhidadhaniya3",
-            icon: "fa-brands fa-twitter",
+            icon: "FiTwitter",
         },
         {
             label: "Github",
             link: "https://github.com/abhidadhaniya23",
-            icon: "fa-brands fa-github",
+            icon: "FiGithub",
         },
         {
             label: "LinkedIn",
             link: "https://www.linkedin.com/in/abhi-dadhaniya-a09924220/",
-            icon: "fa-brands fa-linkedin",
+            icon: "RiLinkedinLine",
         },
     ];
     return (
@@ -61,8 +66,8 @@ const EmailLine = () => {
             <div className="absolute left-0 right-auto flex flex-row-reverse items-center justify-center md:left-auto md:right-0 md:flex-row bottom-5 md:bottom-10">
                 <motion.div variants={animations.emailAnimate} animate="animate" exit="exit" initial="initial">
                     <Link href="mailto:abhidadhaniya23@gmail.com">
-                        <a className="duration-300 text-lightBluePrimary/50 hover:text-cyanPrimary/90">
-                            <i className="mr-2 fa-solid fa-envelope"></i> abhidadhaniya23@gmail.com
+                        <a className="duration-300 flex flex-row justify-center items-center text-lightBluePrimary/50 hover:text-cyanPrimary/90">
+                            <FiMail className="mr-3 font-bold text-2xl" /> abhidadhaniya23@gmail.com
                         </a>
                     </Link>
                 </motion.div>
@@ -76,16 +81,16 @@ const Icon = ({ index, icon, link, label }) => {
     const animations = {
         icons: {
             initial: { opacity: 0, y: -20 },
-            exit: { opacity: 0, y: 0, transition: { duration: 0.3 } },
+            exit: { opacity: 0, y: -10, transition: { duration: 0.3, delay: index * 0.1 } },
             animate: { opacity: 1, y: 0, transition: { duration: 0.4, delay: index * 0.2 + 1 } },
         },
     };
     return (
         <>
-            <motion.div variants={animations.icons} animate="animate" exit="exit" initial="initial">
+            <motion.div variants={animations.icons} animate="animate" exit="exit" initial="initial" className="my-1.5 md:my-2">
                 <Link href={link}>
                     <a target="_blank" rel="noreferrer" area-label={label}>
-                        <i className={`my-1.5 md:my-2 text-xl duration-300 text-lightBluePrimary/30 hover:text-cyanPrimary ${icon}`}></i>
+                        <i className={`text-2xl duration-300 text-lightBluePrimary/30 hover:text-cyanPrimary`}>{icon === "SiInstagram" ? <SiInstagram /> : icon === "FiTwitter" ? <FiTwitter /> : icon === "FiGithub" ? <FiGithub /> : <RiLinkedinLine />}</i>
                     </a>
                 </Link>
             </motion.div>
