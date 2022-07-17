@@ -50,7 +50,7 @@ const Blogs = () => {
                     ))}
                 </div>
                 <div className="w-full text-center">
-                    <a href="https://abhisblogs.hashnode.dev/" target={"_blank"} className="btn">
+                    <a href="https://abhisblogs.hashnode.dev/" target={"_blank"} rel="noreferrer" className="btn">
                         Read More <i className="ml-2 fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
