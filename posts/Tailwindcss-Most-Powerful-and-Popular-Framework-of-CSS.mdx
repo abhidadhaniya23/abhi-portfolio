@@ -1,0 +1,135 @@
+---
+title: "Tailwindcss: Most Powerful and Popular Framework of CSS"
+date: "Dec 18, 2021"
+description: "Markdown First Post Description"
+---
+
+In this article, I explained to you about [Tailwindcss](https://tailwindcss.com/docs). Which is the powerful framework of css. There are many css frameworks in the market like Bootstrap, Tailwindcss, Materialize CSS, and so on.
+
+Tailwind is the most popular and lightweight css framework to all others.
+
+### Reasons to use Tailwindcss:
+
+-   No default theme
+-   Doesn’t impose design decisions that you have to fight to undo
+-   Offers a head start implementing a custom design with its own identity
+-   Comes with a menu of predesigned widgets to build your site with
+
+![Tailwindcss](https://res.cloudinary.com/practicaldev/image/fetch/s--eFmlJnAW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://themeselection.com/wp-content/uploads/2020/09/tailwind-CSS.jpg)
+
+You can use tailwindcss with CDN links by importing styles to your project and another way to use tailwindcss with npm installation.
+
+### CDN Link
+
+```html
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+```
+
+There are lots of disadvantages to importing [Tailwindcss Directives](https://tailwindcss.com/docs/functions-and-directives) into your project. When you import Tailwindcss directives, you are not able to do some tailwindcss customization.
+
+-   CDN takes a lot of time to interact with your website.
+-   It takes a lot of time to import and render styles with your HTML document.
+-   You can't remove unused styles from the main tailwindcss file.
+-   You aren't able to use some special [features of tailwindcss](https://tailwindcss.com/docs/installation) by importing CDN.
+
+### Tailwindcss using NPM
+
+There are lots of benefits to using tailwindcss by installing from NPM.
+
+-   You can remove unwanted css from your project to load fewer styles and it will impact on rendering documents.
+-   You can create directives to apply to common HTML elements.
+-   You can customize a dark and light theme using `tailwindcss.config.js`
+-   You can add some special colors and fonts by customizing the config file.
+    Personally, I recommend you to use tailwindcss using npm instead of importing styles through CDN.
+
+## Let's setup Tailwindcss using NPM
+
+Run the following command in your folder path.
+
+```bash
+npm i tailwindcss
+```
+
+You have to install some more packages to remove unwanted styles from your project.
+
+```bash
+npm i autoprefixer postcss postcss-cli
+```
+
+Now, I will explain to you how to set up tailwindcss files and config files.
+
+Let's create `tailwind.config.js`. Run the following command.
+
+```bash
+npx tailwindcss init
+```
+
+Now, create a `postcss.config.js` file by running the command
+
+```bash
+npx tailwindcss init -p
+```
+
+Now, create a public/css folder and create a `tailwind.style` name file inside css folder and add this code.
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Add a new script in `package.json` to compile tailwindcss directives to styles.
+
+```javascript
+"build": "postcss ./public/css/tailwind.css -o ./public/css/style.css -w"
+```
+
+When you run `npm run build` tailwindcss automatically creates a `style.css` inside public/css.
+
+Before you execute the build script, you need to set **JIT Compiler**.
+
+Now, the most important step is we have to define JIT Compiler in `tailwind.config.js`
+
+You have to set JIT compiler like
+
+```javascript
+module.exports = {
+    mode: "jit",
+    purge: ["./views/**/*.ejs", "./views/*.ejs", "./public/**/*.html", "./public/*.html"],
+    darkMode: false,
+    theme: {
+        extend: {
+            fontFamily: {},
+            colors: {},
+        },
+    },
+    variants: {
+        extend: {},
+    },
+    plugins: [],
+};
+```
+
+In the above code, when we define purge and in that purge array, we have to define the files where we applied styles or you can say that classes on HTML elements. Thus when the build script running, postcss packages automatically remove unwanted styles from `public/css/style.css` and also add wanted styles.
+
+Now, You easily run the build script
+
+```bash
+npm run build
+```
+
+## Setup Tailwindcss using a C++ program
+
+I have created a C++ program to generate tailwindcss with node and express project.
+
+You can check out my [Github Repository](https://github.com/abhidadhaniya23/Node-and-express-structure-using-cpp)
+
+It will save you a lot of time and also you don't have to do anything to set up all folders and files. You have to just run that `program.exe` file from the repository.
+
+## Tailblocks
+
+[Tailblocks](https://tailblocks.cc/) is a website to grab built-in templates using tailwindcss. You can directly copy those components from the website.
+
+## Conclusion
+
+Tailwind is the most popular framework. Tailwindcss is better than bootstrap because you can more customize your project with tailwindcss instead of bootstrap. There are lots of features than bootstrap. I strongly recommend you to use Tailwind instead of others. You can check out more features and [documentation](https://tailwindcss.com/docs) from its website.
