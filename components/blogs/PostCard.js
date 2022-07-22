@@ -3,9 +3,9 @@ import Link from "next/link";
 
 function PostCard({ title, date, description, slug, index }) {
     const animations = {
-        initial: { x: 0, opacity: 0, x: -60 },
-        animate: { x: 0, opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.2 * index } },
-        exit: { x: 0, opacity: 0, x: 30, transition: { duration: 0.15, delay: 0.1 * index } },
+        initial: { x: 0, opacity: 0 },
+        animate: { x: 0, opacity: 1, transition: { duration: 0.4, delay: 0.2 * index } },
+        exit: { x: 0, opacity: 0, transition: { duration: 0.15, delay: 0.1 * index } },
     };
     return (
         <>
