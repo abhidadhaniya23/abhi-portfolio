@@ -36,7 +36,7 @@ const Resource = () => {
                     </motion.div>
                     <div className="text-lightBluePrimary px-1 text-justify md:text-left md:px-10 py-10 text-lg font-bodyText flex w-full md:w-[60rem] flex-col items-center md:items-start justify-center">
                         <motion.span variants={animations.desc1} initial="initial" animate="animate" exit="exit" className="mb-3">
-                            Eager to start web development but don't know from where to start? Don't worry we've got your back. With me friend,
+                            Eager to start web development but dont know from where to start? Dont worry weve got your back. With me friend,
                             <span className="mx-1 text-cyanPrimary">
                                 <a className="font-codeText" target="_blank" rel="noreferrer" href="https://www.rohankiratsata.xyz/">
                                     Rohan,

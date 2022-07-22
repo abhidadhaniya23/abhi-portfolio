@@ -52,7 +52,7 @@ const GigaWebContent = () => {
                                     GigaWeb
                                 </a>
                             </span>
-                            Agency. Don't hesitate to contact us if you have any questions or want to work with us.
+                            Agency. Dont hesitate to contact us if you have any questions or want to work with us.
                         </motion.span>
                         <motion.a href="https://www.gigaweb.in/" target="_blank" rel="noreferrer" variants={animations.btn} initial="initial" animate="animate" exit="exit" className="btn">
                             Get Services
