@@ -14,9 +14,10 @@ const Layout = ({ component }) => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="title" content="MERN Stack Developer - Abhi Dadhaniya" />
                 <meta name="description" content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database." />
-                <meta name="keywords" content="MERN Stack, Developer, Portfolio" />
+                <meta name="keywords" content="Abhi Dadhaniya, MERN Stack, Developer, Portfolio" />
                 <meta name="google-site-verification" content="eVbmWrqbc7ik87pvSg21efPrLvJ24IZo-58yBvzSxDY" />
                 <meta name="robots" content="index, follow" />
+                <meta name="theme-color" content="#071124" />
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="language" content="English" />
                 <meta name="revisit-after" content="15 days" />

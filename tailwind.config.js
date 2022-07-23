@@ -5,6 +5,7 @@ module.exports = {
             fontFamily: {
                 bodyText: ["textFont"],
                 codeText: ["codeFont"],
+                inter: ["inter"],
             },
             colors: {
                 darkBluePrimary: "#071124",

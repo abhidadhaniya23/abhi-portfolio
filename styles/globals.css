@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +12,34 @@
         font-family: textFont;
         src: url("/font/Sohne.woff");
     }
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+}
+
+.touch-disable {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-moz-selection {
+    color: #071124;
+    background: #65feda;
+}
+
+::selection {
+    color: #071124;
+    background: #65feda;
 }
 
 p,
