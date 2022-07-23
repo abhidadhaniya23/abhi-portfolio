@@ -9,7 +9,7 @@ function PostCard({ title, date, description, slug, index }) {
     };
     return (
         <>
-            <motion.div variants={animations} initial="initial" animate="animate" exit="exit" className="touch-disable duration-200 transition-all hover:bg-cyanPrimary/5 border-cyanPrimary/10 border-2 rounded-lg px-10 py-4 my-2 mx-2">
+            <motion.div variants={animations} initial="initial" animate="animate" exit="exit" className="touch-disable duration-200 transition-all hover:bg-cyanPrimary/5 border-cyanPrimary/10 border-2 rounded-lg px-7 sm:px-10 py-3 sm:py-4 my-2 mx-2">
                 <Link href="blogs/[slug]" as={`blogs/${slug}`}>
                     <a>
                         <p className="font-bold text-2xl !text-cyanPrimary mt-3 mb-4">{title}</p>
