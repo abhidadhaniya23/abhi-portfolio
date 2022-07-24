@@ -43,11 +43,16 @@ function Post({ data, content }) {
                     <div className="flex flex-row items-center justify-center w-full">
                         {/* <div className="flex flex-col items-center justify-center w-full px-0 mx-auto md:px-0 md:w-3/5">{component}</div> */}
                         <div className="w-full px-0 mx-auto md:px-0 md:w-3/5">
-                            <motion.article variants={animations} initial="initial" animate="animate" exit="exit" className="px-5 my-20 !prose-p:font-inter prose-p:font-thin prose-code:font-codeText prose-headings:text-cyanPrimary prose-sm md:prose-xl prose prose-strong:text-white/90 prose-strong:font-bold prose-li:marker:text-cyanPrimary prose-a:text-cyanPrimary prose-pre:bg-cyanPrimary/5 prose-blockquote:bg-cyanPrimary/10 prose-blockquote:text-cyanPrimary prose-blockquote:border-l-2 prose-blockquote:border-cyanPrimary prose-blockquote:py-3 prose-blockquote:px-5 prose-blockquote:rounded-md prose-code:text-white prose-code:-z-50">
-                                <h1 className="font-bold text-4xl sm:text-5xl mt-0 sm:mt-24 mb-12">{data.title}</h1>
-                                {/* <time className="text-white/40 font-bodyText">{data.date}</time> */}
+                            <motion.article variants={animations} initial="initial" animate="animate" exit="exit" className="px-5 my-10 sm:my-20 !prose-p:font-inter prose-p:font-thin prose-code:font-codeText prose-headings:text-cyanPrimary prose-sm md:prose-xl prose prose-strong:text-white/90 prose-strong:font-bold prose-li:marker:text-cyanPrimary prose-a:text-cyanPrimary prose-pre:bg-cyanPrimary/5 prose-blockquote:bg-cyanPrimary/10 prose-blockquote:text-cyanPrimary prose-blockquote:border-l-2 prose-blockquote:border-cyanPrimary prose-blockquote:py-3 prose-blockquote:px-5 prose-blockquote:rounded-md prose-code:text-white prose-code:-z-50">
+                                <h1 className="font-bold text-4xl sm:text-5xl mt-0 sm:mt-0 mb-10">{data.title}</h1>
+                                {/* <time className="text-white/80 font-bodyText">{data.date}</time> */}
                                 {/* <p className="text-white/40">by Abhi Dadhaniya</p> */}
-                                <p className="prose my-5 text-white/70 text-xl ">
+                                {data.tags.map((tag, index) => (
+                                    <span key={index} className="bg-cyanPrimary/5 text-cyanPrimary font-codeText rounded-full px-4 py-2 text-base mr-2">
+                                        {tag}
+                                    </span>
+                                ))}
+                                <p className="prose mb-5 text-white/70 text-xl ">
                                     <MDXRemote {...content} />
                                 </p>
                             </motion.article>
