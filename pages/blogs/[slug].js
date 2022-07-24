@@ -49,7 +49,7 @@ function Post({ data, content }) {
                                 {/* <p className="text-white/40">by Abhi Dadhaniya</p> */}
                                 {data.tags.map((tag, index) => (
                                     <span key={index} className="bg-cyanPrimary/5 text-cyanPrimary font-codeText rounded-full px-4 py-2 text-base mr-2">
-                                        {tag}
+                                        #{tag}
                                     </span>
                                 ))}
                                 <p className="prose mb-5 text-white/70 text-xl ">
