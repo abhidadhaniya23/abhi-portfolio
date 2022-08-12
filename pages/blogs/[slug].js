@@ -23,6 +23,8 @@ function Post({ data, content }) {
                 <link rel="shortcut icon" href="/favicon.png" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="title" content={data.title} />
+                <meta property="og:title" content={data.title} />
+                <meta property="og:description" content={data.description} />
                 <meta name="description" content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database." />
                 <meta name="keywords" content="Abhi Dadhaniya, MERN Stack, Developer, Portfolio" />
                 <meta name="google-site-verification" content="eVbmWrqbc7ik87pvSg21efPrLvJ24IZo-58yBvzSxDY" />
