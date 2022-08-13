@@ -1,13 +1,13 @@
 import { MDXRemote } from "next-mdx-remote";
 import getPost from "../../getPost";
 import getPosts from "../../getPosts";
-import Layout from "../../components/Layout";
 import { serialize } from "next-mdx-remote/serialize";
 import { motion } from "framer-motion";
 import Menu from "../../components/menu/Menu";
 import MenuBarContext from "../../context/MenuBarContext";
 import Navbar from "../../components/navbar/Navbar";
 import { useState } from "react";
+import Script from "next/script";
 import Head from "next/head";
 
 function Post({ data, content }) {
@@ -25,9 +25,10 @@ function Post({ data, content }) {
                 <meta name="title" content={data.title} />
                 <meta property="og:title" content={data.title} />
                 <meta property="og:description" content={data.description} />
-                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content={data.title} />
                 <meta property="twitter:description" content={data.description} />
+                <meta property="twitter:image" content={data.image} />
                 <meta property="twitter:creator" content="@AbhiDadhaniya3" />
                 <meta name="description" content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database." />
                 <meta name="keywords" content="Abhi Dadhaniya, MERN Stack, Developer, Portfolio" />
