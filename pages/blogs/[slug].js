@@ -25,7 +25,7 @@ function Post({ data, content }) {
                 <meta name="title" content={data.title} />
                 <meta property="og:title" content={data.title} />
                 <meta property="og:description" content={data.description} />
-                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content={data.title} />
                 <meta property="twitter:description" content={data.description} />
                 <meta property="twitter:image" content={data.image} />

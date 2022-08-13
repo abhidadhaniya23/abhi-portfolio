@@ -13,10 +13,11 @@ const Layout = ({ component }) => {
                 <link rel="shortcut icon" href="/favicon.png" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="title" content="MERN Stack Developer - Abhi Dadhaniya" />
-                <meta name="twitter:card" content="summary" />
+                <meta property="twitter:card" content="summary" />
                 <meta name="description" content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database." />
                 <meta property="og:title" content="MERN Stack Developer - Abhi Dadhaniya" />
                 <meta property="og:description" content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database." />
+                <meta property="og:url" content={`https://www.web-developer-abhi.me/`} />
                 <meta property="twitter:title" content="MERN Stack Developer - Abhi Dadhaniya" />
                 <meta property="twitter:description" content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database." />
                 <meta property="twitter:creator" content="@AbhiDadhaniya3" />
