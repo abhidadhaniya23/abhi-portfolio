@@ -66,6 +66,30 @@ function Post({ data, content }) {
                     </div>
                 </div>
             </MenuBarContext.Provider>
+
+            <Script id="g_analytics_id" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+            <Script id="g_analytics_script" strategy="lazyOnload">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
+
+            <Script id="g_analytics_id_UA" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_UA_ID}`} />
+            <Script id="g_analytics_script_UA" strategy="lazyOnload">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_UA_ID}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
         </>
     );
 }
