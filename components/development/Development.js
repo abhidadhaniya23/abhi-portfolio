@@ -70,78 +70,91 @@ const Development = () => {
             img: movieapp,
             url: "https://react-movie-app-000.netlify.app/",
             categoryId: [1, 3, 4],
+            id: 766507,
         },
         {
             name: "xLinks Pro",
             img: xlinks,
             url: "https://www.xlinks.pro/",
             categoryId: [1, 2, 3, 4, 5, 6],
+            id: 76789,
         },
         {
             name: "Educational Website",
             img: bme,
             url: "https://basic-mechanical-engineering.herokuapp.com/",
             categoryId: [1, 6],
+            id: 1089,
         },
         {
             name: "Image Gallery",
             img: imagegallery,
             url: "https://image-gallery-ui.netlify.app/",
             categoryId: [1, 3, 4, 5],
+            id: 18930,
         },
         {
             name: "Rock, Paper, Scissor",
             img: rps,
             url: "https://web-developer-abhi.herokuapp.com/RPS-Game/index.html",
             categoryId: [1, 7],
+            id: 14399,
         },
         {
             name: "Mind Sharp",
             img: color_game,
             url: "https://web-developer-abhi.herokuapp.com/Color-game/color-game.html",
             categoryId: [1, 7],
+            id: 91399,
         },
         {
             name: "Countdown Timer",
             img: countdowntimer,
             url: "https://web-developer-abhi.herokuapp.com/countdown-timer/index.html",
             categoryId: [1, 5],
+            id: 923900,
         },
         {
             name: "Time Square News",
             img: timesquarenews,
             url: "https://web-developer-abhi.herokuapp.com/time-square/index.html",
             categoryId: [1, 3, 5],
+            id: 24903,
         },
         {
             name: "Password Generator",
             img: securepassword,
             url: "https://web-developer-abhi.herokuapp.com/Secure-password-generator/index.html",
             categoryId: [1, 5],
+            id: 12345,
         },
         {
             name: "Food Website",
             img: food,
             url: "https://web-developer-abhi.herokuapp.com/Food-site/index.html",
             categoryId: [1, 8],
+            id: 97652,
         },
         {
             name: "Covid-19 Tracker",
             img: covid19tracker,
             url: "https://web-developer-abhi.herokuapp.com/Covid-19-Tracker/index.html",
             categoryId: [1, 3, 5],
+            id: 45677,
         },
         {
             name: "Periodic Table",
             img: periodictable,
             url: "https://web-developer-abhi.herokuapp.com/Periodic-table/index.html",
             categoryId: [1, 3, 5],
+            id: 89765,
         },
         // {
         //     name: "Awesome Cheat Sheets",
         //     img: awesome_cheat_sheets,
         //     url: "http://awesome-cheat-sheets.online/",
         //     categoryId: [1, 5],
+        //     id: uuidv4(),
         // },
     ];
 
@@ -161,9 +174,11 @@ const Development = () => {
                     ))}
                 </div>
                 <motion.div layout className="flex flex-row items-start justify-center mt-7 flex-wrap">
-                    {filteredProjects.map((project, index) => (
-                        <ProjectCard index={index} img={project.img} selectedCategory={selectedCategory} category={project.category} name={project.name} url={project.url} key={index} />
-                    ))}
+                    <AnimatePresence>
+                        {filteredProjects.map((project, index) => (
+                            <ProjectCard index={index} img={project.img} selectedCategory={selectedCategory} category={project.category} name={project.name} url={project.url} key={project.id} />
+                        ))}
+                    </AnimatePresence>
                 </motion.div>
             </div>
         </>
