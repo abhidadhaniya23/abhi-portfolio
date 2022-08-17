@@ -15,8 +15,8 @@ const CategoryCard = ({ index, name, icon, projects, setFilteredProjects, select
     }, [selectedCategory]);
     return (
         <>
-            <motion.div onClick={() => setSelectedCategory(id)} variants={animations.card} initial="initial" animate="animate" exit="exit" className="sticky flex m-2 md:m-3 flex-row w-max items-center justify-center mt-2">
-                <a className={`${id === selectedCategory ? "!text-cyanPrimary !border-cyanPrimary !px-10" : ""} px-4 cursor-pointer py-2 md:py-3 focus:text-cyanPrimary focus:border-cyanPrimary my-0.5 md:my-1 w-full border-[1px] border-transparent duration-300 hover:border-cyanPrimary rounded-[4px] text-lg font-codeText text-lightBluePrimary bg-darkBluePrimary`}>
+            <motion.div onClick={() => setSelectedCategory(id)} variants={animations.card} initial="initial" animate="animate" exit="exit" className="sticky flex m-1 md:m-3 flex-row w-max items-center justify-center mt-2">
+                <a className={`${id === selectedCategory ? "!text-cyanPrimary !border-cyanPrimary !px-7 !sm:px-10" : ""} px-4 cursor-pointer py-2 md:py-3 focus:text-cyanPrimary focus:border-cyanPrimary my-0.5 md:my-1 w-full border-[1px] border-transparent duration-300 hover:border-cyanPrimary rounded-[4px] text-base sm:text-lg font-codeText text-lightBluePrimary bg-darkBluePrimary`}>
                     <i className={`mr-2 text-cyanPrimary ${icon}`}></i>
                     {name}
                 </a>

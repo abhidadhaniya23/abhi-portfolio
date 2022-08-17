@@ -153,9 +153,9 @@ const Development = () => {
 
     return (
         <>
-            <div className="flex flex-col justify-start py-20 items-center min-h-screen h-full">
+            <div className="flex flex-col justify-start py-10 sm:py-20 items-center min-h-screen h-full">
                 <Heading heading={"What I've Done"} />
-                <div className="mx-2 mt-5 flex flex-row justify-center flex-wrap px-4 sm:px-32 items-center">
+                <div className="mx-2 mt-5 flex flex-row justify-start sm:justify-center flex-wrap px-4 sm:px-32 items-center">
                     {categoryProjects.map((project, index) => (
                         <CategoryCard projects={projectData} filteredProjects={filteredProjects} setFilteredProjects={(event) => setFilteredProjects(event)} setSelectedCategory={(event) => setSelectedCategory(event)} name={project.name} selectedCategory={selectedCategory} icon={project.icon} key={index} index={index} id={project.id} />
                     ))}
