@@ -4,8 +4,9 @@ import Menu from "./menu/Menu";
 import MenuBarContext from "../context/MenuBarContext";
 import { useState } from "react";
 import Head from "next/head";
+import Development from "./development/Development";
 
-const Layout = ({ component }) => {
+const Layout = ({ component, width }) => {
     const [menuActive, setMenuActive] = useState(false);
     return (
         <>
@@ -37,8 +38,7 @@ const Layout = ({ component }) => {
                         <Navbar />
                     </div>
                     <div className="flex flex-row items-center justify-center w-full">
-                        {/* <div className="flex flex-col items-center justify-center w-full px-0 mx-auto md:px-0 md:w-3/5">{component}</div> */}
-                        <div className="flex flex-col items-center justify-center w-full px-0 mx-auto md:px-0 md:w-3/5">{component}</div>
+                        <div className={`${width ? "md:w-3/4" : "md:w-3/5"} flex flex-col items-center justify-center w-full px-0 mx-auto md:px-0`}>{component}</div>
                     </div>
                 </div>
             </MenuBarContext.Provider>

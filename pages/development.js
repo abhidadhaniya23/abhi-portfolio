@@ -8,7 +8,7 @@ const development = () => {
             <Head>
                 <title>Developer Abhi || Projects</title>
             </Head>
-            <Layout component={<Development />} />
+            <Layout component={<Development />} width={true} />
         </>
     );
 };

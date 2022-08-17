@@ -2,21 +2,21 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectCard = ({ name, img, index, url, category, selectedCategory }) => {
+const ProjectCard = ({ name, img, index, url }) => {
     const animations = {
         card: {
-            initial: { opacity: 0, y: 20 },
-            exit: { opacity: 0, y: 10, transition: { duration: 0.15, delay: index * 0.1 + 0.2 } },
-            animate: { opacity: 1, y: 0, transition: { duration: 0.3, delay: index * 0.1 + 0.4 } },
+            initial: { opacity: 0, scale: 0.8 },
+            exit: { opacity: 0, scale: 0.9, transition: { duration: 0.15, delay: index * 0.05 } },
+            animate: { opacity: 1, scale: 1, transition: { duration: 0.3, delay: index * 0.1 + 0.3 } },
         },
     };
     return (
         <>
-            <motion.div variants={animations.card} initial="initial" animate="animate" exit="exit" className={selectedCategory !== category ? "hidden" : "flex flex-col items-center justify-center mx-2 md:mx-5 mb-5 overflow-hidden rounded-lg bg-gray-50"}>
+            <motion.div layout variants={animations.card} initial="initial" animate="animate" exit="exit" className={"flex flex-col items-center justify-center mx-2 md:mx-5 mb-5 overflow-hidden rounded-lg bg-gray-50"}>
                 <Link href={url}>
                     <a target={"_blank"}>
-                        <div className="w-[9rem] h-[9rem] md:w-56 md:h-56 bg-lightBlueSecondary">
-                            <Image src={img} alt={name} width="240px" height="240px" rel="noreferrer" />
+                        <div className="w-[12rem] h-[10rem] md:w-56 md:h-48 overflow-hidden bg-lightBlueSecondary">
+                            <Image src={img} alt={name} width="240px" height="220px" rel="noreferrer" />
                         </div>
                     </a>
                 </Link>
