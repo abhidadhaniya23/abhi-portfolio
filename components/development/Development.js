@@ -9,7 +9,7 @@ import movieapp from "../../public/project/movie-app.png";
 import bme from "../../public/project/bme.png";
 import imagegallery from "../../public/project/image-gallery.png";
 import rps from "../../public/project/rps.png";
-import cheatsheets from "../../public/project/cheat-sheets.png";
+// import cheatsheets from "../../public/project/cheat-sheets.png";
 import color_game from "../../public/project/color_game.png";
 import countdowntimer from "../../public/project/countdown-timer.png";
 import timesquarenews from "../../public/project/time-square-news.png";
@@ -18,10 +18,16 @@ import food from "../../public/project/food.png";
 import covid19tracker from "../../public/project/covid-19-tracker.png";
 import periodictable from "../../public/project/periodic-table.png";
 import xlinks from "../../public/project/xlinks.png";
-// import awesome_cheat_sheets from "../../public/project/cheat-sheets.png";
 
 const Development = () => {
     const [selectedCategory, setSelectedCategory] = useState(1);
+    const animations = {
+        cardContainer: {
+            initial: { opacity: 0 },
+            animate: { opacity: 1, transition: { duration: 0.2 } },
+            exit: { opacity: 0, transition: { duration: 0.15, delay: 0.2 } },
+        },
+    };
     const categoryProjects = [
         {
             name: "All",
@@ -151,7 +157,7 @@ const Development = () => {
         },
         // {
         //     name: "Awesome Cheat Sheets",
-        //     img: awesome_cheat_sheets,
+        //     img: cheatsheets,
         //     url: "http://awesome-cheat-sheets.online/",
         //     categoryId: [1, 5],
         //     id: uuidv4(),
@@ -173,7 +179,7 @@ const Development = () => {
                         <CategoryCard projects={projectData} filteredProjects={filteredProjects} setFilteredProjects={(event) => setFilteredProjects(event)} setSelectedCategory={(event) => setSelectedCategory(event)} name={project.name} selectedCategory={selectedCategory} icon={project.icon} key={index} index={index} id={project.id} />
                     ))}
                 </div>
-                <motion.div layout className="flex flex-row items-start justify-center mt-7 flex-wrap">
+                <motion.div variants={animations.cardContainer} animate="animate" initial="initial" exit="exit" layout className="flex flex-row items-start justify-center mt-7 flex-wrap">
                     <AnimatePresence>
                         {filteredProjects.map((project, index) => (
                             <ProjectCard index={index} img={project.img} selectedCategory={selectedCategory} category={project.category} name={project.name} url={project.url} key={project.id} />
