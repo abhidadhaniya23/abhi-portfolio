@@ -40,6 +40,10 @@ const Navbar = () => {
             link: "/resources",
         },
         {
+            name: "Timeline",
+            link: "/timeline",
+        },
+        {
             name: "Read Blogs",
             link: "/blogs",
         },
