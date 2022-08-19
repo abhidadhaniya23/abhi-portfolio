@@ -20,7 +20,7 @@ const Card = ({ data, length, index }) => {
                 </div>
                 <div className={`flex flex-row justify-start items-center rounded-lg  relative bg-cyanPrimary/5 py-3 pl-3 pr-5 w-[16rem] sm:w-[37rem]`}>
                     <div className="bg-cyanPrimary/90 w-8 sm:w-12 h-8 sm:h-12 rounded-full flex justify-center items-center">
-                        <i class={`${data.icon} text-lg sm:text-2xl`}></i>
+                        <i className={`${data.icon} text-lg sm:text-2xl`}></i>
                     </div>
                     <div className="flex flex-col justify-center items-start pl-4 text-white">
                         <p className="text-sm sm:text-xl">{data.title}</p>
@@ -29,7 +29,7 @@ const Card = ({ data, length, index }) => {
                             {data.link && (
                                 <Link href={data.link}>
                                     <a className={`font-bodyText group text-xs sm:text-sm flex justify-center items-center text-cyanPrimary px-3`}>
-                                        <i class="fa-solid fa-link pr-1"></i>Proof<i class="duration-150 group-hover:pl-2 fa-solid fa-angles-right pl-1"></i>
+                                        <i className="fa-solid fa-link pr-1"></i>Proof<i className="duration-150 group-hover:pl-2 fa-solid fa-angles-right pl-1"></i>
                                     </a>
                                 </Link>
                             )}
