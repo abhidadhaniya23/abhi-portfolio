@@ -48,13 +48,13 @@ const Timeline = () => {
         },
         {
             title: "Implemented ReactJS projects",
-            subtitle: "2022 February",
+            subtitle: "2022 Feb.",
             icon: "fa-brands fa-react",
             link: "/development",
         },
         {
             title: "Launched Dev. Resources",
-            subtitle: "2022 February",
+            subtitle: "2022 Feb.",
             icon: "fa-solid fa-folder-open",
             link: "https://web-dev-resources.notion.site/web-dev-resources/Web-Development-Resources-be1207bcc32e434481c1ce6e90756964",
         },
