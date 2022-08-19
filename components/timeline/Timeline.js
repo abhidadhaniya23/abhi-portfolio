@@ -5,172 +5,98 @@ import Card from "./Card";
 const Timeline = () => {
     const data = [
         {
-            year: "2019",
-            content: [
-                {
-                    title: "Designed the web pages",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-solid fa-bezier-curve",
-                },
-            ],
+            title: "Designed the web pages",
+            subtitle: "2019 November",
+            icon: "fa-solid fa-bezier-curve",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Learned JavaScript",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-brands fa-square-js",
-                },
-            ],
+            title: "Learned JavaScript",
+            subtitle: "2020 August",
+            icon: "fa-brands fa-square-js",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Projects in HTML, CSS and JS",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-solid fa-code",
-                    link: "/development",
-                },
-            ],
+            title: "Projects in HTML, CSS and JS",
+            subtitle: "2021 March",
+            icon: "fa-solid fa-code",
+            link: "/development",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Launched my v1 Portfolio",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-solid fa-laptop-code",
-                    link: "https://web-developer-abhi.herokuapp.com/",
-                },
-            ],
+            title: "Launched my v1 Portfolio",
+            subtitle: "2021 May",
+            icon: "fa-solid fa-laptop-code",
+            link: "https://web-developer-abhi.herokuapp.com/",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "NodeJS & ExpressJS",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-brands fa-node-js",
-                },
-            ],
+            title: "NodeJS & ExpressJS",
+            subtitle: "2021 June",
+            icon: "fa-brands fa-node-js",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Learned MongoDB",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-solid fa-database",
-                },
-            ],
+            title: "Learned MongoDB",
+            subtitle: "2021 July",
+            icon: "fa-solid fa-database",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Implemented projects in backend",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-brands fa-node-js",
-                },
-            ],
+            title: "Implemented projects in backend",
+            subtitle: "2021 September",
+            icon: "fa-brands fa-node-js",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Learned ReactJS",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-brands fa-react",
-                },
-            ],
+            title: "Learned ReactJS",
+            subtitle: "2021 December",
+            icon: "fa-brands fa-react",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Implemented ReactJS projects",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-brands fa-react",
-                    link: "/development",
-                },
-            ],
+            title: "Implemented ReactJS projects",
+            subtitle: "2022 February",
+            icon: "fa-brands fa-react",
+            link: "/development",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Leaned NextJS",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-brands fa-neos",
-                },
-            ],
+            title: "Launched Dev. Resources",
+            subtitle: "2022 February",
+            icon: "fa-solid fa-folder-open",
+            link: "https://web-dev-resources.notion.site/web-dev-resources/Web-Development-Resources-be1207bcc32e434481c1ce6e90756964",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Launched my v2 Portfolio",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-solid fa-laptop-code",
-                    link: "/",
-                },
-            ],
+            title: "Leaned NextJS",
+            subtitle: "2022 March",
+            icon: "fa-brands fa-neos",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Joined internship at Adhir",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-solid fa-handshake-simple",
-                    link: "https://www.linkedin.com/company/adhirinfo/mycompany/",
-                },
-            ],
+            title: "Launched my v2 Portfolio",
+            subtitle: "2022 April",
+            icon: "fa-solid fa-laptop-code",
+            link: "/",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Launcher Resources",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-solid fa-folder-open",
-                    link: "https://web-dev-resources.notion.site/web-dev-resources/Web-Development-Resources-be1207bcc32e434481c1ce6e90756964",
-                },
-            ],
+            title: "Joined internship at Adhir",
+            subtitle: "2022 April",
+            icon: "fa-solid fa-handshake-simple",
+            link: "https://www.linkedin.com/company/adhirinfo/mycompany/",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Built an full stack web app",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-brands fa-xing",
-                    link: "https://www.xlinks.pro/",
-                },
-            ],
+            title: "Built an full stack web app",
+            subtitle: "2022 July",
+            icon: "fa-brands fa-xing",
+            link: "https://www.xlinks.pro/",
         },
         {
-            year: "2020",
-            content: [
-                {
-                    title: "Started GigaWeb.in",
-                    subtitle: "2019 - 2020",
-                    icon: "fa-solid fa-briefcase",
-                    link: "https://www.gigaweb.in/",
-                },
-            ],
+            title: "Become MERN Stack Developer",
+            subtitle: "2022 July",
+            icon: "fa-solid fa-check-double",
+            link: "/skills",
         },
         {
-            year: "2022",
-            content: [
-                {
-                    title: "Started learning React Native",
-                    subtitle: "2022 August",
-                    icon: "fa-brands fa-react",
-                },
-            ],
+            title: "Started GigaWeb.in",
+            subtitle: "2022 July",
+            icon: "fa-solid fa-briefcase",
+            link: "https://www.gigaweb.in/",
+        },
+        {
+            title: "Started learning React Native",
+            subtitle: "2022 August",
+            icon: "fa-brands fa-react",
         },
     ];
     return (
