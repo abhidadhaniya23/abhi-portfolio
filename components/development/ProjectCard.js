@@ -12,7 +12,7 @@ const ProjectCard = ({ name, img, index, url }) => {
     };
     return (
         <>
-            <motion.div layout variants={animations.card} initial="initial" animate="animate" exit="exit" className={"flex flex-col items-center justify-center mx-2 md:mx-5 mb-5 overflow-hidden rounded-lg bg-gray-50"}>
+            <motion.div layout variants={animations.card} initial="initial" animate="animate" exit="exit" className={"flex flex-col items-center justify-center mx-2 md:mx-3 mb-5 overflow-hidden rounded-lg bg-gray-50"}>
                 <Link href={url}>
                     <a target={"_blank"}>
                         <div className="w-[10rem] h-[8rem] md:w-56 md:h-48 overflow-hidden bg-lightBlueSecondary">

@@ -28,7 +28,7 @@ const Card = ({ data, length, index }) => {
                             <p className="text-xs sm:text-sm font-codeText pr-2">{data.subtitle}</p>
                             {data.link && (
                                 <Link href={data.link}>
-                                    <a className={`font-bodyText group text-xs sm:text-sm flex justify-center items-center text-cyanPrimary px-3`}>
+                                    <a target={"_blank"} className={`font-bodyText group text-xs sm:text-sm flex justify-center items-center text-cyanPrimary px-3`}>
                                         <i className="fa-solid fa-link pr-1"></i>Proof<i className="duration-150 group-hover:pl-2 fa-solid fa-angles-right pl-1"></i>
                                     </a>
                                 </Link>
