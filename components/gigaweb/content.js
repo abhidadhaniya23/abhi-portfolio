@@ -35,7 +35,7 @@ const GigaWebContent = () => {
                     <motion.div variants={animations.photo} initial="initial" animate="animate" exit="exit" className="w-[80%] mx-auto shadow-lg">
                         <Image src={agency} className="rounded-lg" alt="Web Development Resources" />
                     </motion.div>
-                    <div className="text-lightBluePrimary px-1 text-justify md:text-left md:px-10 py-10 text-lg font-bodyText flex w-full md:w-[60rem] flex-col items-center md:items-start justify-center">
+                    <div className="text-lightBluePrimary px-1 text-left md:text-left md:px-10 py-10 text-lg font-bodyText flex w-full md:w-[60rem] flex-col items-center md:items-start justify-center">
                         <motion.span variants={animations.desc1} initial="initial" animate="animate" exit="exit" className="mb-3">
                             GigaWeb is a team of web developers👨🏻‍💻 who are passionate about building websites and helping small businesses & individuals, providing services like Full-Stack Web Development, UI/UX designing, managing your social handles, and No-Code websites.
                         </motion.span>
