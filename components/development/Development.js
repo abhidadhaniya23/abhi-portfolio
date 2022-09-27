@@ -18,6 +18,8 @@ import food from "../../public/project/food.png";
 import covid19tracker from "../../public/project/covid-19-tracker.png";
 import periodictable from "../../public/project/periodic-table.png";
 import xlinks from "../../public/project/xlinks.png";
+import quotesbot from "../../public/project/quotesbot.jpg";
+import memebot from "../../public/project/memebot.jpg";
 
 const Development = () => {
     const [selectedCategory, setSelectedCategory] = useState(1);
@@ -34,11 +36,11 @@ const Development = () => {
             icon: "fa-solid fa-code-fork",
             id: 1,
         },
-        {
-            name: "Real-World",
-            icon: "fa-solid fa-earth-africa",
-            id: 2,
-        },
+        // {
+        //     name: "Real-World",
+        //     icon: "fa-solid fa-earth-africa",
+        //     id: 2,
+        // },
         {
             name: "Api",
             icon: "fa-solid fa-code",
@@ -60,14 +62,9 @@ const Development = () => {
             id: 6,
         },
         {
-            name: "Games",
-            icon: "fa-solid fa-gamepad",
+            name: "Bots",
+            icon: "fa-solid fa-robot",
             id: 7,
-        },
-        {
-            name: "UI-Designs",
-            icon: "fa-solid fa-bezier-curve",
-            id: 8,
         },
     ];
     const projectData = [
@@ -82,14 +79,14 @@ const Development = () => {
             name: "xLinks Pro",
             img: xlinks,
             url: "https://www.xlinks.pro/",
-            categoryId: [1, 2, 3, 4, 5, 6],
+            categoryId: [1, 3, 4, 5, 6],
             id: 76789,
         },
         {
             name: "Educational Website",
             img: bme,
             url: "https://basic-mechanical-engineering.herokuapp.com/",
-            categoryId: [1, 6],
+            categoryId: [1, 5],
             id: 1089,
         },
         {
@@ -103,23 +100,23 @@ const Development = () => {
             name: "Rock, Paper, Scissor",
             img: rps,
             url: "https://web-developer-abhi.herokuapp.com/RPS-Game/index.html",
-            categoryId: [1, 7],
+            categoryId: [1, 5],
             id: 14399,
         },
         {
             name: "Mind Sharp",
             img: color_game,
             url: "https://web-developer-abhi.herokuapp.com/Color-game/color-game.html",
-            categoryId: [1, 7],
+            categoryId: [1, 5],
             id: 91399,
         },
-        {
-            name: "Countdown Timer",
-            img: countdowntimer,
-            url: "https://web-developer-abhi.herokuapp.com/countdown-timer/index.html",
-            categoryId: [1, 5],
-            id: 923900,
-        },
+        // {
+        //     name: "Countdown Timer",
+        //     img: countdowntimer,
+        //     url: "https://web-developer-abhi.herokuapp.com/countdown-timer/index.html",
+        //     categoryId: [1, 5],
+        //     id: 923900,
+        // },
         {
             name: "Time Square News",
             img: timesquarenews,
@@ -138,7 +135,7 @@ const Development = () => {
             name: "Food Website",
             img: food,
             url: "https://web-developer-abhi.herokuapp.com/Food-site/index.html",
-            categoryId: [1, 8],
+            categoryId: [1, 5],
             id: 97652,
         },
         {
@@ -154,6 +151,20 @@ const Development = () => {
             url: "https://web-developer-abhi.herokuapp.com/Periodic-table/index.html",
             categoryId: [1, 3, 5],
             id: 89765,
+        },
+        {
+            name: "Quotes Generator",
+            img: quotesbot,
+            url: "https://t.me/Quote_generatorbot",
+            categoryId: [1, 7],
+            id: 92145,
+        },
+        {
+            name: "Meme Generator",
+            img: memebot,
+            url: "https://t.me/Meme4_You_bot",
+            categoryId: [1, 7],
+            id: 46824,
         },
         // {
         //     name: "Awesome Cheat Sheets",

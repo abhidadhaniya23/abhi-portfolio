@@ -98,6 +98,12 @@ const Timeline = () => {
             subtitle: "2022 August",
             icon: "fa-brands fa-react",
         },
+        {
+            title: "Automated bots for telegram",
+            subtitle: "2022 September",
+            icon: "fa-solid fa-robot",
+            link: "/development",
+        },
     ];
     return (
         <>
