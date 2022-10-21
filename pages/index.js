@@ -5,7 +5,7 @@ import { EmailLine } from "../components/ConnectLine";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import logo from "../public/logo.png";
+import logo from "../public/Alogo.svg";
 
 export default function Home() {
   return (
