@@ -35,13 +35,13 @@ const Layout = ({ component, width }) => {
           property="og:url"
           content={`https://www.web-developer-abhi.me/`}
         />
-        <meta itemprop="name" content="MERN Stack Developer - Abhi Dadhaniya" />
+        <meta itemProp="name" content="MERN Stack Developer - Abhi Dadhaniya" />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
         />
         <meta
-          itemprop="image"
+          itemProp="image"
           content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
         />
         <meta
