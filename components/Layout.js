@@ -24,6 +24,10 @@ const Layout = ({ component, width }) => {
           content="MERN Stack Developer - Abhi Dadhaniya"
         />
         <meta
+          property="og:image"
+          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
+        />
+        <meta
           property="og:description"
           content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
         />
@@ -31,7 +35,19 @@ const Layout = ({ component, width }) => {
           property="og:url"
           content={`https://www.web-developer-abhi.me/`}
         />
-        <meta property="twitter:image" content="pic.jpg" />
+        <meta itemprop="name" content="MERN Stack Developer - Abhi Dadhaniya" />
+        <meta
+          itemprop="description"
+          content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
+        />
+        <meta
+          itemprop="image"
+          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
+        />
         <meta
           property="twitter:title"
           content="MERN Stack Developer - Abhi Dadhaniya"
