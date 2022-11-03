@@ -25,7 +25,7 @@ const Layout = ({ component, width }) => {
         />
         <meta
           property="og:image"
-          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
+          content="https://www.web-developer-abhi.me/logoAbhi.png"
         />
         <meta
           property="og:description"
