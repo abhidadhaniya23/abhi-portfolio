@@ -14,7 +14,7 @@ const Layout = ({ component, width }) => {
         <link rel="shortcut icon" href="/favicon.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="title" content="MERN Stack Developer - Abhi Dadhaniya" />
-        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:card" content="" />
         <meta
           name="description"
           content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
@@ -25,7 +25,7 @@ const Layout = ({ component, width }) => {
         />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/abhidadhaniya23/abhi-portfolio/main/public/logoAbhi.png"
+          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
         />
         <meta
           property="og:description"
@@ -46,7 +46,7 @@ const Layout = ({ component, width }) => {
         />
         <meta
           property="twitter:image"
-          content="https://avatars.githubusercontent.com/u/70057423?v=4"
+          content="https://raw.githubusercontent.com/abhidadhaniya23/abhi-portfolio/main/public/logoAbhi.png"
         />
         <meta
           property="twitter:title"
