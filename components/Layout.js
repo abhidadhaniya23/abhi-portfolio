@@ -46,7 +46,7 @@ const Layout = ({ component, width }) => {
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:image"
-          content="https://hashnode.com/utility/r?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2FxkBaqlcqeb4%2Fupload%2Fv1660318045256%2FjFLm_-c9U.jpeg%3Fw%3D1200%26h%3D630%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp%26fm%3Dpng"
+          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
         />
         <meta
           name="twitter:title"
