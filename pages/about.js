@@ -5,20 +5,20 @@ import Layout from "../components/Layout";
 import Head from "next/head";
 
 const about = () => {
-    return (
+  return (
+    <>
+      <Head>
+        <title>About - Abhi Dadhaniya</title>
+      </Head>
+      {!isMobile && (
         <>
-            <Head>
-                <title>Developer Abhi || About</title>
-            </Head>
-            {!isMobile && (
-                <>
-                    <SocialLine />
-                    <EmailLine />
-                </>
-            )}
-            <Layout component={<About />} />
+          <SocialLine />
+          <EmailLine />
         </>
-    );
+      )}
+      <Layout component={<About />} />
+    </>
+  );
 };
 
 export default about;

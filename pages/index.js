@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Developer Abhi</title>
+        <title>Abhi Dadhaniya</title>
       </Head>
       <SocialLine />
       <Layout component={<HeaderIntro />} />
@@ -57,7 +57,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="relative my-1 text-base md:my-5 md:text-2xl font-codeText text-cyanPrimary"
+          className="sm:hidden block relative my-1 text-base md:my-5 md:text-2xl font-codeText text-cyanPrimary"
         >
           <Image
             src={logo}
@@ -100,9 +100,8 @@ const HeaderIntro = () => {
           exit="exit"
           className="text-base mb-7 md:mb-10 md:text-xl text-lightBlueSecondary/80"
         >
-          I have been a web developer for the past 2 years. I specialize in
-          JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as
-          Database.
+          I am a Full Stack Web Developer with 2+ years of experience in
+          JavaScript, ReactJS, NodeJS & ExpressJS and MongoDB as Database.
         </motion.p>
         <motion.div
           variants={animations.btn}

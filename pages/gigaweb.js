@@ -4,14 +4,14 @@ import Head from "next/head";
 import GigaWebContent from "../components/gigaweb/content";
 
 const GigaWeb = () => {
-    return (
-        <>
-            <Head>
-                <title>GigaWeb.In</title>
-            </Head>
-            <Layout component={<GigaWebContent />} />
-        </>
-    );
+  return (
+    <>
+      <Head>
+        <title>Gigaweb Agency - Abhi Dadhaniya</title>
+      </Head>
+      <Layout component={<GigaWebContent />} />
+    </>
+  );
 };
 
 export default GigaWeb;

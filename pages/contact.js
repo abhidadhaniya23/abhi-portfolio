@@ -6,22 +6,22 @@ import Head from "next/head";
 import { isMobile } from "react-device-detect";
 
 const contact = () => {
-    return (
+  return (
+    <>
+      <Head>
+        <title>Contact - Abhi Dadhaniya</title>
+      </Head>
+      {!isMobile ? (
         <>
-            <Head>
-                <title>Developer Abhi || Contact</title>
-            </Head>
-            {!isMobile ? (
-                <>
-                    <SocialLine />
-                    <EmailLine />
-                </>
-            ) : (
-                <></>
-            )}
-            <Layout component={<Contact />} />
+          <SocialLine />
+          <EmailLine />
         </>
-    );
+      ) : (
+        <></>
+      )}
+      <Layout component={<Contact />} />
+    </>
+  );
 };
 
 export default contact;

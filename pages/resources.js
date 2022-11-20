@@ -3,14 +3,14 @@ import Layout from "../components/Layout";
 import Head from "next/head";
 
 const DevelopmentResources = () => {
-    return (
-        <>
-            <Head>
-                <title>Developer Abhi || Resources</title>
-            </Head>
-            <Layout component={<Resource />} />
-        </>
-    );
+  return (
+    <>
+      <Head>
+        <title>Resources - Abhi Dadhaniya</title>
+      </Head>
+      <Layout component={<Resource />} />
+    </>
+  );
 };
 
 export default DevelopmentResources;

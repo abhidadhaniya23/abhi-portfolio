@@ -1,45 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: codeFont;
-        src: url("/font/CascadiaCode.woff2");
-    }
-    @font-face {
-        font-family: textFont;
-        src: url("/font/Sohne.woff");
-    }
+  @font-face {
+    font-family: codeFont;
+    src: url("/font/CascadiaCode.woff2");
+  }
+  @font-face {
+    font-family: textFont;
+    src: url("/font/Sohne.woff");
+  }
 }
 
-.inter {
-    font-family: "Inter", sans-serif;
+.projectDiv a span {
+  @apply !block;
 }
 
 .touch-disable {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 ::-moz-selection {
-    color: #071124;
-    background: #65feda;
+  color: #071124;
+  background: #65feda;
 }
 
 ::selection {
-    color: #071124;
-    background: #65feda;
+  color: #071124;
+  background: #65feda;
 }
 
 p,
@@ -51,68 +50,68 @@ h5,
 h6,
 button,
 a {
-    @apply font-bodyText;
+  @apply font-bodyText;
 }
 
 .btn {
-    @apply border-[1px] duration-300 hover:bg-cyanPrimary/5 mt-5 text-base md:text-xl border-cyanPrimary py-3 px-7 text-cyanPrimary rounded-[4px];
+  @apply border-[1px] duration-300 hover:bg-cyanPrimary/5 mt-5 text-base md:text-xl border-cyanPrimary py-3 px-7 text-cyanPrimary rounded-[4px];
 }
 
 .input {
-    @apply px-5 py-3 duration-200 border-[1px] border-transparent rounded-[4px] outline-none bg-darkBluePrimary focus:border-cyanPrimary text-lightBluePrimary placeholder:text-lightBlueSecondary;
+  @apply px-5 py-3 duration-200 border-[1px] border-transparent rounded-[4px] outline-none bg-darkBluePrimary focus:border-cyanPrimary text-lightBluePrimary placeholder:text-lightBlueSecondary;
 }
 
 .loader {
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    -webkit-animation: spin 1s linear infinite; /* Safari */
-    animation: spin 1s linear infinite;
-    @apply border-4 border-t-4 border-t-cyanPrimary border-cyanPrimary/10;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  @apply border-4 border-t-4 border-t-cyanPrimary border-cyanPrimary/10;
 }
 /* Safari */
 @-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {
-    height: 5px;
-    width: 7px;
+  height: 5px;
+  width: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    @apply bg-darkBluePrimary;
-    border-radius: 500px;
+  @apply bg-darkBluePrimary;
+  border-radius: 500px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    @apply bg-cyanPrimary/10;
-    border-radius: 500px;
+  @apply bg-cyanPrimary/10;
+  border-radius: 500px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    @apply bg-cyanPrimary;
-    /* background: #7a7f9c; */
+  @apply bg-cyanPrimary;
+  /* background: #7a7f9c; */
 }
 
 /* ---------- new blog styles ------------
