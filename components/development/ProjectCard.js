@@ -44,7 +44,7 @@ const ProjectCard = ({ name, img, index, url }) => {
         <h2 className="px-2 flex flex-row justify-between items-center w-11/12 md:w-full py-1 text-base text-center md:py-2 md:px-4 md:text-lg text-white">
           {name}
           <span>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i className="fa-solid fa-arrow-up-right-from-square"></i>
           </span>
         </h2>
       </motion.a>
