@@ -58,11 +58,11 @@ const About = () => {
               exit="exit"
               className="my-2 leading-8"
             >
-              Hello, I helps businesses to grow their online presence and
-              increase their sales by creating beautiful animated, responsive
-              and fast websites. I work at the intersection of design and
-              development, and I am passionate about creating websites that
-              provide intuitive, pixel-perfect user experiences.
+              I helps businesses to grow their online presence and increase
+              their sales by creating beautiful animated, responsive and fast
+              websites. I work at the intersection of design and development,
+              and I am passionate about creating websites that provide
+              intuitive, pixel-perfect user experiences.
             </motion.p>
             <div className="mt-8 text-justify md:mt-5 md:text-left">
               <motion.p
