@@ -28,16 +28,13 @@ const Layout = ({ component, width }) => {
         />
         <meta
           property="og:image"
-          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
+          content="https://www.abhidadhaniya.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
         />
         <meta
           property="og:description"
           content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
         />
-        <meta
-          property="og:url"
-          content={`https://www.web-developer-abhi.me/`}
-        />
+        <meta property="og:url" content={`https://www.abhidadhaniya.com/`} />
         <meta itemProp="name" content="MERN Stack Developer - Abhi Dadhaniya" />
         <meta
           itemProp="description"
@@ -45,12 +42,12 @@ const Layout = ({ component, width }) => {
         />
         <meta
           itemProp="image"
-          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
+          content="https://www.abhidadhaniya.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
         />
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:image"
-          content="https://www.web-developer-abhi.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
+          content="https://www.abhidadhaniya.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
         />
         <meta
           name="twitter:title"

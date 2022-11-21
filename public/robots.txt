@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.web-developer-abhi.me/api/sitemap
+Sitemap: https://www.abhidadhaniya.com/api/sitemap
