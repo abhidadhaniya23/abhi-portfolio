@@ -100,7 +100,7 @@ const HeaderIntro = () => {
           exit="exit"
           className="text-base mb-7 md:mb-10 md:text-xl text-lightBlueSecondary/80"
         >
-          I'm a full stack web developer based in India. I helps clients to
+          I&apos;m a full stack web developer based in India. I helps clients to
           build beautiful animated and stunning websites from scratch.
         </motion.p>
         <motion.div
