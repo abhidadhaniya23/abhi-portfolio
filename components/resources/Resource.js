@@ -29,8 +29,8 @@ const Resource = () => {
   return (
     <>
       <div className="py-10 px-7">
-        <Heading heading="Web Development Resources" />
-        <div className="w-[70%] mx-auto flex flex-col items-center justify-center mb-16 mt-20">
+        <Heading heading="Development Resources" />
+        <div className="w-[95%] sm:w-[70%] mx-auto flex flex-col items-center justify-center mb-16 mt-20">
           <motion.div
             variants={animations.photo}
             initial="initial"
@@ -52,7 +52,7 @@ const Resource = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="mb-3 tracking-wide"
+              className="mb-3 tracking-tight sm:tracking-wide"
             >
               Eager to start web development but don&apos;t know from where to
               start? Don&apos;t worry we have got your back. I and
@@ -63,7 +63,7 @@ const Resource = () => {
                   rel="noreferrer"
                   href="https://www.rohankiratsata.xyz/"
                 >
-                  Rohan,
+                  Rohan
                 </a>
               </span>
               have created this resources. If you visit this page, it will glad
