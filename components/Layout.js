@@ -13,6 +13,10 @@ const Layout = ({ component, width }) => {
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="google-site-verification"
+          content="VsmjAnwqQzU4V2OyZHMBAEz3_h26oLzvfFRzvMKPYbs"
+        />
         <meta name="title" content="MERN Stack Developer - Abhi Dadhaniya" />
         <meta
           name="description"
