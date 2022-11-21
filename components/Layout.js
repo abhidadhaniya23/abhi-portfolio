@@ -65,10 +65,6 @@ const Layout = ({ component, width }) => {
           name="keywords"
           content="Abhi Dadhaniya, MERN Stack, Developer, Portfolio"
         />
-        <meta
-          name="google-site-verification"
-          content="eVbmWrqbc7ik87pvSg21efPrLvJ24IZo-58yBvzSxDY"
-        />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#071124" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
