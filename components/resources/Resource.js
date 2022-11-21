@@ -1,6 +1,5 @@
 import Heading from "../Heading";
 import Image from "next/image";
-import resources from "../../public/resources.png";
 import { motion } from "framer-motion";
 
 const Resource = () => {
