@@ -89,7 +89,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="my-2 text-5xl font-bold md:my-5 md:text-7xl text-lightBlueSecondary"
+          className="my-3 text-5xl font-bold md:my-5 md:text-7xl text-lightBlueSecondary"
         >
           I build things for web.
         </motion.h2>
@@ -100,8 +100,8 @@ const HeaderIntro = () => {
           exit="exit"
           className="text-base mb-7 md:mb-10 md:text-xl text-lightBlueSecondary/80"
         >
-          I am a Full Stack Web Developer with 2+ years of experience in
-          JavaScript, ReactJS, NodeJS & ExpressJS and MongoDB as Database.
+          I'm a full stack web developer based in India. I helps clients to
+          build beautiful animated and stunning websites from scratch.
         </motion.p>
         <motion.div
           variants={animations.btn}
@@ -110,7 +110,7 @@ const HeaderIntro = () => {
           exit="exit"
         >
           <Link href="/contact">
-            <a className=" btn">Hire Me</a>
+            <a className=" btn">Get in Touch</a>
           </Link>
         </motion.div>
       </div>

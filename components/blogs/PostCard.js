@@ -29,7 +29,7 @@ function PostCard({ title, date, description, slug, index, tags }) {
           mass: 1,
         }}
         viewport={{ once: true }}
-        whileInView="animate"
+        animate="animate"
         exit="exit"
         className="touch-disable duration-200 transition-all hover:bg-cyanPrimary/5 border-cyanPrimary/10 border-2 rounded-lg px-7 sm:px-10 py-3 sm:py-4 my-2 mx-2"
       >

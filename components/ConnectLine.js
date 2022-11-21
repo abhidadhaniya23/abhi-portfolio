@@ -35,6 +35,11 @@ const SocialLine = () => {
       link: "https://www.linkedin.com/in/abhidadhaniya/",
       icon: "RiLinkedinLine",
     },
+    {
+      label: "Email",
+      link: "mailto:abhidadhaniya23@gmail.com",
+      icon: "FiMail",
+    },
   ];
   return (
     <>
@@ -75,7 +80,7 @@ const EmailLine = () => {
   };
   return (
     <>
-      <div className="absolute left-0 right-auto flex flex-row-reverse items-center justify-center md:left-auto md:right-0 md:flex-row bottom-5 md:bottom-10">
+      <div className="sm:flex hidden absolute left-0 right-auto flex-row-reverse items-center justify-center md:left-auto md:right-0 md:flex-row bottom-5 md:bottom-10">
         <motion.div
           variants={animations.emailAnimate}
           animate="animate"
@@ -137,6 +142,8 @@ const Icon = ({ index, icon, link, label }) => {
                 <FiTwitter />
               ) : icon === "FiGithub" ? (
                 <FiGithub />
+              ) : icon === "FiMail" ? (
+                <FiMail className="sm:hidden block" />
               ) : (
                 <RiLinkedinLine />
               )}

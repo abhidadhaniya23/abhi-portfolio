@@ -42,18 +42,25 @@ const Development = () => {
       id: 97600532,
     },
     {
-      name: "Movie App",
-      img: "/project/movieApp.gif",
-      url: "https://react-movie-app-000.netlify.app/",
-      categoryId: [1],
-      id: 766507,
-    },
-    {
       name: "xLinks Pro",
       img: "/project/xLinks.gif",
       url: "https://www.xlinks.pro/",
       categoryId: [1],
       id: 76789,
+    },
+    {
+      name: "Web Development Resources",
+      img: "/project/webDevResources.gif",
+      url: "/resources",
+      categoryId: [1],
+      id: 9765999,
+    },
+    {
+      name: "Movie App",
+      img: "/project/movieApp.gif",
+      url: "https://react-movie-app-000.netlify.app/",
+      categoryId: [1],
+      id: 766507,
     },
     {
       name: "Image Gallery",
@@ -62,13 +69,13 @@ const Development = () => {
       categoryId: [1],
       id: 18930,
     },
-    {
-      name: "Food Website",
-      img: "/project/foodWeb.gif",
-      url: "https://web-developer-abhi.herokuapp.com/Food-site/index.html",
-      categoryId: [1],
-      id: 97652,
-    },
+    // {
+    //   name: "Food Website",
+    //   img: "/project/foodWeb.gif",
+    //   url: "https://web-developer-abhi.herokuapp.com/Food-site/index.html",
+    //   categoryId: [1],
+    //   id: 97652,
+    // },
   ];
 
   const [filteredProjects, setFilteredProjects] = useState([]);
