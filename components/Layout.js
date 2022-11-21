@@ -17,14 +17,18 @@ const Layout = ({ component, width }) => {
           name="google-site-verification"
           content="VsmjAnwqQzU4V2OyZHMBAEz3_h26oLzvfFRzvMKPYbs"
         />
-        <meta name="title" content="MERN Stack Developer - Abhi Dadhaniya" />
+        <meta
+          name="title"
+          content="Abhi Dadhaniya - Full Stack Web Developer"
+        />
         <meta
           name="description"
-          content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
+          content="I'm a full stack web developer based in India. I helps clients to
+          build beautiful animated and stunning websites from scratch."
         />
         <meta
           property="og:title"
-          content="MERN Stack Developer - Abhi Dadhaniya"
+          content="Abhi Dadhaniya - Full Stack Web Developer"
         />
         <meta
           property="og:image"
@@ -32,13 +36,18 @@ const Layout = ({ component, width }) => {
         />
         <meta
           property="og:description"
-          content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
+          content="I'm a full stack web developer based in India. I helps clients to
+          build beautiful animated and stunning websites from scratch."
         />
         <meta property="og:url" content={`https://www.abhidadhaniya.com/`} />
-        <meta itemProp="name" content="MERN Stack Developer - Abhi Dadhaniya" />
+        <meta
+          itemProp="name"
+          content="Abhi Dadhaniya - Full Stack Web Developer"
+        />
         <meta
           itemProp="description"
-          content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
+          content="I'm a full stack web developer based in India. I helps clients to
+          build beautiful animated and stunning websites from scratch."
         />
         <meta
           itemProp="image"
@@ -51,16 +60,17 @@ const Layout = ({ component, width }) => {
         />
         <meta
           name="twitter:title"
-          content="MERN Stack Developer - Abhi Dadhaniya"
+          content="Abhi Dadhaniya - Full Stack Web Developer"
         />
         <meta
           name="twitter:description"
-          content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
+          content="I'm a full stack web developer based in India. I helps clients to
+          build beautiful animated and stunning websites from scratch."
         />
         <meta name="twitter:creator" content="@AbhiDadhaniya3" />
         <meta
           name="keywords"
-          content="Abhi Dadhaniya, MERN Stack, Developer, Portfolio"
+          content="Abhi Dadhaniya, MERN Stack, Developer, Portfolio,stunning websites, websites from scratch, animated websites, freelancer"
         />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#071124" />
