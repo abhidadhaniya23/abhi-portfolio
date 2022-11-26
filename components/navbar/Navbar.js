@@ -98,7 +98,7 @@ const Navbar = () => {
                 </Link>
               ))}
             </ul>
-            <a
+            {/* <a
               href="resume.pdf"
               download={false}
               target="_blank"
@@ -106,7 +106,7 @@ const Navbar = () => {
               className="btn"
             >
               Resume
-            </a>
+            </a> */}
           </motion.header>
         )
       ) : (
@@ -144,7 +144,7 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
-          <a
+          {/* <a
             href="resume.pdf"
             download={false}
             target="_blank"
@@ -152,7 +152,7 @@ const Navbar = () => {
             className="btn"
           >
             Resume
-          </a>
+          </a> */}
         </header>
       )}
     </>
