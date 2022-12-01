@@ -10,12 +10,6 @@ const about = () => {
       <Head>
         <title>About - Abhi Dadhaniya</title>
       </Head>
-      {!isMobile && (
-        <>
-          <SocialLine />
-          <EmailLine />
-        </>
-      )}
       <Layout component={<About />} />
     </>
   );
