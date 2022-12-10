@@ -5,6 +5,8 @@ import MenuBarContext from "../context/MenuBarContext";
 import { useState } from "react";
 import Head from "next/head";
 import Development from "./development/Development";
+import twitter from "../src/twitter.png";
+import og from "../src/og.png";
 
 const Layout = ({ component, width }) => {
   const [menuActive, setMenuActive] = useState(false);
@@ -30,10 +32,7 @@ const Layout = ({ component, width }) => {
           property="og:title"
           content="Abhi Dadhaniya - Full Stack Web Developer"
         />
-        <meta
-          property="og:image"
-          content="https://www.abhidadhaniya.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
-        />
+        <meta property="og:image" content={og} />
         <meta
           property="og:description"
           content="I'm a full stack web developer based in India. I helps clients to
@@ -49,15 +48,12 @@ const Layout = ({ component, width }) => {
           content="I'm a full stack web developer based in India. I helps clients to
           build beautiful animated and stunning websites from scratch."
         />
-        <meta
+        {/* <meta
           itemProp="image"
           content="https://www.abhidadhaniya.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          name="twitter:image"
-          content="https://www.abhidadhaniya.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
-        />
+        /> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={twitter} />
         <meta
           name="twitter:title"
           content="Abhi Dadhaniya - Full Stack Web Developer"

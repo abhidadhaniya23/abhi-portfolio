@@ -25,11 +25,12 @@ function Post({ data, content }) {
         <meta name="title" content={data.title} />
         <meta property="og:title" content={data.title} />
         <meta property="og:description" content={data.description} />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content={data.title} />
-        <meta property="twitter:description" content={data.description} />
-        <meta property="twitter:image" content={data.image} />
-        <meta property="twitter:creator" content="@AbhiDadhaniya3" />
+        <meta property="og:image" content={data.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={data.title} />
+        <meta name="twitter:description" content={data.description} />
+        <meta name="twitter:image" content={data.image} />
+        <meta name="twitter:creator" content="@AbhiDadhaniya3" />
         <meta
           name="description"
           content="I have been a web developer for the past 2 years. I specialize in JavaScript, ReactJS, NodeJS & ExpressJS and I’m using MongoDB as Database."
