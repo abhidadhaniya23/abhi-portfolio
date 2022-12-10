@@ -4,9 +4,6 @@ import Menu from "./menu/Menu";
 import MenuBarContext from "../context/MenuBarContext";
 import { useState } from "react";
 import Head from "next/head";
-import Development from "./development/Development";
-import twitter from "../public/twitter.png";
-import og from "../public/og.png";
 
 const Layout = ({ component, width }) => {
   const [menuActive, setMenuActive] = useState(false);
