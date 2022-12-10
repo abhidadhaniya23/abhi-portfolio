@@ -32,7 +32,10 @@ const Layout = ({ component, width }) => {
           property="og:title"
           content="Abhi Dadhaniya - Full Stack Web Developer"
         />
-        <meta property="og:image" content="og.png" />
+        <meta
+          property="og:image"
+          content="https://www.abhidadhaniya.com/og.png"
+        />
         <meta
           property="og:description"
           content="I'm a full stack web developer based in India. I helps clients to
@@ -48,12 +51,12 @@ const Layout = ({ component, width }) => {
           content="I'm a full stack web developer based in India. I helps clients to
           build beautiful animated and stunning websites from scratch."
         />
-        {/* <meta
-          itemProp="image"
-          content="https://www.abhidadhaniya.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpic.7a6f735d.jpg&w=640&q=75"
-        /> */}
+        <meta itemProp="image" content="https://www.abhidadhaniya.com/og.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="twitter.png" />
+        <meta
+          name="twitter:image"
+          content="https://www.abhidadhaniya.com/twitter.png"
+        />
         <meta
           name="twitter:title"
           content="Abhi Dadhaniya - Full Stack Web Developer"
