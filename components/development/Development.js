@@ -42,9 +42,9 @@ const Development = () => {
       id: 97600532,
     },
     {
-      name: "xLinks Pro",
-      img: "/project/xLinks.gif",
-      url: "https://www.xlinks.pro/",
+      name: "Foodie VVN (Product)",
+      img: "/project/foodievvn.gif",
+      url: "https://www.foodievvn.com/?utm_campaign=portfolio&utm_medium=website&utm_source=abhi",
       categoryId: [1],
       id: 76789,
     },
