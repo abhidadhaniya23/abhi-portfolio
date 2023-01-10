@@ -68,7 +68,7 @@ const Timeline = () => {
       title: "Become MERN Stack Developer",
       subtitle: "2022 July",
       icon: "fa-solid fa-check-double",
-      link: "/skills",
+      link: "/tech-stack",
     },
     {
       title: "Started GigaWeb.in",
