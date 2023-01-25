@@ -98,15 +98,14 @@ const Navbar = () => {
                 </Link>
               ))}
             </ul>
-            {/* <a
-              href="resume.pdf"
-              download={false}
+            <a
+              href="https://rxresu.me/abhidadhaniya23/abhi-resume"
               target="_blank"
               rel="noreferrer"
               className="btn"
             >
               Resume
-            </a> */}
+            </a>
           </motion.header>
         )
       ) : (
@@ -144,15 +143,14 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
-          {/* <a
-            href="resume.pdf"
-            download={false}
+          <a
+            href="https://rxresu.me/abhidadhaniya23/abhi-resume"
             target="_blank"
             rel="noreferrer"
             className="btn"
           >
             Resume
-          </a> */}
+          </a>
         </header>
       )}
     </>
