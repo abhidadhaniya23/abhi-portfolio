@@ -44,7 +44,7 @@ const Navbar = () => {
     },
     {
       name: "Blogs",
-      link: "https://blogs.abhidadhaniya.com",
+      link: "https://blogs.abhidadhaniya.com?ref=portfolio",
     },
     {
       name: "Contact Me",
