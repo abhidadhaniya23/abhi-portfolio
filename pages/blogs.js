@@ -1,11 +1,15 @@
 import Layout from "../components/Layout";
-// import Blogs from "../components/blogs/Blogs";
 import PostCard from "../components/blogs/PostCard";
 import getPosts from "../getPosts";
 import Head from "next/head";
 import Heading from "../components/Heading";
+import { useEffect } from "react";
 
-export default function blog({ posts }) {
+export default function Blog({ posts }) {
+  useEffect(() => {
+    window.location.href = "https://blogs.abhidadhaniya.com?ref=portfolio";
+  }, []);
+
   return (
     <>
       <Head>
