@@ -77,18 +77,12 @@ const Layout = ({ component, width }) => {
       </Head>
       <MenuBarContext.Provider value={{ menuActive, setMenuActive }}>
         <Menu />
-        <div className="flex flex-row items-center min-h-screen bg-gradient-to-r to-darkBluePrimary from-darkLightBluePrimary">
-          <div className="absolute top-0 z-10 w-full md:relative md:w-1/5">
+        <div className="grid grid-cols-10 items-center min-h-screen bg-gradient-to-r to-darkBluePrimary from-darkLightBluePrimary">
+          <div className="z-20 absolute md:relative col-span-2">
             <Navbar />
           </div>
-          <div className="flex flex-row items-center justify-center w-full">
-            <div
-              className={`${
-                width ? "md:w-3/4" : "md:w-3/5"
-              } flex flex-col items-center justify-center w-full px-0 mx-auto md:px-0`}
-            >
-              {component}
-            </div>
+          <div className="col-span-10 md:col-span-8 max-w-5xl mx-auto">
+            {component}
           </div>
         </div>
       </MenuBarContext.Provider>

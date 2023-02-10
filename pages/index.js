@@ -57,7 +57,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="sm:hidden block relative my-1 text-base md:my-5 md:text-2xl font-codeText text-cyanPrimary"
+          className="md:hidden block relative my-1 text-base md:my-5 md:text-2xl font-codeText text-cyanPrimary"
         >
           <Image
             src={logo}
@@ -110,7 +110,7 @@ const HeaderIntro = () => {
           exit="exit"
         >
           <Link href="/contact">
-            <a className=" btn">Get in Touch</a>
+            <a className="btn">Get in Touch</a>
           </Link>
         </motion.div>
       </div>
