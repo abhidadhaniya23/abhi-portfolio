@@ -24,11 +24,9 @@ const SkillCard = ({ name, url, index }) => {
       animate="animate"
       exit="exit"
       initial="initial"
-      className="flex flex-row items-center rounded-[4px] justify-start w-full py-2 text-lg lg:text-xl text-left px-4 bg-darkBluePrimary text-lightBluePrimary"
+      className="gap-2 flex flex-row items-center rounded-[4px] justify-start w-full py-2 text-xl text-left px-4 bg-darkBluePrimary text-lightBluePrimary"
     >
-      <div className="w-5 mt-1 mr-4 lg:w-8">
-        <Image src={url} width={35} height={35} alt={name} />
-      </div>
+      <Image src={url} width={30} height={30} alt={name} className="my-2" />
       {name}
     </motion.h3>
   );

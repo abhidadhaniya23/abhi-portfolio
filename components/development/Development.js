@@ -131,6 +131,7 @@ const Development = () => {
           className="flex flex-row items-start justify-center mt-10 flex-wrap"
         >
           <AnimatePresence>
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-5"> */}
             {filteredProjects.map((project, index) => (
               <ProjectCard
                 index={index}
@@ -142,6 +143,7 @@ const Development = () => {
                 key={project.id}
               />
             ))}
+            {/* </div> */}
           </AnimatePresence>
         </motion.div>
       </div>

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,7 +30,7 @@ const ProjectCard = ({ name, img, index, url }) => {
           animate="animate"
           exit="exit"
           className={
-            "projectDiv cursor-pointer flex flex-col items-center group sm:w-1/2 w-11/12 bg-darkBluePrimary p-3 justify-center mx-2 lg:mx-5 mb-3 rounded-lg"
+            "projectDiv cursor-pointer flex flex-col items-center group sm:w-3/4 w-full bg-darkBluePrimary p-3 justify-center mx-2 lg:mx-5 mb-3 rounded-lg"
           }
         >
           <div className="rounded-lg overflow-hidden">
