@@ -58,7 +58,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="md:hidden block relative my-1 text-base md:my-5 md:text-2xl font-codeText text-cyanPrimary"
+          className="lg:hidden block relative my-1 text-base lg:my-5 lg:text-2xl font-codeText text-cyanPrimary"
         >
           <Image
             src="/Alogo.svg"
@@ -72,7 +72,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="relative my-1 text-base md:my-5 md:text-2xl font-codeText text-cyanPrimary"
+          className="relative my-1 text-base lg:my-5 lg:text-2xl font-codeText text-cyanPrimary"
         >
           Hi, My name is
         </motion.span>
@@ -81,7 +81,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="text-4xl font-bold md:my-0 md:text-6xl text-lightBluePrimary"
+          className="text-4xl font-bold lg:my-0 lg:text-6xl text-lightBluePrimary"
         >
           Abhi Dadhaniya
         </motion.h1>
@@ -90,7 +90,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="my-3 text-5xl font-bold md:my-5 md:text-7xl text-lightBlueSecondary"
+          className="my-3 text-5xl font-bold lg:my-5 lg:text-7xl text-lightBlueSecondary"
         >
           I build things for web.
         </motion.h2>
@@ -99,7 +99,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="text-base mb-7 md:mb-10 md:text-xl text-lightBlueSecondary/80"
+          className="text-base mb-7 lg:mb-10 lg:text-xl text-lightBlueSecondary/80"
         >
           I&apos;m a full stack web developer based in India. I help clients to
           build beautiful animated and stunning websites from scratch.

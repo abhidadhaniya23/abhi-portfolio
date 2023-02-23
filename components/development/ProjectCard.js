@@ -30,7 +30,7 @@ const ProjectCard = ({ name, img, index, url }) => {
           animate="animate"
           exit="exit"
           className={
-            "projectDiv cursor-pointer flex flex-col items-center group sm:w-1/2 w-11/12 bg-darkBluePrimary p-3 justify-center mx-2 md:mx-5 mb-3 rounded-lg"
+            "projectDiv cursor-pointer flex flex-col items-center group sm:w-1/2 w-11/12 bg-darkBluePrimary p-3 justify-center mx-2 lg:mx-5 mb-3 rounded-lg"
           }
         >
           <div className="rounded-lg overflow-hidden">
@@ -42,7 +42,7 @@ const ProjectCard = ({ name, img, index, url }) => {
               rel="noreferrer"
             />
           </div>
-          <h2 className="px-2 flex flex-row justify-between items-center w-11/12 md:w-full py-1 text-base text-center md:py-2 md:px-4 md:text-lg text-white">
+          <h2 className="px-2 flex flex-row justify-between items-center w-11/12 lg:w-full py-1 text-base text-center lg:py-2 lg:px-4 lg:text-lg text-white">
             {name}
             <span>
               <i className="fa-solid fa-arrow-up-right-from-square"></i>

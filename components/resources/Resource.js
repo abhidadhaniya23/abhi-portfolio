@@ -45,7 +45,7 @@ const Resource = () => {
               alt="Web Development Resources"
             />
           </motion.div>
-          <div className="w-full mx-auto text-lightBluePrimary px-1 text-left md:text-left py-10 text-lg font-bodyText flex flex-col items-center justify-center">
+          <div className="w-full mx-auto text-lightBluePrimary px-1 text-left lg:text-left py-10 text-lg font-bodyText flex flex-col items-center justify-center">
             <motion.span
               variants={animations.desc1}
               initial="initial"

@@ -53,14 +53,14 @@ const Navbar = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="md:hidden fixed top-0 flex flex-col items-center justify-center w-full min-h-screen px-5 mx-auto duration-150 shadow-2xl md:px-16 bg-darkBluePrimary/90 backdrop-blur-sm md:bg-darkBluePrimary"
+          className="lg:hidden fixed top-0 flex flex-col items-center justify-center w-full min-h-screen px-5 mx-auto duration-150 shadow-2xl lg:px-16 bg-darkBluePrimary/90 backdrop-blur-sm lg:bg-darkBluePrimary"
         >
           <LogoImage />
           <NavbarLinks linksData={linksData} />
           <ResumeButton />
         </motion.header>
       )}
-      <header className="hidden fixed top-0 md:flex flex-col items-center justify-center min-h-screen px-5 mx-auto duration-150 shadow-2xl md:px-16 bg-darkBluePrimary/90 backdrop-blur-sm md:bg-darkBluePrimary">
+      <header className="hidden fixed top-0 lg:flex flex-col items-center justify-center min-h-screen px-5 mx-auto duration-150 shadow-2xl lg:px-16 bg-darkBluePrimary/90 backdrop-blur-sm lg:bg-darkBluePrimary">
         <LogoImage />
         <NavbarLinks linksData={linksData} />
         <ResumeButton />
@@ -87,17 +87,10 @@ const NavbarLinks = ({ linksData }) => {
           key={index}
           href={item.link}
           onClick={() => setMenuActive(false)}
-          className={`${
-            router.pathname == "/"
-              ? "text-lightBluePrimary"
-              : item.name
-                  .toLowerCase()
-                  .includes(router.pathname.substring(1).split("-")[0]) ||
-                item.name
-                  .toLowerCase()
-                  .includes(router.pathname.substring(1).split("/")[0])
+          className={`${router.pathname === "/" && "!text-lightBluePrimary"} ${
+            item.link === router.pathname
               ? "text-cyanPrimary"
-              : "text-lightBluePrimary"
+              : "text-lightBluePrimary/70"
           } w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}
         >
           <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>

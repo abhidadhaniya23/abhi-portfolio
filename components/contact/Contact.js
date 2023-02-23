@@ -59,7 +59,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="px-2 md:px-10">
+      <div className="px-2 lg:px-10">
         <Heading heading={"Get In Touch"} />
         <div className="mt-10 font-bodyText">
           <form

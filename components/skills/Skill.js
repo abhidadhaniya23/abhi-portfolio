@@ -99,18 +99,18 @@ const Skill = () => {
     <>
       <div className="py-20">
         <Heading heading={"Tech Stack"} />
-        <div className="flex flex-col items-start justify-center md:flex-row">
+        <div className="flex flex-col items-start justify-center lg:flex-row">
           <div className="flex flex-col items-center justify-center">
             <motion.h2
               variants={animations.fullStack}
               animate="animate"
               exit="exit"
               initial="initial"
-              className="px-32 md:px-24 py-5 my-10 text-2xl text-center rounded-[4px] bg-darkBluePrimary text-cyanPrimary"
+              className="px-32 lg:px-24 py-5 my-10 text-2xl text-center rounded-[4px] bg-darkBluePrimary text-cyanPrimary"
             >
               Full Stack
             </motion.h2>
-            <div className="flex flex-row flex-wrap items-center justify-center w-[95%] md:w-[20rem]">
+            <div className="flex flex-row flex-wrap items-center justify-center w-[95%] lg:w-[20rem]">
               {skillsData.map((skill, index) => (
                 <CircularProgressBar
                   key={index + 1}
@@ -123,13 +123,13 @@ const Skill = () => {
             </div>
           </div>
           <div className="flex flex-row items-start justify-center mx-auto">
-            <div className="flex flex-col items-center justify-center mx-2 md:mx-5">
+            <div className="flex flex-col items-center justify-center mx-2 lg:mx-5">
               <motion.h2
                 variants={animations.tool}
                 animate="animate"
                 exit="exit"
                 initial="initial"
-                className="w-full px-10 md:px-16 py-4 md:py-5 mt-10 mb-5 md:my-10 text-lg md:text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary"
+                className="w-full px-10 lg:px-16 py-4 lg:py-5 mt-10 mb-5 lg:my-10 text-lg lg:text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary"
               >
                 Tools
               </motion.h2>
@@ -142,13 +142,13 @@ const Skill = () => {
                 />
               ))}
             </div>
-            <div className="flex flex-col items-center justify-center mx-2 md:mx-5">
+            <div className="flex flex-col items-center justify-center mx-2 lg:mx-5">
               <motion.h2
                 variants={animations.design}
                 animate="animate"
                 exit="exit"
                 initial="initial"
-                className="w-full px-10 md:px-16 py-4 md:py-5 mt-10 mb-5 md:my-10 text-lg md:text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary"
+                className="w-full px-10 lg:px-16 py-4 lg:py-5 mt-10 mb-5 lg:my-10 text-lg lg:text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary"
               >
                 Design
               </motion.h2>

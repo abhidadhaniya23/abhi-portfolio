@@ -29,7 +29,7 @@ const GigaWebContent = () => {
     <>
       <div className="py-10 px-7">
         <Heading heading="GigaWeb Agency" />
-        <div className="flex flex-col items-center justify-center my-16 md:flex-row">
+        <div className="flex flex-col items-center justify-center my-16 lg:flex-row">
           <motion.div
             variants={animations.photo}
             initial="initial"
@@ -45,7 +45,7 @@ const GigaWebContent = () => {
               alt="Web Development Resources"
             />
           </motion.div>
-          <div className="text-lightBluePrimary px-1 text-left md:text-left md:px-10 py-10 text-lg font-bodyText flex w-full md:w-[60rem] flex-col items-center md:items-start justify-center">
+          <div className="text-lightBluePrimary px-1 text-left lg:text-left lg:px-10 py-10 text-lg font-bodyText flex w-full lg:w-[60rem] flex-col items-center lg:items-start justify-center">
             <motion.span
               variants={animations.desc1}
               initial="initial"
