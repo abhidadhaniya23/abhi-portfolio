@@ -64,8 +64,8 @@ const About = () => {
               exit="exit"
               className="my-2 leading-8"
             >
-              I helps businesses to grow their online presence and increase
-              their sales by creating beautiful animated, responsive and fast
+              I help businesses to grow their online presence and increase their
+              sales by creating beautiful animated, responsive and fast
               websites. I work at the intersection of design and development,
               and I am passionate about creating websites that provide
               intuitive, pixel-perfect user experiences.

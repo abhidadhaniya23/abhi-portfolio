@@ -79,10 +79,15 @@ const CircularProgressBar = ({ value, name, url, index }) => {
       animate="animate"
       exit="exit"
       initial="initial"
-      className="mb-3 mx-2 h-28 px-2 py-3 rounded-md bg-darkBluePrimary w-32 flex justify-center items-center text-center"
+      className="h-36 px-2 py-3 rounded-md bg-darkBluePrimary flex justify-center items-center text-center"
     >
-      <div className="flex flex-col justify-center items-center w-12">
-        <Image src={url} alt="Abhi Dadhaniya" />
+      <div className="flex flex-col justify-evenly h-full items-center w-12">
+        <Image
+          width={100}
+          height={100}
+          src={`/icons/${url}.svg`}
+          alt="Abhi Dadhaniya"
+        />
         <h2 className="text-xl text-center mt-1 font-codeText text-lightBluePrimary">
           {name}
         </h2>

@@ -24,10 +24,10 @@ const SkillCard = ({ name, url, index }) => {
       animate="animate"
       exit="exit"
       initial="initial"
-      className="flex flex-row items-center rounded-[4px] justify-start w-full py-2 mb-3 text-lg lg:text-xl text-left px-4 bg-darkBluePrimary text-lightBluePrimary"
+      className="flex flex-row items-center rounded-[4px] justify-start w-full py-2 text-lg lg:text-xl text-left px-4 bg-darkBluePrimary text-lightBluePrimary"
     >
       <div className="w-5 mt-1 mr-4 lg:w-8">
-        <Image src={url} alt={name} />
+        <Image src={url} width={35} height={35} alt={name} />
       </div>
       {name}
     </motion.h3>

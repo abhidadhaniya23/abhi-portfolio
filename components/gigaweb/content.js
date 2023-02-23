@@ -27,7 +27,7 @@ const GigaWebContent = () => {
   };
   return (
     <>
-      <div className="py-10 px-7">
+      <div className="py-10">
         <Heading heading="GigaWeb Agency" />
         <div className="flex flex-col items-center justify-center my-16 lg:flex-row">
           <motion.div

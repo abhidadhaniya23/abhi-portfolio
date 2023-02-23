@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         />
         <meta
           name="description"
-          content="I'm a full stack web developer based in India. I helps clients to
+          content="I'm a full stack web developer based in India. I help clients to
           build beautiful animated and stunning websites from scratch."
         />
         <meta
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         />
         <meta
           property="og:description"
-          content="I'm a full stack web developer based in India. I helps clients to
+          content="I'm a full stack web developer based in India. I help clients to
           build beautiful animated and stunning websites from scratch."
         />
         <meta property="og:url" content={`https://www.abhidadhaniya.com/`} />
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
         />
         <meta
           itemProp="description"
-          content="I'm a full stack web developer based in India. I helps clients to
+          content="I'm a full stack web developer based in India. I help clients to
           build beautiful animated and stunning websites from scratch."
         />
         <meta itemProp="image" content="https://www.abhidadhaniya.com/og.png" />
@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
         />
         <meta
           name="twitter:description"
-          content="I'm a full stack web developer based in India. I helps clients to
+          content="I'm a full stack web developer based in India. I help clients to
           build beautiful animated and stunning websites from scratch."
         />
         <meta name="twitter:creator" content="@AbhiDadhaniya3" />

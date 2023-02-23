@@ -5,18 +5,8 @@ import SkillCard from "./SkillCard";
 import { motion } from "framer-motion";
 
 // Logo Import
-import ReactJS from "../../public/icons/ReactJS.svg";
-import ExpressJS from "../../public/icons/ExpressJS.svg";
-import NodeJS from "../../public/icons/NodeJS.svg";
-import MongoDB from "../../public/icons/MongoDB.svg";
-import Figma from "../../public/icons/Figma.svg";
 import NextJS from "../../public/icons/NextJS.svg";
-import Photoshop from "../../public/icons/Photoshop.svg";
-import Firebase from "../../public/icons/Firebase.svg";
-import Netlify from "../../public/icons/Netlify.svg";
-import Heroku from "../../public/icons/Heroku.svg";
 import TailwindCSS from "../../public/icons/TailwindCSS.svg";
-import Git from "../../public/icons/Git.svg";
 
 const Skill = () => {
   const value = 60;
@@ -40,51 +30,25 @@ const Skill = () => {
   const skillsData = [
     {
       name: "ReactJS",
-      url: ReactJS,
-      value: 65,
+      url: "ReactJS",
     },
     {
       name: "MongoDB",
-      url: MongoDB,
-      value: 50,
+      url: "MongoDB",
     },
     {
       name: "NodeJS",
-      url: NodeJS,
-      value: 70,
+      url: "NodeJS",
     },
     {
       name: "ExpressJS",
-      url: ExpressJS,
-      value: 80,
-    },
-  ];
-  const designData = [
-    {
-      name: "Figma",
-      url: Figma,
-    },
-    {
-      name: "Photoshop",
-      url: Photoshop,
+      url: "ExpressJS",
     },
   ];
   const toolData = [
     {
-      name: "Firebase",
-      url: Firebase,
-    },
-    {
-      name: "Netlify",
-      url: Netlify,
-    },
-    {
-      name: "Heroku",
-      url: Heroku,
-    },
-    {
-      name: "Git",
-      url: Git,
+      name: "TypeScript",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png",
     },
     {
       name: "TailwindCSS",
@@ -94,23 +58,43 @@ const Skill = () => {
       name: "NextJS",
       url: NextJS,
     },
+    {
+      name: "Redux",
+      url: "https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55",
+    },
+    {
+      name: "GraphQL",
+      url: "https://miro.medium.com/max/400/1*nP2C50GK4_-ly_R_mq3juQ.png",
+    },
+    {
+      name: "Firebase",
+      url: "https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png",
+    },
+    {
+      name: "PostgreSQL",
+      url: "https://assets.stickpng.com/images/584815fdcef1014c0b5e497a.png",
+    },
+    {
+      name: "Docker",
+      url: "https://cdn-icons-png.flaticon.com/512/919/919853.png",
+    },
   ];
   return (
     <>
       <div className="py-20">
         <Heading heading={"Tech Stack"} />
-        <div className="flex flex-col items-start justify-center lg:flex-row">
-          <div className="flex flex-col items-center justify-center">
+        <div className="mt-16 max-w-md lg:max-w-none mx-auto w-full flex flex-col items-center lg:items-start justify-center lg:flex-row gap-10">
+          <div className="w-full gap-4 flex flex-col items-center justify-center">
             <motion.h2
               variants={animations.fullStack}
               animate="animate"
               exit="exit"
               initial="initial"
-              className="px-32 lg:px-24 py-5 my-10 text-2xl text-center rounded-[4px] bg-darkBluePrimary text-cyanPrimary"
+              className="w-full py-4 lg:py-5 text-lg lg:text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary"
             >
               Full Stack
             </motion.h2>
-            <div className="flex flex-row flex-wrap items-center justify-center w-[95%] lg:w-[20rem]">
+            <div className="w-full grid gap-5 grid-cols-2 items-center justify-center">
               {skillsData.map((skill, index) => (
                 <CircularProgressBar
                   key={index + 1}
@@ -122,44 +106,27 @@ const Skill = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-row items-start justify-center mx-auto">
-            <div className="flex flex-col items-center justify-center mx-2 lg:mx-5">
+          <div className="w-full flex flex-row items-start justify-center">
+            <div className="w-full gap-4 flex flex-col items-center justify-center">
               <motion.h2
                 variants={animations.tool}
                 animate="animate"
                 exit="exit"
                 initial="initial"
-                className="w-full px-10 lg:px-16 py-4 lg:py-5 mt-10 mb-5 lg:my-10 text-lg lg:text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary"
+                className="w-full py-4 lg:py-5 text-lg lg:text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary"
               >
-                Tools
+                Languages & Tools
               </motion.h2>
-              {toolData.map((tool, index) => (
-                <SkillCard
-                  name={tool.name}
-                  index={index}
-                  key={index}
-                  url={tool.url}
-                />
-              ))}
-            </div>
-            <div className="flex flex-col items-center justify-center mx-2 lg:mx-5">
-              <motion.h2
-                variants={animations.design}
-                animate="animate"
-                exit="exit"
-                initial="initial"
-                className="w-full px-10 lg:px-16 py-4 lg:py-5 mt-10 mb-5 lg:my-10 text-lg lg:text-2xl rounded-[4px] text-center bg-darkBluePrimary text-cyanPrimary"
-              >
-                Design
-              </motion.h2>
-              {designData.map((designTool, index) => (
-                <SkillCard
-                  name={designTool.name}
-                  index={index}
-                  key={index}
-                  url={designTool.url}
-                />
-              ))}
+              <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
+                {toolData.map((tool, index) => (
+                  <SkillCard
+                    name={tool.name}
+                    index={index}
+                    key={index}
+                    url={tool.url}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
