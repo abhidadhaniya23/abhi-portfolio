@@ -77,12 +77,12 @@ const Layout = ({ children }) => {
       </Head>
       <MenuBarContext.Provider value={{ menuActive, setMenuActive }}>
         <Menu />
-        <div className="grid grid-cols-10 items-center min-h-screen bg-gradient-to-r to-darkBluePrimary from-darkLightBluePrimary">
-          <div className="z-20 absolute md:relative col-span-2">
+        <div className="grid grid-cols-10 items-center justify-center min-h-screen bg-gradient-to-r to-darkBluePrimary from-darkLightBluePrimary">
+          <div className="z-20 fixed top-0 lg:relative col-span-2 w-full">
             <Navbar />
           </div>
-          {/* <div className="col-span-10 md:col-span-8 lg:max-w-4xl mx-auto"> */}
-          <div className="col-span-10 max-w-4xl mx-auto items-center justify-center">
+          {/* <div className="col-span-10 lg:col-span-8 lg:max-w-4xl mx-auto"> */}
+          <div className="px-10 lg:px-0 col-span-10 lg:col-span-8 max-w-4xl w-full mx-auto self-center items-center justify-center">
             {children}
           </div>
         </div>

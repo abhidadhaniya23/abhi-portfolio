@@ -59,22 +59,22 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="px-7">
+      <div className="px-2 md:px-10">
         <Heading heading={"Get In Touch"} />
         <div className="mt-10 font-bodyText">
           <form
             ref={form}
             onSubmit={submitForm}
-            className="flex flex-col items-center justify-center"
+            className="flex flex-col items-center justify-center max-w-xl w-full mx-auto"
           >
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center gap-5 w-full">
               <motion.input
                 name="name"
                 variants={animations.nameInput}
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="w-full mr-2 input"
+                className="w-full input"
                 type="text"
                 placeholder="Full Name"
                 required
@@ -85,7 +85,7 @@ const Contact = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="w-full ml-2 input"
+                className="w-full input"
                 type="email"
                 placeholder="Email"
                 required

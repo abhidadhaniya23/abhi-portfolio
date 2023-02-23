@@ -39,13 +39,14 @@ const About = () => {
     <>
       <div className="py-20">
         <Heading heading="Who Am I?" />
-        <div className="flex flex-col items-center justify-center gap-8 md:flex-row">
+        <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
           <motion.div
             variants={animations.photo}
             initial="initial"
             animate="animate"
             exit="exit"
-            className="my-10 md:my-0 w-[80%] md:w-[50rem]"
+            // className="my-10 lg:my-0 w-[80%] lg:w-[50rem]"
+            className="my-10 lg:my-0"
           >
             <Image
               className="rounded-full"
@@ -69,7 +70,7 @@ const About = () => {
               and I am passionate about creating websites that provide
               intuitive, pixel-perfect user experiences.
             </motion.p>
-            <div className="mt-8 text-justify md:mt-5 md:text-left">
+            <div className="mt-8 text-justify lg:mt-5 lg:text-left">
               <motion.p
                 variants={animations.expert}
                 initial="initial"

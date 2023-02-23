@@ -25,7 +25,7 @@ const Card = ({ data, length, index }) => {
         initial="initial"
         exit="exit"
         animate="animate"
-        className="flex -mb-8 sm:-mb-10 flex-row justify-end items-baseline"
+        className="flex -mb-8 sm:-mb-10 flex-row justify-center md:justify-center items-baseline"
       >
         <p className="text-sm sm:text-xl text-white relative">
           {data.subtitle.split(" ")[0]}

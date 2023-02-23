@@ -43,13 +43,13 @@ const SocialLine = () => {
   ];
   return (
     <>
-      <div className="absolute flex flex-col items-center justify-center md:fixed right-10">
+      <div className="absolute flex flex-col items-center justify-center lg:fixed right-10">
         <motion.span
           variants={animations.line}
           animate="animate"
           exit="exit"
           initial="initial"
-          className="block bg-lightBluePrimary/30 mb-2 md:mb-5 h-12 md:h-32 w-[2px] rounded-full"
+          className="block bg-lightBluePrimary/30 mb-2 lg:mb-5 h-12 lg:h-32 w-[2px] rounded-full"
         ></motion.span>
         {socialIcons.map((icon, index) => (
           <Icon
@@ -80,7 +80,7 @@ const EmailLine = () => {
   };
   return (
     <>
-      <div className="sm:flex hidden absolute left-0 right-auto flex-row-reverse items-center justify-center md:left-auto md:right-0 md:flex-row bottom-5 md:bottom-10">
+      <div className="sm:flex hidden absolute left-0 right-auto flex-row-reverse items-center justify-center lg:left-auto lg:right-0 lg:flex-row bottom-5 lg:bottom-10">
         <motion.div
           variants={animations.emailAnimate}
           animate="animate"
@@ -100,7 +100,7 @@ const EmailLine = () => {
           animate="animate"
           exit="exit"
           initial="initial"
-          className="block bg-lightBluePrimary/30 mx-5 w-10 md:w-32 h-[2px] rounded-full"
+          className="block bg-lightBluePrimary/30 mx-5 w-10 lg:w-32 h-[2px] rounded-full"
         ></motion.span>
       </div>
     </>
@@ -130,7 +130,7 @@ const Icon = ({ index, icon, link, label }) => {
         animate="animate"
         exit="exit"
         initial="initial"
-        className="my-1.5 md:my-2"
+        className="my-1.5 lg:my-2"
       >
         <Link href={link} target="_blank" rel="noreferrer" area-label={label}>
           <i

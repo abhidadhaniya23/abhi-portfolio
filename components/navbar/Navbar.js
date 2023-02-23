@@ -16,11 +16,11 @@ const Navbar = () => {
   };
   const linksData = [
     {
-      name: "About Me",
+      name: "About",
       link: "/about",
     },
     {
-      name: "Tech Stack",
+      name: "Technology",
       link: "/tech-stack",
     },
     {
@@ -40,7 +40,7 @@ const Navbar = () => {
       link: "https://blogs.abhidadhaniya.com?ref=portfolio",
     },
     {
-      name: "Contact Me",
+      name: "Contact",
       link: "/contact",
     },
   ];
@@ -53,14 +53,14 @@ const Navbar = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="md:hidden fixed top-0 flex flex-col items-center justify-center w-full min-h-screen px-5 mx-auto duration-150 shadow-2xl md:px-16 md:fixed bg-darkBluePrimary/90 backdrop-blur-sm md:bg-darkBluePrimary"
+          className="md:hidden fixed top-0 flex flex-col items-center justify-center w-full min-h-screen px-5 mx-auto duration-150 shadow-2xl md:px-16 bg-darkBluePrimary/90 backdrop-blur-sm md:bg-darkBluePrimary"
         >
           <LogoImage />
           <NavbarLinks linksData={linksData} />
           <ResumeButton />
         </motion.header>
       )}
-      <header className="hidden top-0 md:flex flex-col items-center justify-center min-h-screen px-5 mx-auto duration-150 shadow-2xl md:px-16 md:fixed bg-darkBluePrimary/90 backdrop-blur-sm md:bg-darkBluePrimary">
+      <header className="hidden fixed top-0 md:flex flex-col items-center justify-center min-h-screen px-5 mx-auto duration-150 shadow-2xl md:px-16 bg-darkBluePrimary/90 backdrop-blur-sm md:bg-darkBluePrimary">
         <LogoImage />
         <NavbarLinks linksData={linksData} />
         <ResumeButton />
