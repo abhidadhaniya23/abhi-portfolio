@@ -9,7 +9,9 @@ const GigaWeb = () => {
       <Head>
         <title>Gigaweb Agency - Abhi Dadhaniya</title>
       </Head>
-      <Layout component={<GigaWebContent />} />
+      <Layout>
+        <GigaWebContent />
+      </Layout>
     </>
   );
 };

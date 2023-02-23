@@ -8,7 +8,9 @@ const work = () => {
       <Head>
         <title>Projects - Abhi Dadhaniya</title>
       </Head>
-      <Layout component={<Development />} width={true} />
+      <Layout>
+        <Development />
+      </Layout>
     </>
   );
 };

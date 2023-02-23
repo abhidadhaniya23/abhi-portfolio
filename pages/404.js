@@ -11,7 +11,9 @@ const NotFound = () => {
         <title>Not Found</title>
       </Head>
       <SocialLine />
-      <Layout component={<NotFoundComponent />} />
+      <Layout>
+        <NotFoundComponent />
+      </Layout>
       <EmailLine />
     </>
   );
@@ -34,8 +36,8 @@ const NotFoundComponent = () => {
       <h1 className="text-4xl font-semibold text-cyanPrimary">
         Looks like something went wrong...!
       </h1>
-      <Link href="/">
-        <a className="btn w-fit">Go Back to Home</a>
+      <Link href="/" className="btn w-fit">
+        Go Back to Home
       </Link>
     </motion.div>
   );

@@ -1,6 +1,5 @@
 import Heading from "../Heading";
 import Image from "next/image";
-import pic from "../../public/pic.jpg";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -38,9 +37,9 @@ const About = () => {
   };
   return (
     <>
-      <div className="px-10 py-20">
+      <div className="py-20">
         <Heading heading="Who Am I?" />
-        <div className="flex flex-col items-center justify-center md:flex-row">
+        <div className="flex flex-col items-center justify-center gap-8 md:flex-row">
           <motion.div
             variants={animations.photo}
             initial="initial"
@@ -48,9 +47,15 @@ const About = () => {
             exit="exit"
             className="my-10 md:my-0 w-[80%] md:w-[50rem]"
           >
-            <Image className="rounded-full" src={pic} alt="Abhi Dadhaniya" />
+            <Image
+              className="rounded-full"
+              src="/pic.jpg"
+              width={500}
+              height={500}
+              alt="Abhi Dadhaniya"
+            />
           </motion.div>
-          <div className="text-xl text-justify md:p-5 md:ml-10 md:-mr-20 md:text-left text-lightBluePrimary">
+          <div className="text-xl text-justify text-lightBluePrimary">
             <motion.p
               variants={animations.desc}
               initial="initial"

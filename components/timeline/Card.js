@@ -51,14 +51,13 @@ const Card = ({ data, length, index }) => {
                 {data.subtitle}
               </p>
               {data.link && (
-                <Link href={data.link}>
-                  <a
-                    target={`${data.link.charAt(0) === "/" ? "" : "_blank"}`}
-                    className={`font-bodyText group text-xs sm:text-sm flex justify-center items-center text-cyanPrimary px-3`}
-                  >
-                    <i className="fa-solid fa-link pr-1"></i>Proof
-                    <i className="duration-150 group-hover:pl-2 fa-solid fa-angles-right pl-1"></i>
-                  </a>
+                <Link
+                  href={data.link}
+                  target={`${data.link.charAt(0) === "/" ? "" : "_blank"}`}
+                  className={`font-bodyText group text-xs sm:text-sm flex justify-center items-center text-cyanPrimary px-3`}
+                >
+                  <i className="fa-solid fa-link pr-1"></i>Proof
+                  <i className="duration-150 group-hover:pl-2 fa-solid fa-angles-right pl-1"></i>
                 </Link>
               )}
             </div>

@@ -5,7 +5,7 @@ import MenuBarContext from "../context/MenuBarContext";
 import { useState } from "react";
 import Head from "next/head";
 
-const Layout = ({ component, width }) => {
+const Layout = ({ children }) => {
   const [menuActive, setMenuActive] = useState(false);
   return (
     <>
@@ -81,8 +81,9 @@ const Layout = ({ component, width }) => {
           <div className="z-20 absolute md:relative col-span-2">
             <Navbar />
           </div>
-          <div className="col-span-10 md:col-span-8 max-w-5xl mx-auto">
-            {component}
+          {/* <div className="col-span-10 md:col-span-8 lg:max-w-4xl mx-auto"> */}
+          <div className="col-span-10 max-w-4xl mx-auto items-center justify-center">
+            {children}
           </div>
         </div>
       </MenuBarContext.Provider>

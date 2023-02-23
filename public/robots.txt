@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://www.abhidadhaniya.com/api/sitemap
+# Host
+Host: https://abhidadhaniya.com/
+
+# Sitemaps
+Sitemap: https://abhidadhaniya.com/sitemap.xml

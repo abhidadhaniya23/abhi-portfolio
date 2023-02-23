@@ -19,7 +19,9 @@ const contact = () => {
       ) : (
         <></>
       )}
-      <Layout component={<Contact />} />
+      <Layout>
+        <Contact />
+      </Layout>
     </>
   );
 };

@@ -8,7 +8,9 @@ const timeline = () => {
       <Head>
         <title>Proof of work - Abhi Dadhaniya</title>
       </Head>
-      <Layout component={<Timeline />} />
+      <Layout>
+        <Timeline />
+      </Layout>
     </>
   );
 };

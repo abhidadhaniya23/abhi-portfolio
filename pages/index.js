@@ -5,7 +5,6 @@ import { EmailLine } from "../components/ConnectLine";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import logo from "../public/Alogo.svg";
 
 export default function Home() {
   return (
@@ -14,7 +13,9 @@ export default function Home() {
         <title>Abhi Dadhaniya</title>
       </Head>
       <SocialLine />
-      <Layout component={<HeaderIntro />} />
+      <Layout>
+        <HeaderIntro />
+      </Layout>
       <EmailLine />
     </>
   );
@@ -51,7 +52,7 @@ const animations = {
 const HeaderIntro = () => {
   return (
     <>
-      <div className="flex flex-col items-start justify-center px-10">
+      <div className="flex flex-col items-start justify-center">
         <motion.span
           variants={animations.spanTag}
           initial="initial"
@@ -60,7 +61,7 @@ const HeaderIntro = () => {
           className="md:hidden block relative my-1 text-base md:my-5 md:text-2xl font-codeText text-cyanPrimary"
         >
           <Image
-            src={logo}
+            src="/Alogo.svg"
             alt="Abhi Dadhaniya Portfolio"
             width={100}
             height={100}
@@ -109,8 +110,8 @@ const HeaderIntro = () => {
           animate="animate"
           exit="exit"
         >
-          <Link href="/contact">
-            <a className="btn">Get in Touch</a>
+          <Link href="/contact" className="btn">
+            Get in Touch
           </Link>
         </motion.div>
       </div>

@@ -1,6 +1,5 @@
 import Heading from "../Heading";
 import Image from "next/image";
-import agency from "../../public/project/agency.png";
 import { motion } from "framer-motion";
 
 const GigaWebContent = () => {
@@ -39,7 +38,9 @@ const GigaWebContent = () => {
             className="w-[80%] mx-auto shadow-lg"
           >
             <Image
-              src={agency}
+              width={500}
+              height={500}
+              src="/project/agency.png"
               className="rounded-lg"
               alt="Web Development Resources"
             />

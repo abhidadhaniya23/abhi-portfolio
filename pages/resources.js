@@ -8,7 +8,9 @@ const DevelopmentResources = () => {
       <Head>
         <title>Resources - Abhi Dadhaniya</title>
       </Head>
-      <Layout component={<Resource />} />
+      <Layout>
+        <Resource />
+      </Layout>
     </>
   );
 };

@@ -71,10 +71,8 @@ const Navbar = () => {
 
 const LogoImage = () => {
   return (
-    <Link href="/">
-      <a className="mb-4 -mt-10">
-        <Image src="/ALogo.svg" width={90} height={90} alt="Abhi Dadhaniya" />
-      </a>
+    <Link href="/" className="mb-4 -mt-10">
+      <Image src="/Alogo.svg" width={90} height={90} alt="Abhi Dadhaniya" />
     </Link>
   );
 };
@@ -85,27 +83,25 @@ const NavbarLinks = ({ linksData }) => {
   return (
     <ul className="flex flex-col items-start justify-center">
       {linksData.map((item, index) => (
-        <Link key={index} href={item.link}>
-          <a
-            onClick={() => setMenuActive(false)}
-            className={`${
-              router.pathname == "/"
-                ? "text-lightBluePrimary"
-                : item.name
-                    .toLowerCase()
-                    .includes(router.pathname.substring(1).split("-")[0]) ||
-                  item.name
-                    .toLowerCase()
-                    .includes(router.pathname.substring(1).split("/")[0])
-                ? "text-cyanPrimary"
-                : "text-lightBluePrimary"
-            } w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}
-          >
-            <span className="text-cyanPrimary font-codeText">
-              0{index + 1}.
-            </span>
-            {item.name}
-          </a>
+        <Link
+          key={index}
+          href={item.link}
+          onClick={() => setMenuActive(false)}
+          className={`${
+            router.pathname == "/"
+              ? "text-lightBluePrimary"
+              : item.name
+                  .toLowerCase()
+                  .includes(router.pathname.substring(1).split("-")[0]) ||
+                item.name
+                  .toLowerCase()
+                  .includes(router.pathname.substring(1).split("/")[0])
+              ? "text-cyanPrimary"
+              : "text-lightBluePrimary"
+          } w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}
+        >
+          <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
+          {item.name}
         </Link>
       ))}
     </ul>

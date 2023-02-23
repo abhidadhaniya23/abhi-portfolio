@@ -18,27 +18,27 @@ const SocialLine = () => {
     {
       label: "Instagram",
       link: "https://www.instagram.com/_abhi_dadhaniya_/",
-      icon: "SiInstagram",
+      icon: <SiInstagram />,
     },
     {
       label: "Twitter",
       link: "https://twitter.com/abhidadhaniya3",
-      icon: "FiTwitter",
+      icon: <FiTwitter />,
     },
     {
       label: "Github",
       link: "https://github.com/abhidadhaniya23",
-      icon: "FiGithub",
+      icon: <FiGithub />,
     },
     {
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/abhidadhaniya/",
-      icon: "RiLinkedinLine",
+      icon: <RiLinkedinLine />,
     },
     {
       label: "Email",
       link: "mailto:abhidadhaniya23@gmail.com",
-      icon: "FiMail",
+      icon: <FiMail className="sm:hidden block" />,
     },
   ];
   return (
@@ -87,12 +87,13 @@ const EmailLine = () => {
           exit="exit"
           initial="initial"
         >
-          <Link href="mailto:abhidadhaniya23@gmail.com">
-            <a className="duration-300 flex flex-row justify-center items-center text-lightBluePrimary/50 hover:text-cyanPrimary/90">
-              <FiMail className="mr-3 font-bold text-2xl" />{" "}
-              abhidadhaniya23@gmail.com
-            </a>
-          </Link>
+          <a
+            href="mailto:abhidadhaniya23@gmail.com"
+            className="duration-300 flex flex-row justify-center items-center text-lightBluePrimary/50 hover:text-cyanPrimary/90"
+          >
+            <FiMail className="mr-3 font-bold text-2xl" />{" "}
+            abhidadhaniya23@gmail.com
+          </a>
         </motion.div>
         <motion.span
           variants={animations.line}
@@ -131,24 +132,12 @@ const Icon = ({ index, icon, link, label }) => {
         initial="initial"
         className="my-1.5 md:my-2"
       >
-        <Link href={link}>
-          <a target="_blank" rel="noreferrer" area-label={label}>
-            <i
-              className={`text-2xl duration-300 text-lightBluePrimary/30 hover:text-cyanPrimary`}
-            >
-              {icon === "SiInstagram" ? (
-                <SiInstagram />
-              ) : icon === "FiTwitter" ? (
-                <FiTwitter />
-              ) : icon === "FiGithub" ? (
-                <FiGithub />
-              ) : icon === "FiMail" ? (
-                <FiMail className="sm:hidden block" />
-              ) : (
-                <RiLinkedinLine />
-              )}
-            </i>
-          </a>
+        <Link href={link} target="_blank" rel="noreferrer" area-label={label}>
+          <i
+            className={`text-2xl duration-300 text-lightBluePrimary/30 hover:text-cyanPrimary`}
+          >
+            {icon}
+          </i>
         </Link>
       </motion.div>
     </>

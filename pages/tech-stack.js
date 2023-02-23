@@ -8,7 +8,9 @@ const skills = () => {
       <Head>
         <title>Tech Stack - Abhi Dadhaniya</title>
       </Head>
-      <Layout component={<Skill />} />
+      <Layout>
+        <Skill />
+      </Layout>
     </>
   );
 };
