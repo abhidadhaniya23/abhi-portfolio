@@ -107,7 +107,7 @@ const ResumeButton = () => {
       href="https://rxresu.me/abhidadhaniya23/abhi-resume"
       target="_blank"
       rel="noreferrer"
-      className="btn"
+      className="btn mt-5"
     >
       Resume
     </a>

@@ -99,7 +99,7 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="text-base mb-7 lg:mb-10 lg:text-xl text-lightBlueSecondary/80"
+          className="text-base lg:text-xl text-lightBlueSecondary/80"
         >
           I&apos;m a full stack web developer based in India. I help clients to
           build beautiful animated and stunning websites from scratch.
@@ -109,9 +109,17 @@ const HeaderIntro = () => {
           initial="initial"
           animate="animate"
           exit="exit"
+          className="mt-5 lg:mt-7 flex flex-row gap-4 items-center"
         >
           <Link href="/contact" className="btn">
             Get in Touch
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.upwork.com/freelancers/~012c300b71361fe159"
+            className="btn"
+          >
+            Hire Me
           </Link>
         </motion.div>
       </div>

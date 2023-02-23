@@ -54,7 +54,7 @@ a {
 }
 
 .btn {
-  @apply border-[1px] duration-300 hover:bg-cyanPrimary/5 mt-5 text-base lg:text-xl border-cyanPrimary py-3 px-7 text-cyanPrimary rounded-[4px];
+  @apply border duration-300 hover:bg-cyanPrimary/5 text-base lg:text-xl border-cyanPrimary py-3 px-7 text-cyanPrimary rounded-md;
 }
 
 .input {
