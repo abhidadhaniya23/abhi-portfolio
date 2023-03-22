@@ -114,13 +114,13 @@ const HeaderIntro = () => {
           <Link href="/contact" className="btn">
             Get in Touch
           </Link>
-          <Link
+          {/* <Link
             target="_blank"
             href="https://www.upwork.com/freelancers/~012c300b71361fe159"
             className="btn"
           >
             Hire Me
-          </Link>
+          </Link> */}
         </motion.div>
       </div>
     </>

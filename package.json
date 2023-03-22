@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "framer-motion": "^6.2.8",
+    "gray-matter": "^4.0.3",
     "next": "^13.1.6",
     "next-sitemap": "^3.1.52",
     "nextjs-progressbar": "0.0.14",
