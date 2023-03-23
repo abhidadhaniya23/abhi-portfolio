@@ -1,15 +1,68 @@
-[Visit website](https://www.abhidadhaniya.com/)
+## Introduction
 
-## Here's the gif of my portfolio
+I'm [Abhi Dadhaniya](https://abhidadhaniya.com/), a freelancer and self-taught developer from India. I'm passionate about building things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+
+I and [Rohan](https://rohankiratsata.xyz/) are running up a freelancing agency called [Gigaweb](https://gigaweb.in/). We are building websites and web applications for small businesses and startups.
+
+## Portfolio
+
+Read case studies of completed projects under [Gigaweb](https://gigaweb.in/) and verify our work at [here](https://gigaweb.in/work).
+
+## Here's the preview of my portfolio
 
 ![Portfolio](/public/project/portfolio.gif)
 
 ## Technologies that are used in this project
 
-1. Next.js
-2. Framer motion for animations
-3. React icons
+1. [TypeScript](https://www.typescriptlang.org/)
+2. [Next.js](https://nextjs.org/)
+3. [Framer motion](https://www.framer.com/motion/) for animations
+4. [React icons](https://react-icons.github.io/react-icons)
+5. [React markdown](https://www.npmjs.com/package/react-markdown) to render project description
+6. [EmailJS](https://www.emailjs.com/) to get the response of contact form
 
-### Also, I have added a blog section in my portfolio where I often write about my learnings and experiences.
+## Blogs
 
-- Go and visit the blog page [here](https://www.abhidadhaniya.com/blogs)
+Read more about - Tech talk and programming adventures from a self-taught developer at [here](https://blogs.abhidadhaniya.com/)
+
+## How to run this project
+
+1. Clone this repository
+
+```bash
+git clone https://github.com/abhidadhaniya23/abhi-portfolio.git
+```
+
+2. Run this command to install all the dependencies
+
+```bash
+npm install
+```
+
+3. Run this command to start the development server
+
+```bash
+npm run dev
+```
+
+## Let's connect
+
+Don't hesitate to reach out if you have any questions or just want to connect.
+
+Follow me on my social media platforms:
+
+- [Twitter](https://twitter.com/AbhiDadhaniya3)
+- [LinkedIn](https://www.linkedin.com/in/abhidadhaniya/)
+- [Instagram](https://www.instagram.com/_abhi_dadhaniya_/)
+
+## Support
+
+If you like this project, please consider giving it a ⭐️ on Github and sharing it with your friends via social media.
+
+## Buy me a coffee
+
+If you want to support me, you can [buy me a coffee](https://www.buymeacoffee.com/AbhiDadhaniya07). I'll really appreciate it.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
