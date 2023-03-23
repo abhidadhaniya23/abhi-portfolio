@@ -1,4 +1,16 @@
-## Introduction
+# Table of Contents
+
+1. [About Me](#about-me)
+2. [Portfolio](#portfolio)
+3. [Technologies that are used in this project](#technologies-that-are-used-in-this-project)
+4. [Blogs](#blogs)
+5. [How to run this project](#how-to-run-this-project)
+6. [Let's connect](#lets-connect)
+7. [Support](#support)
+8. [Buy me a coffee](#buy-me-a-coffee)
+9. [License](#license)
+
+## About Me
 
 I'm [Abhi Dadhaniya](https://abhidadhaniya.com/), a freelancer and self-taught developer from India. I'm passionate about building things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
 
@@ -24,6 +36,8 @@ Read case studies of completed projects under [Gigaweb](https://gigaweb.in/) and
 ## Blogs
 
 Read more about - Tech talk and programming adventures from a self-taught developer at [here](https://blogs.abhidadhaniya.com/)
+
+Here's the [Github repository](https://github.com/abhidadhaniya23/personal-blogs-nextjs) of my blogs website.
 
 ## How to run this project
 
