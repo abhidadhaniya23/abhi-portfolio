@@ -16,12 +16,14 @@ const ProjectCard = ({ project, delay }: PropTypes) => {
       exit: {
         opacity: 0,
         scale: 0.9,
-        transition: { duration: 0.15, delay: delay * 0.05 },
+        // transition: { duration: 0.15, delay: delay * 0.05 },
+        transition: { duration: 0.15, delay: 0.05 },
       },
       animate: {
         opacity: 1,
         scale: 1,
-        transition: { duration: 0.3, delay: delay * 0.1 + 0.3 },
+        transition: { duration: 0.3, delay: delay * 0.1 },
+        // transition: { duration: 0.3, delay: 0.3 },
       },
     },
   };
@@ -47,7 +49,7 @@ const ProjectCard = ({ project, delay }: PropTypes) => {
             alt={project.data.name}
             className="w-full h-full object-cover group-hover:scale-110 duration-500"
           />
-          <p className="opacity-0 flex-row gap-2 group-hover:opacity-100 duration-300 text-2xl md:text-4xl absolute top-0 w-full h-full flex justify-center items-center bg-black/80 text-white">
+          <p className="opacity-0 flex-row gap-2 group-hover:opacity-100 duration-300 text-2xl md:text-3xl absolute top-0 w-full h-full flex justify-center items-center bg-darkBluePrimary/90 text-white">
             Learn More
             <RiShareCircleFill />
           </p>
@@ -60,7 +62,7 @@ const ProjectCard = ({ project, delay }: PropTypes) => {
             <h2 className="text-2xl md:text-3xl text-lightBluePrimary font-medium">
               {project.data.name}
             </h2>
-            <span className="text-xs md:text-sm rounded-full text-cyanPrimary px-2 md:px-3 py-0.5 md:py-1 font-normal border border-cyanPrimary">
+            <span className="flex text-xs md:text-sm rounded-full text-cyanPrimary px-2 md:px-3 py-0.5 md:py-1 font-normal border border-cyanPrimary">
               {project.data.tag}
             </span>
           </div>

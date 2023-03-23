@@ -7,6 +7,7 @@ import { projectDataTypes } from "../../types/ProjectTypes";
 
 const Project = (props: any) => {
   const projectsData: projectDataTypes[] = props.projectsData;
+  // console.log(projectsData);
   return (
     <>
       <Head>

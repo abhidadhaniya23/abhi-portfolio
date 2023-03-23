@@ -33,7 +33,7 @@ const ProjectSlug = (props: any) => {
             className="font-bodyText text-lightBluePrimary mt-16 flex flex-col justify-center items-start gap-4 w-full md:w-4/5 mx-auto"
           >
             <Image
-              src={`/project/${project.data.previewImage}`}
+              src={`/project/preview/${project.data.previewImage}`}
               width={1200}
               height={800}
               alt={project.data.name}
@@ -50,6 +50,7 @@ const ProjectSlug = (props: any) => {
             <div className="text-base flex flex-row flex-wrap justify-start items-center gap-x-3 gap-y-1 text-lightBluePrimary/60">
               <a
                 href={project.data.link}
+                target=""
                 className="flex flex-row items-center gap-2 text-cyanPrimary text-lg"
               >
                 Visit
@@ -83,7 +84,7 @@ const ProjectSlug = (props: any) => {
               ))}
             </div>
 
-            <article className="mt-10 prose-base lg:prose-lg prose-p:text-lightBluePrimary/70  prose-p:font-normal prose-li:list-disc prose-li:marker:text-cyanPrimary prose-blockquote:rounded-lg prose-headings:text-lightBluePrimary prose-blockquote:px-5 prose-strong:text-lightBluePrimary/90 prose-code:!font-code prose-pre:!bg-black prose-pre:p-0 prose-pre:m-0 prose-blockquote:py-0.5 prose-blockquote:border prose-blockquote:border-solid prose-blockquote:border-lightBluePrimary/10 prose-blockquote:text-lightBluePrimary/70 mx-auto prose-headings:text-lightBluePrimary/70 prose-headings:font-semibold prose-a:no-underline prose-a:border-b prose-a:pb-0.5 prose-a:border-dashed prose-a:border-cyanPrimary/70 hover:prose-a:border-solid hover:prose-a:border-cyanPrimary prose-a:text-lightBluePrimary/90 hover:prose-a:text-cyanPrimary prose-a:mx-1 text-lightBluePrimary/50 prose-a:duration-300">
+            <article className="mt-10 prose-base lg:prose-lg prose-p:text-lightBluePrimary/70  prose-p:font-normal prose-li:list-disc prose-li:marker:text-cyanPrimary prose-blockquote:rounded-lg prose-headings:text-lightBluePrimary prose-blockquote:px-5 prose-strong:text-lightBluePrimary/90 prose-strong:font-medium prose-code:!font-code prose-pre:!bg-black prose-pre:p-0 prose-pre:m-0 prose-blockquote:py-0.5 prose-blockquote:border prose-blockquote:border-solid prose-blockquote:border-lightBluePrimary/10 prose-blockquote:text-lightBluePrimary/70 mx-auto prose-headings:text-lightBluePrimary/70 prose-headings:font-semibold prose-a:no-underline prose-a:border-b prose-a:pb-0.5 prose-a:border-dashed prose-a:border-cyanPrimary/70 hover:prose-a:border-solid hover:prose-a:border-cyanPrimary prose-a:text-lightBluePrimary/90 hover:prose-a:text-cyanPrimary prose-a:mx-1 text-lightBluePrimary/50 prose-a:duration-300">
               <ReactMarkdown>{content}</ReactMarkdown>
             </article>
           </motion.div>
