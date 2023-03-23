@@ -1,15 +1,15 @@
-const path = require("path");
-const fs = require("fs");
-const matter = require("gray-matter");
+import path from "path";
+import fs from "fs";
+import matter from "gray-matter";
 
-const getPosts = () => {
-  const dirPath = path.join(__dirname, "../project");
+const getProjects = () => {
+  const dirPath = path.join("project");
   const files = fs.readdirSync(dirPath);
 
   const allPostsData = files.map((fileName) => {
     const slug = fileName.replace(".mdx", "");
     const fileContents = fs.readFileSync(
-      path.join(__dirname, `../project/${slug}.mdx`),
+      path.join(`project/${slug}.mdx`),
       "utf8"
     );
     const { data, content } = matter(fileContents);
@@ -60,4 +60,4 @@ const getPosts = () => {
   return newSortedPosts;
 };
 
-module.exports = getPosts;
+export default getProjects;

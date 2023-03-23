@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const SkillCard = ({ name, url, index }) => {
+interface PropTypes {
+  name: string;
+  url: string;
+  index: number;
+}
+
+const SkillCard = ({ name, url, index }: PropTypes) => {
   const animations = {
     card: {
       initial: { opacity: 0, y: -20 },

@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bodyText: ["textFont"],
+        // bodyText: ["textFont"],
+        bodyText: ["Plus Jakarta Sans", "sans-serif"],
         codeText: ["codeFont"],
         inter: ["inter"],
       },
@@ -23,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

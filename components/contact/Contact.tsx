@@ -7,13 +7,14 @@ const Contact = () => {
   const form = useRef();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [dataReceived, setDataReceived] = useState(false);
-  const submitForm = (event) => {
+  const submitForm = (event: any) => {
     event.preventDefault();
     setFormSubmitted(true);
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        // @ts-ignore
         form.current,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID
       )
@@ -63,6 +64,7 @@ const Contact = () => {
         <Heading heading={"Get In Touch"} />
         <div className="mt-10 font-bodyText">
           <form
+            // @ts-ignore
             ref={form}
             onSubmit={submitForm}
             className="flex flex-col items-center justify-center max-w-xl w-full mx-auto"

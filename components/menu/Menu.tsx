@@ -2,6 +2,7 @@ import { useContext } from "react";
 import MenuBarContext from "../../context/MenuBarContext";
 
 const Menu = () => {
+  // @ts-ignore
   const { menuActive, setMenuActive } = useContext(MenuBarContext);
   return (
     <>

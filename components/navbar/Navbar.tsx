@@ -6,6 +6,7 @@ import MenuBarContext from "../../context/MenuBarContext";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
+  // @ts-ignore
   const { menuActive } = useContext(MenuBarContext);
   const animations = {
     navbar: {
@@ -24,8 +25,8 @@ const Navbar = () => {
       link: "/tech-stack",
     },
     {
-      name: "Work",
-      link: "/work",
+      name: "Projects",
+      link: "/project",
     },
     {
       name: "GigaWeb",
@@ -77,12 +78,13 @@ const LogoImage = () => {
   );
 };
 
-const NavbarLinks = ({ linksData }) => {
+const NavbarLinks = ({ linksData }: any) => {
   const router = useRouter();
+  // @ts-ignore
   const { setMenuActive } = useContext(MenuBarContext);
   return (
     <ul className="flex flex-col items-start justify-center">
-      {linksData.map((item, index) => (
+      {linksData.map((item: any, index: any) => (
         <Link
           key={index}
           href={item.link}

@@ -89,6 +89,7 @@ const Timeline = () => {
         <Heading heading={"Proof of Work"} />
         <div className="py-10 sm:py-20">
           {data.reverse().map((item, index) => (
+            // @ts-ignore
             <Card key={index} index={index} data={item} length={data.length} />
           ))}
         </div>

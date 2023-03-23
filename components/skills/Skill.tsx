@@ -101,7 +101,6 @@ const Skill = () => {
                   index={index}
                   url={skill.url}
                   name={skill.name}
-                  value={skill.value}
                 />
               ))}
             </div>

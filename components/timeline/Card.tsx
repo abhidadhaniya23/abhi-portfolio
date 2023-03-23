@@ -2,7 +2,18 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
-const Card = ({ data, length, index }) => {
+interface CardProps {
+  data: {
+    title: string;
+    subtitle: string;
+    link: string;
+    icon: string;
+  };
+  length: number;
+  index: number;
+}
+
+const Card = ({ data, length, index }: CardProps) => {
   const animations = {
     card: {
       initial: { opacity: 0, x: -20 },

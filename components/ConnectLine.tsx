@@ -107,7 +107,7 @@ const EmailLine = () => {
   );
 };
 
-const Icon = ({ index, icon, link, label }) => {
+const Icon = ({ index, icon, link, label }: any) => {
   const animations = {
     icons: {
       initial: { opacity: 0, y: -20 },

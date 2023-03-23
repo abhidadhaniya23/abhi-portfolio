@@ -2,7 +2,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 
-const CircularProgressBar = ({ value, name, url, index }) => {
+const CircularProgressBar = ({ name, url, index }: any) => {
   const animations = {
     card1: {
       initial: { opacity: 0, x: 20, y: 20 },

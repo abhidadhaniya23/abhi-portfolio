@@ -5,7 +5,7 @@ import MenuBarContext from "../context/MenuBarContext";
 import { useState } from "react";
 import Head from "next/head";
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: JSX.Element }) => {
   const [menuActive, setMenuActive] = useState(false);
   return (
     <>
@@ -82,7 +82,7 @@ const Layout = ({ children }) => {
             <Navbar />
           </div>
           {/* <div className="col-span-10 lg:col-span-8 lg:max-w-4xl mx-auto"> */}
-          <div className="px-10 lg:px-0 col-span-10 lg:col-span-8 max-w-4xl w-full mx-auto self-center items-center justify-center">
+          <div className="px-5 py-12 lg:px-0 col-span-10 lg:col-span-8 max-w-4xl w-full mx-auto self-center items-center justify-center">
             {children}
           </div>
         </div>
