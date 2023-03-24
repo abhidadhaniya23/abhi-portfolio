@@ -49,14 +49,14 @@ const About = () => {
             className="my-10 lg:my-0"
           >
             <Image
-              className="rounded-full"
+              className="w-60 rounded-full"
               src="/pic.jpg"
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               alt="Abhi Dadhaniya"
             />
           </motion.div>
-          <div className="text-xl text-justify text-lightBluePrimary">
+          <div className="text-xl text-lightBluePrimary flex-1">
             <motion.p
               variants={animations.desc}
               initial="initial"
@@ -66,9 +66,10 @@ const About = () => {
             >
               I help businesses to grow their online presence and increase their
               sales by creating beautiful animated, responsive and fast
-              websites. I work at the intersection of design and development,
+              websites.
+              {/* I work at the intersection of design and development,
               and I am passionate about creating websites that provide
-              intuitive, pixel-perfect user experiences.
+              intuitive, pixel-perfect user experiences. */}
             </motion.p>
             <div className="mt-8 text-justify lg:mt-5 lg:text-left">
               <motion.p
