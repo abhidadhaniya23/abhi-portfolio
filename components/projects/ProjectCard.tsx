@@ -16,8 +16,7 @@ const ProjectCard = ({ project, delay }: PropTypes) => {
       exit: {
         opacity: 0,
         scale: 0.9,
-        // transition: { duration: 0.15, delay: delay * 0.05 },
-        transition: { duration: 0.15, delay: 0.05 },
+        transition: { duration: 0.15, delay: delay * 0.05 },
       },
       animate: {
         opacity: 1,
