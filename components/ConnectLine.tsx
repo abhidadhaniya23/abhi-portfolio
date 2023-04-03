@@ -5,6 +5,7 @@ import { SiInstagram } from "react-icons/si";
 import { FiTwitter } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
+import { TbBrandTelegram } from "react-icons/tb";
 
 const SocialLine = () => {
   const animations = {
@@ -34,6 +35,11 @@ const SocialLine = () => {
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/abhidadhaniya/",
       icon: <RiLinkedinLine />,
+    },
+    {
+      label: "Telegram",
+      link: "https://t.me/Abhi_Dadhaniya",
+      icon: <TbBrandTelegram />,
     },
     {
       label: "Email",
