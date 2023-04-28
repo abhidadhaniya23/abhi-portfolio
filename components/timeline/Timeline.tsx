@@ -77,10 +77,16 @@ const Timeline = () => {
       link: "https://www.gigaweb.in/",
     },
     {
-      title: "More projects of clients",
+      title: "Worked on client projects",
       subtitle: "2022 Sept.",
-      icon: "fa-solid fa-briefcase",
+      icon: "fa-solid fa-indian-rupee-sign",
       link: "/work",
+    },
+    {
+      title: "Sold digital products",
+      subtitle: "2023 April",
+      icon: "fa-solid fa-cart-plus",
+      link: "https://abhidadhaniya.gumroad.com/",
     },
   ];
   return (
