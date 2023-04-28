@@ -76,7 +76,7 @@ const Navbar = () => {
 const GithubStar = () => {
   return (
     <a
-      className="flex items-center gap-1 text-cyanPrimary/70 hover:text-cyanPrimary mt-5 duration-200"
+      className="flex items-center gap-1 text-cyanPrimary/70 hover:!text-cyanPrimary mt-5 duration-200"
       href="https://github.com/abhidadhaniya23/abhi-portfolio"
       target="_blank"
       rel="noreferrer"
@@ -111,7 +111,7 @@ const NavbarLinks = ({ linksData }: any) => {
             item.link === router.pathname
               ? "text-cyanPrimary"
               : "text-lightBluePrimary/70"
-          } w-full my-3 text-xl duration-300 hover:text-cyanPrimary`}
+          } w-full my-3 text-xl duration-300 hover:!text-cyanPrimary`}
         >
           <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
           {item.name}

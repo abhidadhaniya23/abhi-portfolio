@@ -5,7 +5,7 @@ import Card from "./Card";
 const Timeline = () => {
   const data = [
     {
-      title: "Designed the web pages",
+      title: "Designed some web pages",
       subtitle: "2019 November",
       icon: "fa-solid fa-bezier-curve",
     },
@@ -62,7 +62,7 @@ const Timeline = () => {
       title: "Built an full stack web app",
       subtitle: "2022 July",
       icon: "fa-brands fa-xing",
-      link: "https://www.xlinks.pro/",
+      link: "/project/xlinks",
     },
     {
       title: "Become MERN Stack Developer",
@@ -71,7 +71,7 @@ const Timeline = () => {
       link: "/tech-stack",
     },
     {
-      title: "Started GigaWeb.in",
+      title: "Started Gigaweb Agency",
       subtitle: "2022 July",
       icon: "fa-solid fa-briefcase",
       link: "https://www.gigaweb.in/",
@@ -80,7 +80,19 @@ const Timeline = () => {
       title: "Worked on client projects",
       subtitle: "2022 Sept.",
       icon: "fa-solid fa-indian-rupee-sign",
-      link: "/work",
+      link: "https://www.gigaweb.in/work",
+    },
+    {
+      title: "Personalized blog platform",
+      subtitle: "2023 Jan.",
+      icon: "fa-regular fa-pen-to-square",
+      link: "/project/blogs-project",
+    },
+    {
+      title: "Developed an API Service",
+      subtitle: "2023 March",
+      icon: "fa-solid fa-server",
+      link: "/project/meta-magnet",
     },
     {
       title: "Sold digital products",

@@ -69,7 +69,7 @@ const Contact = () => {
             onSubmit={submitForm}
             className="flex flex-col items-center justify-center max-w-xl w-full mx-auto"
           >
-            <div className="flex flex-row items-center justify-center gap-5 w-full">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5 w-full">
               <motion.input
                 name="name"
                 variants={animations.nameInput}
@@ -120,7 +120,7 @@ const Contact = () => {
               animate="animate"
               exit="exit"
               disabled={formSubmitted}
-              className={`btn ${formSubmitted && "cursor-not-allowed"} `}
+              className={`btn mt-5 ${formSubmitted && "cursor-not-allowed"} `}
               type="submit"
             >
               {formSubmitted ? (
