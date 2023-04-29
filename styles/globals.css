@@ -12,6 +12,10 @@
     font-family: textFont;
     src: url("/font/Sohne.woff");
   }
+  @font-face {
+    font-family: skiff;
+    src: url("/font/Skiff.woff2");
+  }
 }
 
 .projectDiv a span {
@@ -52,6 +56,9 @@ h6,
 button,
 a {
   @apply font-bodyText;
+}
+* {
+  /* @apply tracking-wide; */
 }
 
 .btn {

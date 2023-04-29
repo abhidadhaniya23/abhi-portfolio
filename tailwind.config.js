@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         // bodyText: ["textFont"],
-        bodyText: ["Plus Jakarta Sans", "sans-serif"],
+        // bodyText: ["Plus Jakarta Sans", "sans-serif"],
+        bodyText: ["skiff", "sans-serif"],
         codeText: ["codeFont"],
         inter: ["inter"],
       },

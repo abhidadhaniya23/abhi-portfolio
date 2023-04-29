@@ -71,7 +71,7 @@ const About = () => {
               and I am passionate about creating websites that provide
               intuitive, pixel-perfect user experiences. */}
             </motion.p>
-            <div className="mt-8 text-justify lg:mt-5 lg:text-left">
+            <div className="mt-8 lg:mt-5 text-left">
               <motion.p
                 variants={animations.expert}
                 initial="initial"
