@@ -30,7 +30,7 @@ const Navbar = () => {
       link: "/project",
     },
     {
-      name: "GigaWeb",
+      name: "Gigaweb",
       link: "/gigaweb",
     },
     {

@@ -86,9 +86,9 @@ const About = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="pl-4 mt-1"
+                className="pl-4 mt-1 flex flex-row items-start"
               >
-                <i className="mr-3 text-xs text-cyanPrimary fa-solid fa-diamond"></i>
+                <i className="pt-2 mr-3 text-xs text-cyanPrimary fa-solid fa-diamond"></i>
                 Beautiful animated stunning websites with fast loading speed.
               </motion.p>
               <motion.p
@@ -96,9 +96,9 @@ const About = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="pl-4 mt-1"
+                className="pl-4 mt-1 flex flex-row items-start"
               >
-                <i className="mr-3 text-xs text-cyanPrimary fa-solid fa-diamond"></i>
+                <i className="pt-2 mr-3 text-xs text-cyanPrimary fa-solid fa-diamond"></i>
                 Full stack web apps with best user experience and server
                 interactivity.
               </motion.p>
@@ -107,11 +107,21 @@ const About = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="pl-4 mt-1"
+                className="pl-4 mt-1 flex flex-row items-start"
               >
-                <i className="mr-3 text-xs text-cyanPrimary fa-solid fa-diamond"></i>
-                Helps in SEO to rank your website on top of search engine
-                results.
+                <i className="pt-2 mr-3 text-xs text-cyanPrimary fa-solid fa-diamond"></i>
+                I create real world products that love to use.
+              </motion.p>
+              <motion.p
+                variants={animations.p3}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="pl-4 mt-1 flex flex-row items-start"
+              >
+                <i className="pt-2 mr-3 text-xs text-cyanPrimary fa-solid fa-diamond"></i>
+                Seamless integration of e-commerce functionality to maximize
+                online sales.
               </motion.p>
             </div>
           </div>

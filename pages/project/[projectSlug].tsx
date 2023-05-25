@@ -50,7 +50,8 @@ const ProjectSlug = (props: any) => {
             <div className="text-base flex flex-row flex-wrap justify-start items-center gap-x-3 gap-y-1 text-lightBluePrimary/60">
               <a
                 href={project.data.link}
-                target=""
+                target="_blank"
+                rel="noreferrer"
                 className="flex flex-row items-center gap-2 text-cyanPrimary text-lg"
               >
                 Visit
