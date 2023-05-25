@@ -105,6 +105,14 @@ const Layout = ({ children }: { children: JSX.Element }) => {
       </Script>
 
       <Script
+        id="umami-analytics"
+        strategy="lazyOnload"
+        async
+        src="https://analytics.umami.is/script.js"
+        data-website-id="c633ad37-453e-4e97-a1a5-2a519390d56e"
+      ></Script>
+
+      <Script
         id="g_analytics_id_UA"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_UA_ID}`}
