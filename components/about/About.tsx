@@ -50,7 +50,7 @@ const About = () => {
           >
             <Image
               className="w-60 rounded-full"
-              src="/pic.jpeg"
+              src="/pic.jpg"
               width={600}
               height={600}
               alt="Abhi Dadhaniya"
