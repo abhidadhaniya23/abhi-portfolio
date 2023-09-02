@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { useContext } from "react";
-import MenuBarContext from "../../context/MenuBarContext";
-import { useRouter } from "next/router";
-import { FiGithub, FiStar } from "react-icons/fi";
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { useContext } from 'react';
+import MenuBarContext from '../../context/MenuBarContext';
+import { useRouter } from 'next/router';
+import { FiGithub, FiStar } from 'react-icons/fi';
 
 const Navbar = () => {
   // @ts-ignore
@@ -18,32 +18,28 @@ const Navbar = () => {
   };
   const linksData = [
     {
-      name: "About",
-      link: "/about",
+      name: 'About',
+      link: '/about',
     },
     {
-      name: "Technology",
-      link: "/tech-stack",
+      name: 'Technology',
+      link: '/tech-stack',
     },
     {
-      name: "Projects",
-      link: "/project",
+      name: 'Projects',
+      link: '/project',
     },
     {
-      name: "Gigaweb",
-      link: "/gigaweb",
+      name: 'Timeline',
+      link: '/timeline',
     },
     {
-      name: "Timeline",
-      link: "/timeline",
+      name: 'Blogs',
+      link: 'https://blogs.abhidadhaniya.com?ref=portfolio',
     },
     {
-      name: "Blogs",
-      link: "https://blogs.abhidadhaniya.com?ref=portfolio",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
+      name: 'Contact',
+      link: '/contact',
     },
   ];
 
@@ -107,10 +103,8 @@ const NavbarLinks = ({ linksData }: any) => {
           key={index}
           href={item.link}
           onClick={() => setMenuActive(false)}
-          className={`${router.pathname === "/" && "!text-lightBluePrimary"} ${
-            item.link === router.pathname
-              ? "text-cyanPrimary"
-              : "text-lightBluePrimary/70"
+          className={`${router.pathname === '/' && '!text-lightBluePrimary'} ${
+            item.link === router.pathname ? 'text-cyanPrimary' : 'text-lightBluePrimary/70'
           } w-full my-3 text-xl duration-300 hover:!text-cyanPrimary`}
         >
           <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
@@ -123,12 +117,7 @@ const NavbarLinks = ({ linksData }: any) => {
 
 const ResumeButton = () => {
   return (
-    <a
-      href="https://rxresu.me/abhidadhaniya23/abhi-resume"
-      target="_blank"
-      rel="noreferrer"
-      className="btn mt-5"
-    >
+    <a href="https://rxresu.me/abhidadhaniya23/abhi-resume" target="_blank" rel="noreferrer" className="btn mt-5">
       Resume
     </a>
   );

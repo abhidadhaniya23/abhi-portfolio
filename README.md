@@ -14,12 +14,6 @@
 
 I'm [Abhi Dadhaniya](https://abhidadhaniya.com/), a freelancer and self-taught developer from India. I'm passionate about building things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
 
-I and [Rohan](https://rohankiratsata.xyz/) are running up a freelancing agency called [Gigaweb](https://gigaweb.in/). We are building websites and web applications for small businesses and startups.
-
-## Portfolio
-
-Read case studies of completed projects under [Gigaweb](https://gigaweb.in/) and verify our work at [here](https://gigaweb.in/work).
-
 ## Here's the preview of my portfolio
 
 ![Portfolio](/public/project/portfolio.gif)
