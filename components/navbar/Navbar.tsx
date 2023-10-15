@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { useContext } from 'react';
-import MenuBarContext from '../../context/MenuBarContext';
-import { useRouter } from 'next/router';
-import { FiGithub, FiStar } from 'react-icons/fi';
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { useContext } from "react";
+import MenuBarContext from "../../context/MenuBarContext";
+import { useRouter } from "next/router";
+import { FiGithub, FiStar } from "react-icons/fi";
 
 const Navbar = () => {
   // @ts-ignore
@@ -18,28 +18,28 @@ const Navbar = () => {
   };
   const linksData = [
     {
-      name: 'About',
-      link: '/about',
+      name: "About",
+      link: "/about",
     },
     {
-      name: 'Technology',
-      link: '/tech-stack',
+      name: "Technology",
+      link: "/tech-stack",
     },
     {
-      name: 'Projects',
-      link: '/project',
+      name: "Projects",
+      link: "/project",
     },
     {
-      name: 'Timeline',
-      link: '/timeline',
+      name: "Timeline",
+      link: "/timeline",
     },
     {
-      name: 'Blogs',
-      link: 'https://blogs.abhidadhaniya.com?ref=portfolio',
+      name: "Blogs",
+      link: "https://blogs.abhidadhaniya.com?ref=portfolio",
     },
     {
-      name: 'Contact',
-      link: '/contact',
+      name: "Contact",
+      link: "/contact",
     },
   ];
 
@@ -55,14 +55,14 @@ const Navbar = () => {
         >
           <LogoImage />
           <NavbarLinks linksData={linksData} />
-          <ResumeButton />
+          {/* <ResumeButton /> */}
           <GithubStar />
         </motion.header>
       )}
       <header className="hidden fixed top-0 lg:flex flex-col items-center justify-center min-h-screen px-5 mx-auto duration-150 shadow-2xl lg:px-16 bg-darkBluePrimary/90 backdrop-blur-sm lg:bg-darkBluePrimary">
         <LogoImage />
         <NavbarLinks linksData={linksData} />
-        <ResumeButton />
+        {/* <ResumeButton /> */}
         <GithubStar />
       </header>
     </>
@@ -71,12 +71,7 @@ const Navbar = () => {
 
 const GithubStar = () => {
   return (
-    <a
-      className="flex items-center gap-1 text-cyanPrimary/70 hover:!text-cyanPrimary mt-5 duration-200"
-      href="https://github.com/abhidadhaniya23/abhi-portfolio"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a className="flex items-center gap-1 text-cyanPrimary/70 hover:!text-cyanPrimary mt-5 duration-200" href="https://github.com/abhidadhaniya23/abhi-portfolio" target="_blank" rel="noreferrer">
       <FiStar />
       <span className="text-lightBluePrimary">GitHub</span>
       {/* <FiGithub /> */}
@@ -103,8 +98,8 @@ const NavbarLinks = ({ linksData }: any) => {
           key={index}
           href={item.link}
           onClick={() => setMenuActive(false)}
-          className={`${router.pathname === '/' && '!text-lightBluePrimary'} ${
-            item.link === router.pathname ? 'text-cyanPrimary' : 'text-lightBluePrimary/70'
+          className={`${router.pathname === "/" && "!text-lightBluePrimary"} ${
+            item.link === router.pathname ? "text-cyanPrimary" : "text-lightBluePrimary/70"
           } w-full my-3 text-xl duration-300 hover:!text-cyanPrimary`}
         >
           <span className="text-cyanPrimary font-codeText">0{index + 1}.</span>
